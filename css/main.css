@@ -20,7 +20,7 @@ body{
   font-size: 1.3em; 
 }
 
-h1 {
+.h1 {
    text-align: center;
    text-shadow: wheat;
    border: 1px solid black;
