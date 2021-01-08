@@ -29,7 +29,7 @@ body{
    padding: 50px;
    background-color: #61c2ad;
    color:white;
-   margin-left: 20px;
+   margin-left: 20px 0, 0, 0;
 
 
 }
