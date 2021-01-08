@@ -33,3 +33,13 @@ body{
 
 
 }
+
+.underline{
+  grid-area: 'combine';
+  grid-column: 1/6;
+}
+
+.img {
+ float: right;
+ margin-top: 10px;;
+}
