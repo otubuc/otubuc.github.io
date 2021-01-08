@@ -15,7 +15,18 @@ header {
 
 
 body{
-  background-color: gray;
+  background-color: whitesmoke;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.3em; 
+}
+
+h1 {
+   text-align: center;
+   text-shadow: wheat;
+   border: 1px solid black;
+   border-radius: 5px 5px 5px 5px;
+   width:fit-content;
+   padding: 1px;
+
+
 }
