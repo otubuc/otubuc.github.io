@@ -54,6 +54,7 @@ body{
 footer {
   display: block;
   text-align: center;
+  text-size-adjust: 10px;
    text-shadow: rgb(20, 20, 19);
    border: 0px solid #61c2ad;
    border-radius: 5px 5px 5px 5px;
