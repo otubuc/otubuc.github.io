@@ -42,7 +42,9 @@ body{
 .img {
  float: right;
  margin-top: 10px;
- border:rgb(14, 13, 13)
+ border: 5px solid gray;
+ width: 300px;
+
 }
 
 
