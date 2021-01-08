@@ -21,7 +21,7 @@ body{
 }
 
 .h1 {
-   text-align: center;
+   text-align: left;
    text-shadow: rgb(20, 20, 19);
    border: 0px solid #61c2ad;
    border-radius: 5px 5px 5px 5px;
@@ -29,7 +29,7 @@ body{
    padding: 50px;
    background-color: #61c2ad;
    color:rgb(14, 13, 13);
-   margin-left: 20px 0, 0, 0;
+   margin-left: 25px 0, 0, 0;
 
 
 }
@@ -54,13 +54,13 @@ body{
 footer {
   display: block;
   text-align: center;
-  font-size: 10px;
+  font-size: 14px;
   font-style: Arial Rounded MT Bold;
    text-shadow: rgb(243, 243, 241);
    border: 0px solid #61c2ad;
    border-radius: 5px 5px 5px 5px;
    width: 850px;
-   padding: 30px;
+   padding: 20px;
    background-color: #61c2ad;
    color:rgb(14, 13, 13);
    margin-left: 20px 0, 0, 0;
