@@ -3,3 +3,19 @@
   --accent1-color: #A43312;
   --accent2-color: white;
 */
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;   
+    align-items: center;
+    padding-bottom: 1em; 
+}
+
+
+body{
+  background-color: gray;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.3em; 
+}
