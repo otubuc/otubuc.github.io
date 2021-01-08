@@ -42,6 +42,7 @@ body{
 .img {
  float: right;
  margin-top: 10px;
+ border:rgb(14, 13, 13)
 }
 
 
@@ -52,7 +53,7 @@ footer {
    border: 0px solid #61c2ad;
    border-radius: 5px 5px 5px 5px;
    width: 850px;
-   padding: 50px;
+   padding: 20px;
    background-color: #61c2ad;
    color:rgb(14, 13, 13);
    margin-left: 20px 0, 0, 0;
