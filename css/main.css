@@ -22,10 +22,10 @@ body{
 
 .h1 {
    text-align: left;
-   text-shadow: wheat;
-   border: 1px solid black;
+   text-shadow: rgb(20, 20, 19);
+   border: 0px solid #61c2ad;
    border-radius: 5px 5px 5px 5px;
-   width: 850px;
+   width: auto;
    padding: 30px;
    background-color: #61c2ad;
    color:white;
