@@ -25,9 +25,10 @@ body{
    text-shadow: wheat;
    border: 1px solid black;
    border-radius: 5px 5px 5px 5px;
-   width: 960px;
+   width: 850px;
    padding: 10px;
    background-color: #000000;
+   color:white;
 
 
 }
