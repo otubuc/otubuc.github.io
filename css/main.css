@@ -54,8 +54,9 @@ body{
 footer {
   display: block;
   text-align: center;
-  text-size-adjust: 10px;
-   text-shadow: rgb(20, 20, 19);
+  font-size: 10px;
+  font-style: Arial Rounded MT Bold;
+   text-shadow: rgb(243, 243, 241);
    border: 0px solid #61c2ad;
    border-radius: 5px 5px 5px 5px;
    width: 850px;
