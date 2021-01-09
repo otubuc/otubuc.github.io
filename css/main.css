@@ -43,6 +43,7 @@ body{
  margin-top: 95px;
  width: 200px;
  margin-left: 500px;
+
 }
 
 
@@ -54,7 +55,7 @@ footer {
    text-shadow: rgb(243, 243, 241);
    border: 0px solid #010a24;
    border-radius: 10px 0px 0px 10px;
-   width: 940px;
+   width: 890px;
    padding: 10px;
    background-color: #010a24;
    color:rgb(255, 255, 255);
@@ -65,10 +66,7 @@ footer {
 #content {
     max-width: 960px;
     margin: auto; 
-}
 
-#a {
-  color:aliceblue;
 }
 
 
