@@ -23,7 +23,6 @@ body{
 .h1 {
    text-align: left;
    text-shadow: rgb(20, 20, 19);
-   font-style: Arial Rounded MT Bold;
    border: 0px solid  #010a24;
    border-radius: 10px 0px 0px 10px;
    width: 850px;
