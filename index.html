@@ -35,8 +35,13 @@
     <!-- footer area -->
     <footer class="footer">
       &copy 2021 | Charleson Otubu | Abuja, Nigeria |
-      <a style= color:aliceblue; href ="https://www.byui.edu/" target="_blank">Brigham Young University Idaho online</a> <br />  <p class="update">Last Updated: <span id='lastupdated'></span>
+      <a style= color:aliceblue; href ="https://www.byui.edu/" target="_blank">Brigham Young University Idaho online</a> 
+      <p>last Updated <span id="modify"></span>.</p>
+      <script>
+        document.getElementById("modify").innerHTML = document.lastModified
+        </script>
     </footer>
+   
   </div>
 </body>
 

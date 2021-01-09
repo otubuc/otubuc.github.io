@@ -66,29 +66,10 @@ footer {
 }
 
 #content {
-    max-width: 960px;
+    max-width: 850px;
     margin: auto; 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 550px) { 
   /* beginning of media query */
