@@ -62,7 +62,7 @@ footer {
 /* text color for script */
 .update {
 	text-align: center;
-	color: var(--orange-color);
+	color: orange;
 }
 
 #content {
