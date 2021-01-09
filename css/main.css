@@ -24,7 +24,7 @@ body{
    text-align: left;
    text-shadow: rgb(20, 20, 19);
    border: 0px solid  #010a24;
-   border-radius: 10px 0px 10px px;
+   border-radius: 10px 0px 0px 10px;
    width: 850px;
    padding: 50px;
    background-color: #010a24;
@@ -58,7 +58,7 @@ footer {
   font-style: Arial Rounded MT Bold;
    text-shadow: rgb(243, 243, 241);
    border: 0px solid #010a24;
-   border-radius: 10px 0px 10px 0px;
+   border-radius: 10px 0px 0px 10px;
    width: 890px;
    padding: 10px;
    background-color: #010a24;
