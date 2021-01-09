@@ -23,12 +23,12 @@ body{
 .h1 {
    text-align: left;
    text-shadow: rgb(20, 20, 19);
-   border: 0px solid #61c2ad;
+   border: 0px solid #031136;
    border-radius: 5px 5px 5px 5px;
    width: 850px;
    padding: 50px;
-   background-color: #61c2ad;
-   color:rgb(14, 13, 13);
+   background-color: #022853;
+   color:rgb(248, 242, 242);
    margin-left: 25px 0, 0, 0;
 
 
@@ -57,11 +57,11 @@ footer {
   font-size: 14px;
   font-style: Arial Rounded MT Bold;
    text-shadow: rgb(243, 243, 241);
-   border: 0px solid #61c2ad;
+   border: 0px solid #010e27;
    border-radius: 5px 5px 5px 5px;
    width: 850px;
    padding: 20px;
-   background-color: #61c2ad;
+   background-color: #010a24;
    color:rgb(255, 255, 255);
    margin-left: 20px 0, 0, 0;
 
