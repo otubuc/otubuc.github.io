@@ -59,6 +59,11 @@ footer {
   margin-left: 20px 0, 0, 0;
 
 }
+/* text color for script */
+.update {
+	text-align: center;
+	color: var(--orange-color);
+}
 
 #content {
     max-width: 960px;
