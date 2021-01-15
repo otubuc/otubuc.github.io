@@ -9,8 +9,8 @@
   /* Style the header */
   .header {
     grid-area: header;
-    background-color: #f1f1f1;
-    padding: 30px;
+    background-color:#0080ff;
+    padding: 5px;
     text-align: center;
     font-size: 35px;
   }
@@ -45,15 +45,36 @@
   /* Style the right column */
   .right {
     grid-area: right;
+    column-gap: 40px;
+  }
+
+  .column {
+    float: left;
+    width: 400px;
+    column-gap: 40px;
+    padding: 10px;
+    margin: 12px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
   
   /* Style the footer */
   .footer {
     grid-area: footer;
-    background-color: #f1f1f1;
-    padding: 10px;
+    display: block;
+    background-color: #0080ff;
+    padding: 5px;
     text-align: center;
+    border: 0px solid #0080ff;
+    color:#f6faf7;
   }
+
   
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media (max-width: 600px) {
