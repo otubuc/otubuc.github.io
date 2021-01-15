@@ -18,6 +18,8 @@
   /* The grid container */
   .grid-container {
     display: grid;
+    widows: 960px;
+    grid-column-gap: 10px;
     grid-template-areas: 
       'header header header header header header' 
       'left left middle middle right right' 
