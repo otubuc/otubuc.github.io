@@ -26,7 +26,7 @@
       'header header header header header header' 
       'left left middle middle right right' 
       'footer footer footer footer footer footer';
-    /* grid-column-gap: 10px; - if you want gap between the columns */
+    /* grid-column-gap: 10px; - if I want gap between the columns */
   } 
   
   .left,
@@ -54,12 +54,12 @@
   }
 
   .column {
-    float: left;
-    width: 300px;
-    column-gap: 40px;
+    display:inline-block;
+    width: 32%;
     padding: 5px;
-    margin: 5px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    margin: auto;
+    text-align: center;
+    height: auto; /* Should be removed. Only for demonstration */
   }
   
   /* Clear floats after the columns */
@@ -80,7 +80,30 @@
     color:#f6faf7;
   }
 
-  
+  .update {
+	text-align: center;
+	color: orange;
+}
+
+
+.img {
+    width: 290px;
+    border: 1px solid white;
+   
+   }
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+
+.text{
+    margin: 70px;
+    text-align: center;
+
+   }
+
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media (max-width: 600px) {
     .grid-container  {
