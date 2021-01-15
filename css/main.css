@@ -23,15 +23,14 @@ body{
 .h1 {
    text-align: left;
    text-shadow: rgb(20, 20, 19);
-   border: 0px solid #61c2ad;
-   border-radius: 5px 5px 5px 5px;
+   border: 0px solid  #010a24;
+   border-radius: 10px 0px 0px 10px;
    width: 850px;
-   padding: 50px;
-   background-color: #61c2ad;
-   color:rgb(14, 13, 13);
+   padding: 30px;
+   background-color: #270106;
+   color:rgb(248, 242, 242);
    margin-left: 25px 0, 0, 0;
-
-
+   
 }
 
 .underline{
@@ -40,13 +39,10 @@ body{
 }
 
 .img {
- margin-top: 95px;
- border: 5px solid gray;
+ margin-top: 110px;
  width: 200px;
- border-radius: 5px 5px 5px 5px;
- padding: 2px;
- margin-left: 500px;
-
+ margin-left: 495px;
+ border: 1px solid gray;
 
 }
 
@@ -55,42 +51,27 @@ footer {
   display: block;
   text-align: center;
   font-size: 14px;
-  font-style: Arial Rounded MT Bold;
-   text-shadow: rgb(243, 243, 241);
-   border: 0px solid #61c2ad;
-   border-radius: 5px 5px 5px 5px;
-   width: 850px;
-   padding: 20px;
-   background-color: #61c2ad;
-   color:rgb(255, 255, 255);
-   margin-left: 20px 0, 0, 0;
+  text-shadow: rgb(243, 243, 241);
+  border: 0px solid #010a24;
+  border-radius: 10px 0px 0px 10px;
+  width: 890px;
+  padding: 10px;
+  background-color: #270106;
+  color:rgb(255, 255, 255);
+  margin-left: 20px 0, 0, 0;
 
+}
+/* text color for script */
+.update {
+	text-align: center;
+	color: orange;
 }
 
 #content {
-    max-width: 960px;
-    margin: auto; 
+    max-width: 850px;
+    
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 550px) { 
   /* beginning of media query */
