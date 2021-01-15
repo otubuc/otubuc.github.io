@@ -18,8 +18,10 @@
   /* The grid container */
   .grid-container {
     display: grid;
-    widows: 960px;
     grid-column-gap: 10px;
+    max-width: 1024px;
+    margin: auto;
+    height: 100%;
     grid-template-areas: 
       'header header header header header header' 
       'left left middle middle right right' 
@@ -31,7 +33,8 @@
   .middle,
   .right {
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    width: 33.3%;
+  /* Should be removed. Only for demonstration */
   }
   
   /* Style the left column */
