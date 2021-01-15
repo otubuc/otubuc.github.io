@@ -69,7 +69,11 @@ footer {
 
 #content {
     max-width: 850px;
+<<<<<<< HEAD
     
+=======
+    margin: auto; 
+>>>>>>> 16fe95cd8785fbc425c14e5cb5d6a51045a42302
 
 }
 
