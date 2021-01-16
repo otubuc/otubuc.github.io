@@ -57,10 +57,10 @@
   }
 
   .column {
-    display:inline-block;
+    display: grid;
     width: 32%;
-    padding: 5px;
-    margin: 4px;
+    padding: 2px;
+    margin: auto;
     text-align: center;
     
   }
