@@ -120,10 +120,20 @@
         'header header header header header header' 
         'left left left left left left' 
         'middle middle middle middle middle middle' 
-        'main main main main main main'
         'right right right right right right' 
         'footer footer footer footer footer footer';
     }
 
-
-  }
+@media only screen and (min-width: 18.25em) {
+        main {
+            grid-template-columns: 1fr;
+        }
+ @media only screen and (min-width: 37.5em) {
+        main {
+            grid-template-columns: 1fr 1fr;
+        }
+    
+@media only screen and (min-width: 60em) {
+        main {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
