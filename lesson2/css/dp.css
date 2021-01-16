@@ -124,7 +124,7 @@
         'footer footer footer footer footer footer';
     }
 
-@media only screen and (min-width: 18.25em) {
+@media only screen and (min-width: 18.125em) {
         main {
             grid-template-columns: 1fr;
         }
