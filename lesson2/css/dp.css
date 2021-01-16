@@ -57,9 +57,9 @@
     display:inline-block;
     width: 32%;
     padding: 5px;
-    margin: auto;
+    margin: 50px;
     text-align: center;
-    height: auto; /* Should be removed. Only for demonstration */
+    /* Should be removed. Only for demonstration */
   }
   
   /* Clear floats after the columns */
