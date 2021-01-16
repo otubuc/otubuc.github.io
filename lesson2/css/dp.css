@@ -93,6 +93,7 @@
 .img {
     width: 290px;
     border: 2px solid rgb(24, 23, 23);
+    border-radius: 10px 10px 0px 0px;
    
    }
 
