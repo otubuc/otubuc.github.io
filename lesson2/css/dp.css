@@ -19,7 +19,7 @@
   /* The grid container */
   .grid-container {
     display: grid;
-    grid-column-gap: 10px;
+    grid-column-gap: 5px;
     max-width: 960px;
     margin: auto;
     height: 100%;
