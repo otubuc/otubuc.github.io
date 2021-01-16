@@ -59,8 +59,8 @@
   .column {
     display: grid;
     width: 32%;
-    padding: 2px;
-    margin: auto;
+    padding: 5px;
+    margin: 4px;
     text-align: center;
     
   }
