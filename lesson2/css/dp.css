@@ -91,13 +91,13 @@
 
 
 .img {
-    
+    width: 290px;
     border: 1px solid white;
    
    }
 
 .responsive {
-    width: 290px;
+    width: 100%;
     height: auto;
   }
 
