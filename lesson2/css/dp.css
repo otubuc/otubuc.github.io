@@ -57,7 +57,7 @@
   }
 
   .column {
-    display: inline-flex;
+    display: inline-table;
     width: 32%;
     padding: 5px;
     margin: 4px;
