@@ -10,7 +10,7 @@ body {
 /* phone or baseline views **************************/
 header,
 footer {
-	background-color: #bed;
+	background-color: rgb(109, 179, 219);
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -62,7 +62,7 @@ nav a:hover {
 }
 
 .active {
-	color: yellow;
+	color: rgb(223, 236, 46);
 }
 
 main {
@@ -89,7 +89,7 @@ footer {
 }
 
 /* Tablet Views ******************************/
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 18.125em) {
 
 	/* Horizontal Menu Examples */
 	/* Flex *********************/
