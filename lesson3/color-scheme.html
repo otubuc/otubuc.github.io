@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>  
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Charleson weather site planning website </title>
@@ -9,7 +9,7 @@
     <meta name="description"
         content="Charleson's WDD230 Course portal for Winter 2021 Semester at Brigham Young University - Idaho (BYUi).">
     <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link href="css/wps.css" rel="stylesheet" />
 
@@ -30,70 +30,79 @@
     <main>
         <article>
             <h2>Introduction</h2>
-            <p style="text-align: justify;">Colors play an important role in design as well as in everyday life. The CWC website will be built 
-                using the selected color-scheme as indicated below. These combination were selected because of their mildness and weather-related 
-                brightness. There may be need to adjust the brightness or dullness of each color depending on the circumstance. I am going to be 
-                very flexible as the design progresses. I'll endeavor to be consistent in my approach and this scheme will serve as a guide.
+            <p style="text-align: justify;">Colors play an important role in design as well as in everyday life. The CWC
+                website will be built
+                using the selected color-scheme as indicated below. These combination were selected because of their
+                mildness and weather-related
+                brightness. There may be need to adjust the brightness or dullness of each color depending on the
+                circumstance. I am going to be
+                very flexible as the design progresses. I'll endeavor to be consistent in my approach and this scheme
+                will serve as a guide.
 
             </p>
 
         </article>
-<article>
-<h2> HEX </h2>
-<p>--prussian-blue: #023655ff;
---capri: #10bbfbff;
---dark-turquoise: #0bc9cdff;
---turquoise-blue: #14fff7ff;
---lavender-blush: #ede3e9ff;</p>
+        <section>
+            <article>
+                <h2> HEX </h2>
+                <p>--prussian-blue: #023655ff;
+                    --capri: #10bbfbff;
+                    --dark-turquoise: #0bc9cdff;
+                    --turquoise-blue: #14fff7ff;
+                    --lavender-blush: #ede3e9ff;</p>
 
-<h2>CSS HSL </h2>
-<p>--prussian-blue: hsla(202, 95%, 17%, 1);
---capri: hsla(196, 97%, 52%, 1);
---dark-turquoise: hsla(181, 90%, 42%, 1);
---turquoise-blue: hsla(178, 100%, 54%, 1);
---lavender-blush: hsla(324, 22%, 91%, 1);</p>
+                <h2>CSS HSL </h2>
+                <p>--prussian-blue: hsla(202, 95%, 17%, 1);
+                    --capri: hsla(196, 97%, 52%, 1);
+                    --dark-turquoise: hsla(181, 90%, 42%, 1);
+                    --turquoise-blue: hsla(178, 100%, 54%, 1);
+                    --lavender-blush: hsla(324, 22%, 91%, 1);</p>
 
-<h2> SCSS HEX </h2>
-<p>$prussian-blue: #023655ff;
-$capri: #10bbfbff;
-$dark-turquoise: #0bc9cdff;
-$turquoise-blue: #14fff7ff;
-$lavender-blush: #ede3e9ff;</p>
+                <h2> SCSS HEX </h2>
+                <p>$prussian-blue: #023655ff;
+                    $capri: #10bbfbff;
+                    $dark-turquoise: #0bc9cdff;
+                    $turquoise-blue: #14fff7ff;
+                    $lavender-blush: #ede3e9ff;</p>
 
-<h2> SCSS HSL</h2>
-<p>$prussian-blue: hsla(202, 95%, 17%, 1);
-$capri: hsla(196, 97%, 52%, 1);
-$dark-turquoise: hsla(181, 90%, 42%, 1);
-$turquoise-blue: hsla(178, 100%, 54%, 1);
-$lavender-blush: hsla(324, 22%, 91%, 1);</p>
+                <h2> SCSS HSL</h2>
+                <p>$prussian-blue: hsla(202, 95%, 17%, 1);
+                    $capri: hsla(196, 97%, 52%, 1);
+                    $dark-turquoise: hsla(181, 90%, 42%, 1);
+                    $turquoise-blue: hsla(178, 100%, 54%, 1);
+                    $lavender-blush: hsla(324, 22%, 91%, 1);</p>
 
-<h2>SCSS RGB </h2>
-<p>>$prussian-blue: rgba(2, 54, 85, 1);
-$capri: rgba(16, 187, 251, 1);
-$dark-turquoise: rgba(11, 201, 205, 1);
-$turquoise-blue: rgba(20, 255, 247, 1);
-$lavender-blush: rgba(237, 227, 233, 1);</p>
+                <h2>SCSS RGB </h2>
+                <p>>$prussian-blue: rgba(2, 54, 85, 1);
+                    $capri: rgba(16, 187, 251, 1);
+                    $dark-turquoise: rgba(11, 201, 205, 1);
+                    $turquoise-blue: rgba(20, 255, 247, 1);
+                    $lavender-blush: rgba(237, 227, 233, 1);</p>
 
-<h2>SCSS Gradient </h2>
-<p>$gradient-top: linear-gradient(0deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff);
-$gradient-right: linear-gradient(90deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff);
-$gradient-bottom: linear-gradient(180deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff);
-$gradient-left: linear-gradient(270deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff);
-$gradient-top-right: linear-gradient(45deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff);
-$gradient-bottom-right: linear-gradient(135deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff);
-$gradient-top-left: linear-gradient(225deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff);
-$gradient-bottom-left: linear-gradient(315deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff);
-$gradient-radial: radial-gradient(#023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff); </p>
-</article>
+                <h2>SCSS Gradient </h2>
+                <p>$gradient-top: linear-gradient(0deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff);
+                    $gradient-right: linear-gradient(90deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff);
+                    $gradient-bottom: linear-gradient(180deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff);
+                    $gradient-left: linear-gradient(270deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff);
+                    $gradient-top-right: linear-gradient(45deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff);
+                    $gradient-bottom-right: linear-gradient(135deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff,
+                    #ede3e9ff);
+                    $gradient-top-left: linear-gradient(225deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff);
+                    $gradient-bottom-left: linear-gradient(315deg, #023655ff, #10bbfbff, #0bc9cdff, #14fff7ff,
+                    #ede3e9ff);
+                    $gradient-radial: radial-gradient(#023655ff, #10bbfbff, #0bc9cdff, #14fff7ff, #ede3e9ff); </p>
+            </article>
+        </section>
         <article>
             <h2>Site Color Scheme</h2>
             <picture> <img src="images/pallete.PNG" alt="Cloud10 Weather Center Color Scheme" /> </picture>
         </article>
-        
+
 
     </main>
     <footer>
-        &copy;2021 &nbsp; | &nbsp; All Rights Reserved &nbsp; | &nbsp; Charleson L. Otubu &nbsp; | &nbsp; WDD230 WINTER 2021 &nbsp; | &nbsp; Brigham Young University-Idaho
+        &copy;2021 &nbsp; | &nbsp; All Rights Reserved &nbsp; | &nbsp; Charleson L. Otubu &nbsp; | &nbsp; WDD230 WINTER
+        2021 &nbsp; | &nbsp; Brigham Young University-Idaho
     </footer>
 
 </body>
