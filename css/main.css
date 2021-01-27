@@ -41,7 +41,7 @@ body{
 
 .img {
   float: right;
- margin-top: auto;
+ margin-top: -40px;
  width: 200px;
  border: 1px solid gray;
 
