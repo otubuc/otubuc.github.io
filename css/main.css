@@ -21,10 +21,11 @@ body{
 }
 
 .h1 {
+  display: flex;
    text-align: left;
    text-shadow: rgb(20, 20, 19);
    border: 0px solid  #010a24;
-   border-radius: 10px 0px 0px 10px;
+   border-radius: 10px 10px 10px 10px;
    width: 850px;
    padding: 10px;
    background-color: #270106;
@@ -54,7 +55,7 @@ footer {
   font-size: 14px;
   text-shadow: rgb(243, 243, 241);
   border: 0px solid #010a24;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 10px 10px 10px;
   width: 890px;
   padding: 10px;
   background-color: #270106;
