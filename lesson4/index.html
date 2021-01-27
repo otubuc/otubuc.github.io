@@ -22,6 +22,7 @@
 <link href="css/medium.css" rel="stylesheet">
 <!-- enhance-desktop -->
 <link href="css/large.css" rel="stylesheet">
+<script src="./js/scripts.js"></script>
 
 
      
@@ -31,14 +32,14 @@
 	<header>
       <picture> <img src="images/mobile-logo.png" width="100" alt="CWC logo" /></picture>
  <h1>Cloud10 Weather Center</h1>
-        <h2 style="text-overflow: none;"> Reliable Weather Forecasting</h2>
+        <h2> Reliable Weather Forecasting</h2>
     </header>
     
     
 <!-- NAVIGATION HERE -->
     <nav class="clearfix">
-        <button>&#9776;</button>
-        <ul>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Preston</a></li>
             <li><a href="#">Fish Haven</a></li>
