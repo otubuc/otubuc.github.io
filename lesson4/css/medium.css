@@ -1,5 +1,5 @@
 /* 35em is also 560px when basefont is 16px */
-@media only screen and (min-width: 37rem) {
+@media only screen and (min-width: 35rem) {
    
     nav {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0ebcfb+0,22c2fc+100 */

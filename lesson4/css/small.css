@@ -36,12 +36,12 @@ nav ul li a {
 }
 
 nav ul li.active a{
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(143, 226, 252, 0.2);
     color: #fff;
 }
 
 nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(78, 214, 248, 0.4);
 }
 nav ul.hide{
     display: none;
