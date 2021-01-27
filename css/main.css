@@ -78,6 +78,11 @@ footer {
 
 }
 
+.shift {
+margin-top: auto;
+
+}
+
 @media screen and (max-width: 550px) { 
   /* beginning of media query */
       .home-grid {

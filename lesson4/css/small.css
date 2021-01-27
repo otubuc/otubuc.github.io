@@ -41,7 +41,7 @@ nav ul li.active a{
 }
 
 nav ul li a:hover {
-    background-color: rgba(78, 214, 248, 0.4);
+    background-color: rgba(3, 59, 73, 0.4);
 }
 nav ul.hide{
     display: none;
