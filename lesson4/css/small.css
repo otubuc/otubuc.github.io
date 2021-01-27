@@ -28,7 +28,20 @@ nav ul {
 }
 
 nav ul li a {
-    
+    display: block;
+    padding: .8rem 2;
+    text-decoration: none;
+    color: #000;
+    border-top:  1px solid rgba (0, 0, 0, 0.3);
+}
+
+nav ul li.active a{
+    background-color: 0,0,0,0.2;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 
