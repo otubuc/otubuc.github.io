@@ -36,13 +36,14 @@ nav ul li a {
 }
 
 nav ul li.active a{
-    background-color: rgba(143, 226, 252, 0.2);
-    color: #fff;
+    background-color:#0bc9cd;
+    color: #ffffff;
 }
 
 nav ul li a:hover {
-    background-color: rgba(3, 59, 73, 0.4);
+    background-color: #0bc9cd;
 }
+
 nav ul.hide{
     display: none;
 }
@@ -77,7 +78,8 @@ header img {
 
 .headings h1 {
 	font-size: 1.6rem;
-	margin: 0 0 0 17px;
+    margin: 0 0 0 17px;
+    color: #023655;
 }
 
 .m {
@@ -88,9 +90,7 @@ header img {
 	font-size: .9rem;
 }
 
-.active {
-    color: yellow;
-}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
