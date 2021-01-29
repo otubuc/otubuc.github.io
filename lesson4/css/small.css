@@ -36,7 +36,7 @@ nav ul li a {
 }
 
 nav ul li.active a{
-    background-color:#0bc9cd;
+    background-color:#074e91;
     color: #ffffff;
 }
 
@@ -95,12 +95,12 @@ header img {
     display: grid;
     justify-content: center;
     align-items: center;
-    font-size: .6rem;
+    font-size: 1.4rem;
 
 }
 
 .main {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .article:nth-child(3) {
