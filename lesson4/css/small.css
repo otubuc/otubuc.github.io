@@ -60,10 +60,10 @@ body {
 
 header {
 	background-color: rgb(98, 221, 215);
-	padding: 5px 0;
+	padding: 10px 0;
 	display: flex;
-	align-items:center;
-	justify-content:center;
+	align-items: center;
+    flex-flow: column;
 }
 
 header img {
@@ -80,6 +80,7 @@ header img {
 	font-size: 1.6rem;
     margin: 0 0 0 17px;
     color: #023655;
+    font: ubuntu;
 }
 
 .m {
@@ -88,6 +89,21 @@ header img {
 	color: rgb(6, 59, 109);
 	margin-left: 20px;
 	font-size: .9rem;
+}
+
+.centerfit{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.article:nth-child(3) {
+    grid-column: span 2;
 }
 
 

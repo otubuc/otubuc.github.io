@@ -53,8 +53,29 @@ nav ul li a {
 	.m {
 		letter-spacing: 1.5pt;
 		font-size: larger;
-		margin-left: 17px;
-	}
+		text-align: center;
+    }
+    
+    .top-nav-left{
+        display: flex;
+        text-align: left;
+        font-size: .5rem;
+        background-color:  rgb(98, 221, 215);
+        padding: 10px;
+        color:  #023655;
+        
+    }
+
+    .top-nav-right{
+        display: flex;
+        text-align: right;
+        font-size: .5rem;
+        background-color:  rgb(98, 221, 215);
+        padding: 10px;
+        color:  #023655;
+        margin-top: 0px;
+        
+    }
 }
 
 
