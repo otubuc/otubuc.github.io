@@ -99,7 +99,7 @@ header img {
 	font-size: .9rem;
 }
 
-.centerfit{
+.centerfit {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -119,7 +119,27 @@ header img {
 	background-color: #eee;
 }
 
+.article img {
+    display: flex;
+    float: right;
+    border-radius: 8px;
+}
 
+
+footer {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    text-shadow: rgb(243, 243, 241);
+    border: 0px solid #010a24;
+    border-radius: 10px 10px 10px 10px;
+    width: auto;
+    padding: 10px;
+    background-color: #0b837d;
+    color:rgb(255, 255, 255);
+    margin-left: 20px 0, 0, 0;
+  
+  }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
