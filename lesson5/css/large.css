@@ -1,0 +1,80 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+   
+   
+    nav {
+        align-items: center;
+        text-align: center;
+        background: #0ebcfb; /* Old browsers */
+        background: -moz-linear-gradient(top,  #0ebcfb 0%, #22c2fc 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #0ebcfb 0%,#22c2fc 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #0ebcfb 0%,#22c2fc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ebcfb', endColorstr='#22c2fc',GradientType=0 ); /* IE6-9 */
+
+    }
+
+    #content {
+        max-width: 960px;
+        margin-top: 0px;
+        margin: auto;
+        background-color: rgba(63, 247, 237, 0.13);
+    }
+
+    
+    
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide{
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li { 
+        float: left;
+    }
+nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding: .6rem 2rem;
+}
+
+
+/* Larger viewports */
+@media only screen and (min-width: 18.125em) {
+	header img {
+        width: 100px;
+        height: auto;
+	}
+
+	.headings h1 {
+		font-size: 2rem;
+	}
+
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		text-align: center;
+    }
+    
+  
+
+    .top-nav-right{
+        display: flex;
+        text-align: right;
+        font-size: .5rem;
+        background-color:  rgb(98, 221, 215);
+        padding: 10px;
+        color:  #023655;
+        margin-top: 0px;
+        
+    }
+}
+
+
+
+} /*end large */
