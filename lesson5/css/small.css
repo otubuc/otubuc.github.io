@@ -151,6 +151,29 @@ footer {
   
   }
 
+
+  .herodiv {margin: 10px auto;
+    position: relative;
+}
+    
+  h1, h2, p {margin: 0;
+
+}
+  
+  .stats {
+      position: absolute;
+      top: -350px;
+      right: auto;
+      background: radial-gradient(#eee, #17e690);
+      border: 1px solid #000;
+      padding: 1.5rem;
+      box-shadow: 0 0 30px #111;
+      opacity: .8;
+  }
+  
+  
+
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
