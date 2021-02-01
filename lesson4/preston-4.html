@@ -9,7 +9,6 @@
     <title>Home - Preston city weather </title>
     <meta name="description" content="Preston weather homepage developed by Charleson Otubu. Student at BYUI Online.">
     <meta name="author" content="Charleson Otubu">
-
     <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -33,7 +32,7 @@
     </style>
 </head>
 
-<body id="content">
+<body>
     <!--<div class="top-nav-left">505E, City Center Mall, SLC, Utah | Hotline: +234 703 083 5572 | info@cloud10.news</div>
      class="top-nav-right"> class="top-nav-right"><a href="#">privacy policy </a> | <a href="#">Terms of Use </a>|
         href="#"> Contact us </a>|<a href="#"> Help </a></p>-->
@@ -42,12 +41,12 @@
             <img src="images/logo-small-black.png" alt="The CWC logo">
         </picture>
         <section class="headings">
-            <h2>Cloud10 Weather Center</h2>
+            <h1>CloudTen Weather Center</h1>
             <div class="m">Reliable Weather Forecasting</div>
         </section>
     </header>
-
-    <nav class="clearfix">
+<div>
+    <nav class="clearfix" class="nav">
         <button onclick="toggleMenu()">&#9776; Menu</button>
         <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
@@ -62,8 +61,8 @@
 
 
     <!-- CONTENT HERE -->
-    <main class="main">
-        <h2 class="centerfit">Preston, Idaho - Weather Center</h2>
+    <main id="content" class="main">
+        <h2 class="centerfit">Preston, Idaho Community</h2>
         <div id="demo" class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -159,9 +158,9 @@
             <p>The page name shoud almost exactly match the menu item. </p>
         </article>
     </main>
-
+</div>
     <!-- FOOTER HERE -->
-    <footer class="footer">
+    <footer id="footerfit" class="footer">
         &copy 2021 | Charleson Otubu | Abuja, Nigeria |
         <a style=color:aliceblue; href="https://www.byui.edu/" target="_blank">Brigham Young University Idaho online</a>
         <p class="update"> <span id="modify"></span>.</p>

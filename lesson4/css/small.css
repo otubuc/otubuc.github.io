@@ -17,7 +17,7 @@ nav button {
 nav{
     background-color: #10BBFB;
     font-family: sans-serif;
-
+    text-align: center;
 }
 
 nav ul {
@@ -72,6 +72,7 @@ header {
 	display: flex;
 	align-items: center;
     flex-flow: column;
+    text-align: center;
 }
 
 header img {
@@ -81,7 +82,8 @@ header img {
 
 .headings {
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
+    text-align: center;
 }
 
 .headings h1 {
@@ -89,13 +91,14 @@ header img {
     margin: 0 0 0 17px;
     color: #023655;
     font: ubuntu;
+       
 }
 
 .m {
 	font-style: italic;
 	letter-spacing: 1pt;
 	color: rgb(6, 59, 109);
-	margin-left: 20px;
+    text-align: center;
 	font-size: .9rem;
 }
 
@@ -125,14 +128,21 @@ header img {
     border-radius: 8px;
 }
 
+#footerfit {
+    max-width: 960px;
+    margin-top: 0px;
+    margin: auto;
+    background-color: #0b837d;
+    
+}
+
 
 footer {
     display: block;
     text-align: center;
     font-size: 14px;
     text-shadow: rgb(243, 243, 241);
-    border: 0px solid #010a24;
-    border-radius: 10px 10px 10px 10px;
+    border: 0px solid #0b837d;
     width: auto;
     padding: 10px;
     background-color: #0b837d;
@@ -140,6 +150,7 @@ footer {
     margin-left: 20px 0, 0, 0;
   
   }
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
