@@ -1,3 +1,6 @@
+<!doctype html>
+<html>
+<head>
 
 <script language="Javascript">MyBanners=new Array('banner1.jpg','banner2.jpg','banner3.jpg','banner4.jpg')
 MyBannerLinks=new Array('http://www.vbtutor.net/','http://www.excelvbatutor.com/','http://onlinebizguide4you.com/','http://javascript-tutor.net/')
@@ -14,7 +17,7 @@ setTimeout("ShowBanners()",5000)
 }
 }
 </script>
-
+</head>
 <body onload="ShowBanners()">
 <center>
 <a href="javascript: ShowLinks()">
