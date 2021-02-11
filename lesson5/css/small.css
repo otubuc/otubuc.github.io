@@ -174,7 +174,18 @@ footer {
     
       
   }
+
+  aside.announcement {
+    background-color: #068f61;
+    color: white;
+    padding: 2em;
+    margin-top: 0;
+    text-align: center;
+  }
   
+  aside#pancakes.announcement.hide {
+    display: none;
+  }
   
 
 
