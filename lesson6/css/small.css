@@ -187,7 +187,11 @@ footer {
     display: none;
   }
   
-
+.img {
+    display: flex;
+    width: auto;
+    
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
