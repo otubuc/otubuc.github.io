@@ -20,7 +20,10 @@
         background-color: rgba(63, 247, 237, 0.13);
     }
 
-    
+    .iframe {
+        display: flex;
+        float: right;
+    }
     
     nav button {
         display: none;
@@ -35,12 +38,15 @@
     }
 
     nav ul li { 
+        display: flex;
         float: left;
+        
     }
 nav ul li a {
     border: none;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     padding: .6rem 2rem;
+    
 }
 
 

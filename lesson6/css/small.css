@@ -68,7 +68,7 @@ body {
 
 header {
 	background-color: rgb(98, 221, 215);
-	padding: 10px 0;
+	padding: 3px 0;
 	display: flex;
 	align-items: center;
     flex-flow: column;
@@ -81,7 +81,8 @@ header img {
 }
 
 .headings {
-	display: flex;
+    display: flex;
+    width: 100%;
     flex-direction: column;
     text-align: center;
 }
