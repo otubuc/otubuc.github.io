@@ -137,6 +137,14 @@ header img {
     
 }
 
+.iframe {
+    display: flex;
+    float: right;
+    border: 1px solid gray;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 0;
+    width: 350px;
+}
 
 footer {
     display: block;
