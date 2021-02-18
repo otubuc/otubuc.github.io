@@ -231,7 +231,7 @@ h1 {
 .gallery .image--big {
   grid-area: span 2/span 2;
 }
-@media (max-width: 400px) {
+@media (max-width: 300px) {
   .gallery .image--horizontal,
   .gallery .image--vertical,
   .gallery .image--big {
