@@ -21,6 +21,7 @@ nav{
     text-align: center;
     align-content: center;
     flex-flow: column;
+    font-size: 1.1em;
 }
 
 nav ul {
@@ -32,7 +33,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    padding: .8rem 2;
+    padding: 1rem 2;
     text-decoration: none;
     color: rgb(255, 255, 255);
     border-top:  1px solid rgba(0, 0, 0, 0.3);
