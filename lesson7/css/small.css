@@ -247,15 +247,15 @@ h1 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1px;
-  background-color: #000;
+  background-color: rgb(239, 241, 231);
 }
 .gallery img.lazy-image {
-  opacity: 0.1;
+  opacity: 10%;
   will-change: opacity;
   transition: all 0.3s;
 }
 .gallery img.lazy-image.loaded {
-  opacity: 1;
+  opacity: 20%;
 }
 
 
