@@ -168,9 +168,10 @@ footer {
    .page {
     display: block;
     text-align: center;
+    margin-top: .5rem;
     background: radial-gradient(#eee, #07edf5);
-    padding: 1.8rem;
-    box-shadow: 0 0 30px rgb(14, 13, 13);
+    padding: 2rem;
+    box-shadow: 0 0 10px rgb(14, 13, 13);
     opacity: .8;
     font-size: 3.8em;
     color: rgba(2, 2, 2, 0.897);
@@ -217,7 +218,8 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
   grid-auto-rows: 250px;
   grid-gap: 20px;
-  padding: 10px;
+  padding: 3px;
+  
 }
 .gallery .image {
   grid-area: span 1/span 1;
@@ -243,16 +245,16 @@ h1 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 3px;
+  border-radius: 1px;
   background-color: #000;
 }
 .gallery img.lazy-image {
   opacity: 0.1;
   will-change: opacity;
-  transition: all 0.3s;
+  transition: all 0.9s;
 }
 .gallery img.lazy-image.loaded {
-  opacity: 1;
+  opacity: .8;
 }
 
 
