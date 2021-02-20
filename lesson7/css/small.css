@@ -170,12 +170,12 @@ footer {
     display: block;
     text-align: center;
     margin-top: .5rem;
-    background: radial-gradient(#eee, #07edf5);
+    background: radial-gradient(rgb(229, 233, 232), #029189);
     padding: 2rem;
     box-shadow: 0 0 10px rgb(14, 13, 13);
     opacity: .8;
     font-size: 3.8em;
-    color: rgba(2, 2, 2, 0.897);
+    color: #023655;
     
 }
 
@@ -253,14 +253,14 @@ h1 {
 .gallery img:hover {
   box-shadow: 1px 1px 10px #03ffc8;
   filter: blur(0rem);
-  transform: scale(1.05);
+  transform: scale(1.1);
 
 
 }
 .gallery img.lazy-image {
   opacity: 0.1;
   will-change: opacity;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 .gallery img.lazy-image.loaded {
   opacity: 1;
