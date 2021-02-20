@@ -260,7 +260,7 @@ h1 {
 .gallery img.lazy-image {
   opacity: 0.1;
   will-change: opacity;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .gallery img.lazy-image.loaded {
   opacity: 1;
