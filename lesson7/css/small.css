@@ -246,8 +246,16 @@ h1 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 1px;
+  border-radius: 8px;
   background-color: rgb(255, 255, 255);
+  
+}
+.gallery img:hover {
+  box-shadow: 1px 1px 10px #03ffc8;
+  filter: blur(0rem);
+  transition: filter .5s;
+
+
 }
 .gallery img.lazy-image {
   opacity: 0.1;
