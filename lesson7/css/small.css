@@ -253,7 +253,7 @@ h1 {
 .gallery img:hover {
   box-shadow: 1px 1px 10px #03ffc8;
   filter: blur(0rem);
-  transition: filter .5s;
+  transform: scale(1.05);
 
 
 }
