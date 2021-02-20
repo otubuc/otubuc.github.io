@@ -3,6 +3,7 @@
    
    
     nav {
+        display: flex;
         align-items: center;
         text-align: center;
         background: #0ebcfb; /* Old browsers */
@@ -14,7 +15,7 @@
     }
 
     #content {
-        max-width: 960px;
+        max-width: 1024px;
         margin-top: 0px;
         margin: auto;
         background-color: rgba(63, 247, 237, 0.13);
