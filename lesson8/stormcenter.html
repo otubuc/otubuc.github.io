@@ -55,29 +55,79 @@
 
 
     <main id="content">
-        <!-- Main content for the gallery starts here -->
+        <!-- Main content for the storm center starts here -->
         <h2 class="page">Live Weather Report</h2>
-        <div class="gallery">
-            <picture class="image"> <img src="./images/Big_Fish-800x600.jpg" data-src="images/Big_Fish-800x600"
-                    alt="Scenic Idaho 1" />Soda Springs resident catches 57-pound trout!</picture>
-            <picture class="image"> <img src="./images/1.jpg" data-src="images/1.jpg"
-                    alt="Preston Idaho Rain Storm" />Preston Idaho Rain Storm</picture>
-            <picture class="image"> <img src="./images/2.jpg" data-src="images/2.jpg"
-                    alt="Fish Haven Spring season" />Fish Haven Spring season</picture>
-            <picture class="image"> <img src="./images/3.jpg" data-src="images/3.jpg"
-                    alt="Soda Spring Rain Drops on Leaves 4" />Soda Spring Rain Drops on Leaves</picture>
-            <picture class="image"> <img src="./images/4.jpg" data-src="images/4.jpg"
-                    alt="Fish Haven City Council 5" />Heart of Fish Haven City Council</picture>
-            <picture class="image"> <img src="./images/5.jpg" data-src="images/5.jpg"
-                    alt="Preston Idaho Scenic Waterfall" />Preston Idaho Scenic Waterfall</picture>
-            <picture class="image"> <img src="./images/6.jpg" data-src="images/6.jpg"
-                    alt="Fish Haven Scenic RockyRiver 7" />Fish Haven Scenic RockyRiver</picture>
-            <picture class="image"> <img src="./images/7.jpg" data-src="images/7.jpg"
-                    alt="Soda spring Scenic Forest house 7" />Soda spring Scenic Forest house</picture>
-            <picture class="image"> <img src="./images/8.jpg" data-src="images/8.jpg"
-                    alt="Fish Haven Hilltop Winter house 8" />Fish Haven Hilltop Winter House</picture>
+        <article class="article">
 
-        </div>
+            <p style="color: darkcyan; font-size: 1.5rem; text-align: left;">
+                Welcome to the weather center eye-witness report. Please use the form below to submit information on
+                your current weather condition.
+            </p>
+
+        </article>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="example@gmail.com"
+                        required></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="07030835572" required></label>
+                <label class="top">Zip Code*<input type="number" name="zipcode" placeholder="90024" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+
+                <label class="top">Are you in Danger?</label>
+                <label class="sbs"><input type="radio" name="audience" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="audience" value="no"> No</label>
+                <label class="sbs"><input type="radio" name="audience" value="maybe"> Maybe</label>
+
+                <label class="top">Storm Date<input type="date" name="stormDate" value="date"></label>
+
+                <label class="top">Storm Type<select name="subject">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="flashflood">Flash Flood</option>
+                        <option value="hail">Hail</option>
+                        <option value="hurricane">Hurricane</option>
+                        <option value="thunderstorm">Thunderstorm</option>
+                        <option value="tornado">Tornado</option>
+                    </select>
+                </label>
+
+                <div id="rate"><label for="rating">Storm Severity (on a scale of 1-10)</label></div>
+                    <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </label>
+            
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Please Provide Additional Information</legend>
+                <label class="top">Comments:</label>
+                <textarea id="area" name="comment" rows="4" cols="50">
+    </textarea>
+            </fieldset>
+
+            <input type="submit" value="submit" class="submitBtn">
+        </form>
+
     </main>
     <br>
     <br>

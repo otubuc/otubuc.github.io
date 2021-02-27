@@ -128,12 +128,15 @@ header img {
 	border: 1px solid #bbb;
 	padding: 0 1rem;
 	background-color: #eee;
+  height: fit-content;
 }
 
 .article img {
     display: flex;
     float: right;
-    border-radius: 8px;
+    border-radius: 0;
+    width: 290px;
+    padding:0%;
 }
 
 #footerfit {
@@ -166,18 +169,21 @@ footer {
     margin-left: 20px 0, 0, 0;
   
   }
-
+/*-------------Page Title---------------*/
 
    .page {
     display: block;
     text-align: center;
+    border-radius: 10px;
     margin-top: .5rem;
-    background: radial-gradient(rgb(229, 233, 232), #029189);
+    background: radial-gradient(rgb(255, 255, 255), #0ddbdbe0);
     padding: 2rem;
-    box-shadow: 0 0 10px rgb(14, 13, 13);
+    box-shadow: 0 0 10px rgb(3, 155, 155);
     opacity: .8;
     font-size: 3.8em;
-    color: #023655;
+    color: #f50707;
+    
+    
     
 }
 
@@ -214,6 +220,8 @@ h1 {
   margin: 10px;
   font-family: Nunito, sans-serif;
 }
+
+/*------------- Gallery ---------------*/
 
 .gallery {
   display: grid;
@@ -267,6 +275,91 @@ h1 {
 }
 .gallery img.lazy-image.loaded {
   opacity: 1;
+}
+
+/*-------------storm center form styling---------------*/
+form label.top input, form label.top select {
+  -webkit-appearance: none;
+  width: 100%;
+  display: block;
+  color : rgb(49, 48, 48);
+  background-color: rgba(241, 37, 37, 0.1);
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: .75rem;
+  max-width: 20rem;
+  
+}
+
+
+form legend {
+  color: #41042e;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  font-size: 1.5em;
+}    
+
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: rgb(4, 52, 58);
+  font-size: 1rem;
+  text-align: left;
+}
+
+form fieldset {
+  margin: 2em 2em;
+  border: 2px solid #41042e;
+  border-radius: 8px;
+  padding: .5rem 2%;
+  }
+
+
+
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: #555;
+}
+
+
+form input.submitBtn {
+  border: none;
+  background-color: #41042e;
+  color: white;
+  border-radius: 1rem;
+  padding: .85rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: #41042e solid 8px;
+}
+
+form label.top input:required:valid {
+  border-left: #0dda7a solid 8px;
+}
+
+.flexly {
+display: flex;
+align-items: center;
+
+}
+#ratingvalue {
+margin: 0 15px;
+color: #19647E;
+}
+
+textarea {
+  border: solid 2px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  width: 100%;
 }
 
 

@@ -91,9 +91,14 @@ nav ul li a {
         
     }
 
+/* ........form objects .........*/
+    .article img {
+        width: 600px;
+    }
 
-
-
+    form input.submitBtn {
+       font-size: 1.2em;
+      }
     
 }
 
