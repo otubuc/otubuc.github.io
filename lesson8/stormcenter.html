@@ -56,10 +56,10 @@
 
     <main id="content">
         <!-- Main content for the storm center starts here -->
-        <h2 class="page">Live Weather Report</h2>
+        <h2 class="page">Storm Center - Live Weather Report</h2>
         <article class="article">
 
-            <p style="color: darkcyan; font-size: 1.5rem; text-align: left;">
+            <p style="color: gray; font-size: .8rem; text-align: left;">
                 Welcome to the weather center eye-witness report. Please use the form below to submit information on
                 your current weather condition.
             </p>
@@ -99,7 +99,8 @@
                 <div id="rate"><label for="rating">Storm Severity (on a scale of 1-10)</label></div>
                     <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
                         <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="ratingvalue">5</span>
+                        <span id="ratingvalue">5</span><script src="js/rating.js">
+                        </script>
                     </label>
             
                     <datalist id="tickmarks">
