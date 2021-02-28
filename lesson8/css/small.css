@@ -176,12 +176,12 @@ footer {
     text-align: center;
     border-radius: 10px;
     margin-top: .5rem;
-    background: radial-gradient(rgb(255, 255, 255), #0ddbdbe0);
+    background: radial-gradient(rgb(20, 27, 27), #0ddbdbe0);
     padding: 2rem;
-    box-shadow: 0 0 10px rgb(3, 155, 155);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     opacity: .8;
-    font-size: 3.8em;
-    color: #f50707;
+    font-size: 2.2em;
+    color: #fcfafa;
     
     
     
