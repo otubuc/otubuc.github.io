@@ -1,0 +1,397 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 50%; -ms-text-size-adjust: 50%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+
+}
+
+
+nav{
+    display: flex;
+    background-color: #10BBFB;
+    font-family: sans-serif;
+    text-align: center;
+    align-content: center;
+    flex-flow: column;
+    font-size: 1.4em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+   
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem 2;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-top:  1px solid rgba(0, 0, 0, 0.3);
+   
+}
+
+nav ul li.active a{
+    background-color:#074e91;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: #0bc9cd;
+    transform: scale(1.1);
+}
+
+nav ul.hide{
+    display: none;
+}
+
+.top-nav-left{
+    display: flex;
+    text-align: left;
+    font-size: .5rem;
+    background-color:  rgb(98, 221, 215);
+    padding: 10px;
+    color:  #023655;
+    
+}
+
+body {
+    font-size: 16px;
+	font-family: "Sansita", Ubuntu, sans-serif;
+	padding: 0;
+    margin: 0;
+    
+}
+
+header {
+	background-color: rgb(98, 221, 215);
+	padding: 3px 0;
+	display: flex;
+	align-items: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header img {
+	width: 80px;
+	height: auto;
+}
+
+.headings {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+}
+
+.headings h1 {
+ 	font-size: 1.6rem;
+    margin: 0 0 0 17px;
+    color: #023655;
+    font: ubuntu;
+       
+}
+
+.m {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: rgb(6, 59, 109);
+    text-align: center;
+	font-size: .9rem;
+}
+
+.centerfit {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+.herodiv {margin: .5rem auto;
+  position: relative;
+  
+}
+
+.stats {
+  position: absolute;
+  top: -350px;
+  right: 2rem;
+  float: right;
+  background: radial-gradient(#eee, #17e690);
+  border: 1px solid #000;
+  padding: .5rem;
+  box-shadow: 0 0 30px #111;
+  opacity: .8;  
+}
+
+
+
+
+
+.main {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+.article {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+  height: fit-content;
+}
+
+.article img {
+    display: flex;
+    float: right;
+    border-radius: 0;
+    width: 290px;
+    padding:0%;
+}
+
+#footerfit {
+    max-width: 1024px;
+    margin-top: 0px;
+    margin: auto;
+    background-color: #0b837d;
+    
+}
+
+.iframe {
+    display: flex;
+        border: 1px solid gray;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 0;
+    width: 200px;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    text-shadow: rgb(243, 243, 241);
+    border: 0px solid #0b837d;
+    width: auto;
+    padding: 10px;
+    background-color: #0b837d;
+    color:rgb(255, 255, 255);
+    margin-left: 20px 0, 0, 0;
+  
+  }
+/*-------------Page Title---------------*/
+
+   .page {
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: .5rem;
+    background: radial-gradient(rgb(20, 27, 27), #0ddbdbe0);
+    padding: 2rem;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    opacity: .8;
+    font-size: 2.2em;
+    color: #fcfafa;
+    
+    
+    
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 12px;
+  background-color: #eee;
+}
+
+.inspiration {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 12px;
+  color: #969696;
+}
+
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin: 10px;
+  font-family: Nunito, sans-serif;
+}
+
+/*------------- Gallery ---------------*/
+
+.gallery {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  grid-auto-rows: 250px;
+  grid-gap: 20px;
+  padding: 5px;
+  
+}
+.gallery .image {
+  grid-area: span 1/span 1;
+}
+.gallery .image--horizontal {
+  grid-area: span 1/span 2;
+}
+.gallery .image--vertical {
+  grid-area: span 2/span 1;
+}
+.gallery .image--big {
+  grid-area: span 2/span 2;
+}
+@media (max-width: 300px) {
+  .gallery .image--horizontal,
+  .gallery .image--vertical,
+  .gallery .image--big {
+    grid-area: span 1/span 1;
+  }
+}
+.gallery img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  padding: 2px;
+  
+}
+.gallery img:hover {
+  box-shadow: 1px 1px 10px #03ffc8;
+  filter: blur(0rem);
+  transform: scale(1.1);
+
+
+}
+.gallery img.lazy-image {
+  opacity: 0.1;
+  will-change: opacity;
+  transition: all 0.3s;
+}
+.gallery img.lazy-image.loaded {
+  opacity: 1;
+}
+
+/*-------------storm center form styling---------------*/
+form label.top input, form label.top select {
+  -webkit-appearance: none;
+  width: 100%;
+  display: block;
+  color : rgb(49, 48, 48);
+  background-color: rgba(241, 37, 37, 0.1);
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: .75rem;
+  max-width: 20rem;
+  
+}
+
+
+form legend {
+  color: #41042e;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  font-size: 1.5em;
+}    
+
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: rgb(4, 52, 58);
+  font-size: 1rem;
+  text-align: left;
+}
+
+form fieldset {
+  margin: 2em 2em;
+  border: 2px solid #41042e;
+  border-radius: 8px;
+  padding: .5rem 2%;
+  }
+
+
+
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: rgb(4, 52, 58);
+}
+
+
+form input.submitBtn {
+  border: none;
+  background-color: #41042e;
+  color: white;
+  border-radius: 1rem;
+  padding: .85rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: #41042e solid 8px;
+}
+
+form label.top input:required:valid {
+  border-left: #0dda7a solid 8px;
+}
+
+.flexly {
+display: flex;
+align-items: center;
+
+}
+#ratingvalue {
+margin: 0 15px;
+color: #f70b0b;
+}
+
+textarea {
+  border: solid 2px rgb(11, 110, 52);
+  border-radius: 5px;
+  padding: .75rem;
+  width: 100%;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix::before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+
+

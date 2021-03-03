@@ -1,0 +1,14 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+    
+    .article img {
+       width: 450px;
+    }
+
+    .iframe {
+        width: 500px;
+    }
+   
+}
+
+/*end medium */
