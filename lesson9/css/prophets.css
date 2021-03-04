@@ -57,11 +57,11 @@ section {
 
 section img {
     width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
+    height: 250px;
+    border-radius: 10px 10px 10px 10px;
     margin: auto;
     display: block;
-    margin-bottom: 10px;
+    
 }
 
 p {
@@ -71,10 +71,26 @@ p {
 }
 
 
-footer{
-    margin: auto;
+footer {
     display: block;
-    font-size: 25px;
-    font-weight: bold;
     text-align: center;
+    font-size: 14px;
+    text-shadow: rgb(243, 243, 241);
+    border: 0px solid #0b837d;
+    width: auto;
+    padding: 10px;
+    background-color: #0b837d;
+    color:rgb(255, 255, 255);
+    margin-left: 20px 0, 0, 0;
+    border-radius: 10px;
+  
+  }
+
+  
+#footerfit {
+    max-width: 1000px;
+    margin-top: 0px;
+    margin: auto;
+    background-color: #0b837d;
+    
 }
