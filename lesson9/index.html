@@ -23,8 +23,7 @@
     <!-- enhance-desktop -->
     <link href="css/large.css" rel="stylesheet">
     <script src="./js/scripts.js"></script>
-    <script
-        type="text/javascript">document.getElementById("myelement1") = "Saturday - Preston Pancakes in the Park!  9:00 a.m. at the city park pavilion"; </script>
+    
     <style>
         /* Make the image fully responsive */
         .carousel-inner img {
@@ -66,7 +65,7 @@
 
     <!-- CONTENT HERE -->
     <main id="content">
-            <div id="demo" class="carousel slide" data-ride="carousel">
+        <div id="demo" class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
                 <li data-target="#demo" data-slide-to="1"></li>
@@ -104,7 +103,7 @@
         </div>
         <div class="herodiv">
             <section class="stats">
-                <h2>Today's Weather!</h2>
+                <h2>weather summary</h2>
                 <p>Cloudy <span id="shots">18&#176;C</span></p>
                 <p>Precipitation: <span id="gender">12%</span></p>
                 <p>Humidity: <span id="age">21%</span></p>
@@ -170,15 +169,65 @@
                 injected humour, or non-characteristic words etc.</p>
             <p>The page name shoud almost exactly match the menu item. </p>
         </article>
+
+       
     </main>
     </div>
+    
     <!-- FOOTER HERE -->
     <footer id="footerfit" class="footer">
-        <!-- Map -->
-      <article class="article">  <iframe class="iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9370.664205311323!2d7.468968448318288!3d9.074789386814723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b8caddab6d3%3A0xbfd75453dfe2a573!2sHyde%20Petrol%20Station!5e0!3m2!1sen!2sng!4v1614744315381!5m2!1sen!2sng"
-            width="960" height="350" style="border:0;" allowfullscreen="false" loading="lazy"></iframe> </article><br>
+ <!-- Map -->
+ <article class="article"> <iframe class="iframe"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9370.664205311323!2d7.468968448318288!3d9.074789386814723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b8caddab6d3%3A0xbfd75453dfe2a573!2sHyde%20Petrol%20Station!5e0!3m2!1sen!2sng!4v1614744315381!5m2!1sen!2sng"
+    width="960" height="350" style="border:0;" allowfullscreen="false" loading="lazy"></iframe> </article>
+<br>
+        <div class="container">
+            <div style="text-align:center">
+                <h2 style="color: black; font-size: 2.5rem; text-align: center;">Contact Us</h2>
+                <p style="color: black; font-size:1.2rem; text-align: center;">Swing by for a cup of coffee, or leave us a message:</p>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="column">
+                    <div>
+                        <p style="color: black; font-size: .8rem; text-align: left;">
+                            <strong>Address:</strong> Hyde Petrol Station, Plot 598 Kashim Ibrahim Way, Wuse 2, Abuja.
+                        </p>
+                        <p style="color: black; font-size: .8rem; text-align: left;">
+                            <strong>E-mail:</strong> support@cloudtenweather.com
+                        </p>
+                        <p style="color: black; font-size: .8rem; text-align: left;">
+                            <strong>Phone:</strong> +234 703 083 5572
+                        </p>
+                    </div>
+                    <hr>
+                    <img src="./images/4.jpg" style="width:100%">
+                </div>
+                <div class="column">
+                    <form action="/lesson8/thanks.html">
+                        <label for="fname" class="top">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
+                        <label for="lname" class="top">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="town" class="top">Town</label>
+                        <select id="country" name="country">
+                            <option value="sodaspring">Soda Spring</option>
+                            <option value="preston">Preston</option>
+                            <option value="fishhaven">Fish Haven</option>
+                        </select>
+
+                        <label for="subject" class="top">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write your message"
+                            style="height:100px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <hr>
         &copy 2021 | Charleson Otubu | Abuja, Nigeria |
         <a style=color:aliceblue; href="https://www.byui.edu/" target="_blank">Brigham Young University Idaho online</a>
         <p><span id="date"></span> </p>
