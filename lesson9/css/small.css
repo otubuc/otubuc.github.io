@@ -425,22 +425,26 @@ textarea {
    }
    
    
-   /*fin de medium para el index*/
+   /*end of medium viewport*/
 
    html{
        max-width: 1024px;
    }
+
 @media (min-width: 64em) {
-    .town{
+    
+  .town{
         display: block;
     }
-    /*grid para pantalla grande*/
+
+    /*Large Viewport*/
     .towns{
         display: grid;
         grid-template-columns: repeat(3, minmax(300px, 1fr));
     }
+
     .towns section img{
-        height: 290px;
+        height: auto;
     }
 
 /* ........... Homepage contact us form..........*/
