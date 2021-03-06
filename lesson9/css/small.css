@@ -411,20 +411,27 @@ textarea {
        grid-column: 1;
    }
    
-   .derecha{
+   .right{
        grid-column: 2;
        
    }
    .left{
        grid-column: 1;
        grid-row: 1;
-   };
+   }
+   
    data{
        grid-column: -1;
-   }/*fin de medium para el index*/
+   }
+   
+   
+   /*fin de medium para el index*/
+
    html{
        max-width: 1250px;
    }
+
+
 /* ........... Homepage contact us form..........*/
 body {
   font-family: Arial, Helvetica, sans-serif;

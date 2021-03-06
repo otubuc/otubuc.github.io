@@ -35,7 +35,7 @@ fetch(requestURL)
         card.setAttribute('class',"town");
         contenedor.setAttribute('class', "data");
         if(i%2==0){
-            image.setAttribute('class', "derecha");
+            image.setAttribute('class', "right");
             contenedor.setAttribute('class', "data2");
 
         }
