@@ -419,7 +419,7 @@ textarea {
        grid-column: 1;
        grid-row: 1;
    }
-   
+
    data{
        grid-column: -1;
    }
@@ -428,9 +428,20 @@ textarea {
    /*fin de medium para el index*/
 
    html{
-       max-width: 1250px;
+       max-width: 1024px;
    }
-
+@media (min-width: 64em) {
+    .town{
+        display: block;
+    }
+    /*grid para pantalla grande*/
+    .towns{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+    }
+    .towns section img{
+        height: 290px;
+    }
 
 /* ........... Homepage contact us form..........*/
 body {
