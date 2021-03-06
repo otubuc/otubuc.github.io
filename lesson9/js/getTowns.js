@@ -8,7 +8,7 @@ fetch(requestURL)
     const towns = jsonObject['towns'];
     for (let i = 0; i < towns.length; i++ ) {
         let card = document.createElement('section');
-        let contenedor = document.createElement('div');
+        let container = document.createElement('div');
         let h2 = document.createElement('h2');
         let h4 = document.createElement('h4');
         let p = document.createElement('p');
@@ -27,16 +27,16 @@ fetch(requestURL)
         image.setAttribute('class', "left");
       
 
-       contenedor.appendChild(h2);
-       contenedor.appendChild(h4);
-       contenedor.appendChild(p);
-       card.appendChild(contenedor);
+        container.appendChild(h2);
+        container.appendChild(h4);
+        container.appendChild(p);
+       card.appendChild(container);
         card.appendChild(image);
         card.setAttribute('class',"town");
-        contenedor.setAttribute('class', "data");
+        container.setAttribute('class', "data");
         if(i%2==0){
             image.setAttribute('class', "right");
-            contenedor.setAttribute('class', "data2");
+            container.setAttribute('class', "data2");
 
         }
 
