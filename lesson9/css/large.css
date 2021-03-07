@@ -90,11 +90,14 @@ nav ul li a {
     .article img {
         width: 600px;
         height: 260px;
+        border: 2px solid rgb(158, 231, 207);
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 5px 5px 5px 5px;
     }
 
     .img {
         width: 290px;
-        border: 2px solid rgb(24, 23, 23);
+        border: 2px solid rgb(23, 24, 24);
         border-radius: 10px 10px 0px 0px;
         box-shadow: cornsilk;
        
