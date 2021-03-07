@@ -86,6 +86,13 @@ nav ul li a {
         
     }
 
+    .video iframe{
+        float: left;
+        padding:5px;
+        width:33%;
+        box-sizing:border-box;
+        
+    }
 /* ........form objects .........*/
     .article img {
         width: 600px;
