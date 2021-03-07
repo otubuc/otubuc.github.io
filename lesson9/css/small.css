@@ -399,8 +399,7 @@ textarea {
 
 @media (min-width: 32.5em) {
    
-  /* grid para el index pantalla mediana
-  muestra intercalado las imagenes*/
+  
    .town{
        display: grid;
        grid-template-columns: 1fr 1fr;
