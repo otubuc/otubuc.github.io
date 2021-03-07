@@ -89,11 +89,27 @@ nav ul li a {
 /* ........form objects .........*/
     .article img {
         width: 600px;
+        height: auto;
     }
+
+    .img {
+        width: 290px;
+        border: 2px solid rgb(24, 23, 23);
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: cornsilk;
+       
+       }
+    
+    .responsive {
+        width: 100%;
+        height: auto;
+      }
 
     form input.submitBtn {
        font-size: 1.2em;
       }
+
+      
     
 }
 
