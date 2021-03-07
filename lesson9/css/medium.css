@@ -2,7 +2,8 @@
 @media only screen and (min-width: 35rem) {
     
     .article img {
-       width: 450em;
+       width: 400px;
+       height: 220px;
     }
 
     .iframe {
