@@ -55,7 +55,7 @@ nav ul li a {
 
 
 /* Larger viewports */
-@media only screen and (min-width: 18.125em) {
+@media only screen and (min-width: 64em) {
 	header img {
         width: 100px;
         height: auto;

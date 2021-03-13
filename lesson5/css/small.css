@@ -15,9 +15,13 @@ nav button {
 
 
 nav{
+    display: flex;
     background-color: #10BBFB;
     font-family: sans-serif;
     text-align: center;
+    align-content: center;
+    flex-flow: column;
+    font-size: 1.4em;
 }
 
 nav ul {

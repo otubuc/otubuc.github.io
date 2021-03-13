@@ -71,7 +71,7 @@
         <picture>
             <source media="(max-width: 400px)" srcset="images/small.jpeg">
             <source media="(max-width: 600px)" srcset="images/medium.jpeg">
-            <source media="(max-width: 960px)" srcset="./images/large.jpeg">
+            <source media="(max-width: 1024px)" srcset="./images/large.jpeg">
             <img src="images/large.jpeg" alt="Preston Idaho">
         </picture>
         <div class="herodiv">
@@ -83,6 +83,53 @@
                 <p>Wind: <span id="shots">10 km/p</span></p>
             </section>
         </div>
+        <!-- Five Day weather forecast using weather api-->
+        <div id="five_day">
+            <table id="forecast_table" class="center">
+              <caption>
+                <h3 class="five_day_title">Five Day Forecast</h3>
+              </caption>
+              <tr class="color_table">
+                <td id="d1"><p></p></td>
+                <td id="d2"><p></p></td>
+                <td id="d3"><p></p></td>
+                <td id="d4"><p></p></td>
+                <td id="d5"><p></p></td>
+              </tr>
+              <tr>
+                <td>
+                    <img id="imagesrc1"></img> &nbsp;
+                    <img src="" alt="" id="icon1" />
+                 
+                </td>
+                <td>
+                    <img id="imagesrc2"></img> &nbsp;
+                    <img src="" alt="" id="icon2" />
+                </td>
+                <td>
+                    <img id="imagesrc3"></img> &nbsp;
+                    <img src="" alt="" id="icon3" />
+                </td>
+                <td>
+                    <img id="imagesrc4"></img> &nbsp;
+                    <img src="" alt="" id="icon4" />
+                </td>
+                <td>
+                  <img id="imagesrc5"></img> &nbsp;
+                    <img src="" alt="" id="icon5" />
+                </td>
+              </tr>
+              <tr class="color_table">
+                <td id='t1'><p> ;</p></td>
+                <td id='t2'><p> &deg;</p></td>
+                <td id='t3'><p> &deg;</p&deg;</p></td>
+                <td id='t4'><p> &deg;</p></td>
+                <td id='t5'><p> &deg;</p></td>
+              </tr>
+            </table>
+          </div>
+
+
         <article class="article">
             <h2>Quick Links</h2>
             <hr>

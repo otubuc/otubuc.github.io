@@ -15,12 +15,17 @@ nav button {
 
 
 nav{
+    display: flex;
     background-color: #10BBFB;
     font-family: sans-serif;
     text-align: center;
+    align-content: center;
+    flex-flow: column;
+    font-size: 1.4em;
 }
 
 nav ul {
+    
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -60,7 +65,7 @@ nav ul.hide{
 
 body {
     font-size: 16px;
-	font-family: "Sansita", Ubuntu, sans-serif;
+	font-family: "Sansita, Ubuntu, sans-serif";
 	padding: 0;
     margin: 0;
     
