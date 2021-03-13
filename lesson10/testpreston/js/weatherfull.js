@@ -15,11 +15,5 @@ fetch(apiURL)
       let winch = 35.74 + 0.6215 * tempF - 35.75 * (Math.pow(speed, 0.16)) + 0.4275 * tempF * (Math.pow(speed, 0.16));
       return winch.toFixed(2) + "°" + "F";
     }
-        
-    /*const imagesrc = "https://openweathermap.org/img/w/" + jsObject.weather[0].icon + ".png"; // note the concatenation
-    const desc = jsObject.weather[0].description; // note how we reference the weather array
-    document.getElementById("imagesrc").textContent = imagesrc; // informational specification only
-    document.getElementById("icon").setAttribute("src", imagesrc); // focus on the setAttribute() method
-    document.getElementById("icon").setAttribute("alt", desc);
-    document.getElementById("current-temp").textContent = jsObject.main.temp;*/
+    
   });
