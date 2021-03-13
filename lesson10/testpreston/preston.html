@@ -30,12 +30,6 @@
             width: 100%;
             height: auto;
         }
-
-        /* Make the image fully responsive */
-        .carousel-inner img {
-            width: 100%;
-            height: 350px;
-        }
     </style>
 </head>
 
@@ -68,29 +62,37 @@
             </ul>
         </nav>
     </div>
-<br>
     <!-- CONTENT HERE -->
     <main id="content">
         <h2 style="text-align: center; color: rgb(6, 107, 110);">Welcome to Preston Idaho</h2>
-        <picture>  
-            <img src="./images/8.jpg" alt="Preston Idaho Falls" width="1024px" height="350px">
+        <picture>
+            <img class="responsive" src="./images/8.jpg" alt="Preston Idaho Falls">
         </picture>
-        <div class="herodiv">
-     
-          
-        </div>
-        <section>
-            <article class="article">
-                
-                <p style="text-align: center; font-size: small; padding: 3px;">
-                    <marquee style="color: crimson;" width="100%" direction="left" height="25px">
-                        We give you reliable weather forecast for our major towns, Preston, Fish Haven and Soda Spring.
-                        Go to our storm center to report your current weather situation. Check out our town pages to see
-                        useful information about each city's news, events, sports, entertainment, movies, politics, and
-                        lots more.
-                    </marquee>
-                </p>
-            </article>
+
+        <section class="herodiv">
+            <div class="stats" class="weather">
+                <h4>Weather Summary</h4>
+                    <p>Temperature: <span id="wcurrent"></span> &deg;F</p>
+                    <p>High: <span id="high"></span>&deg;F</p>
+                    <p>Wind Chill: <span id="wchill"></span></p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Wind Speed: <span id="wspeed"></span> mph</p>
+            </div>
+        </section>
+        <h3 class="fco">Forecast 5 Days</h3>
+        <div class="fc"></div>
+
+        <article class="article">
+
+            <p style="text-align: center; font-size: small; padding: 3px;">
+                <marquee style="color: crimson;" width="100%" direction="left" height="25px">
+                    We give you reliable weather forecast for our major towns, Preston, Fish Haven and Soda Spring.
+                    Go to our storm center to report your current weather situation. Check out our town pages to see
+                    useful information about each city's news, events, sports, entertainment, movies, politics, and
+                    lots more.
+                </marquee>
+            </p>
+        </article>
         </section>
 
         <article class="article">
@@ -98,14 +100,14 @@
             <h2> About Preston City</h2>
             <hr />
             <picture><img class="responsive" class="article img" src="./images/7.jpg" width="400" height="auto"
-                alt="News"></picture>There are many variations of passages of Lorem Ipsum available, but the
-                majority have suffered alteration in some form, by injected humour, or randomised words which don't look
-                even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
-                isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-                tend to repeatpredefined chunks as necessary, making this the first true generator on the Internet. It
-                uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
-                generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from
-                repetition, injected humour, or non-characteristic words etc.
+                    alt="News"></picture>There are many variations of passages of Lorem Ipsum available, but the
+            majority have suffered alteration in some form, by injected humour, or randomised words which don't look
+            even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
+            isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
+            tend to repeatpredefined chunks as necessary, making this the first true generator on the Internet. It
+            uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
+            generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from
+            repetition, injected humour, or non-characteristic words etc.
             </p>
             <p>The page name shoud almost exactly match the menu item. </p>
         </article>
@@ -114,8 +116,9 @@
             <h2> Preston Idaho Music Festival</h2>
             <hr />
             <p>
-                <picture><img class="responsive" id="article img left" src="../images/Preston-Music-Events-Eventbrite.jpg " width="400" height="auto"
-                        alt="News"></picture>There are many variations of passages of Lorem Ipsum available, but the
+                <picture><img class="responsive" id="article img left"
+                        src="../images/Preston-Music-Events-Eventbrite.jpg " width="400" height="auto" alt="News">
+                </picture>There are many variations of passages of Lorem Ipsum available, but the
                 majority have suffered
                 alteration in some form, by injected humour, or randomised words which don't look even slightly
                 believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
@@ -131,7 +134,8 @@
             <h2> Preston Annual Sports Championship</h2>
             <hr />
             <p>
-                <picture><img class="responsive" src="../images/sports.jfif " width="400" height="auto" alt="News"></picture>
+                <picture><img class="responsive" src="../images/sports.jfif " width="400" height="auto" alt="News">
+                </picture>
                 There are many
                 variations of passages of Lorem Ipsum available, but the majority have suffered
                 alteration in some form, by injected humour, or randomised words which don't look even slightly
@@ -149,11 +153,11 @@
     </main>
     </div>
 
-    <!-- FOOTER HERE -->
+        <!-- FOOTER HERE -->
     <footer id="footerfit" class="footer">
         <!-- Map -->
         <article class="article"> <iframe class="iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9370.664205311323!2d7.468968448318288!3d9.074789386814723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b8caddab6d3%3A0xbfd75453dfe2a573!2sHyde%20Petrol%20Station!5e0!3m2!1sen!2sng!4v1614744315381!5m2!1sen!2sng"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5125.20673638594!2d-111.87078260093082!3d42.09224691604069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sng!4v1615635481523!5m2!1sen!2sng"
                 width="960" height="350" style="border:0;" allowfullscreen="false" loading="lazy"></iframe> </article>
         <br>
         <div class="container">
@@ -208,9 +212,9 @@
         <a style=color:aliceblue; href="https://www.byui.edu/" target="_blank">Brigham Young University Idaho online</a>
         <p><span id="date"></span> </p>
     </footer>
-    <script src="./js/date.js">
-
-    </script>
+    <script src="./js/date.js"></script>
+    <script src="js/weatherfull.js"></script>
+    <script src="js/forecast.js"></script>
 
 </body>
 
