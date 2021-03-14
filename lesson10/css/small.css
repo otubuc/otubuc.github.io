@@ -144,14 +144,14 @@ header img {
 .weather{
   position: absolute;
   bottom: 15rem;
-  background-color: rgba(10, 145, 138, 0.705);
+  background-color: rgba(132, 218, 213, 0.705);
   border-radius: .5rem;
   left: 65%;
   padding: 1rem;
   padding-top: 0;
   box-shadow: 1px 1px 10px #d7e2d7;
   font-size: .4rem;
-  color: #021a14;
+  color: #000a08;
 }
 
 h3 .fco {
