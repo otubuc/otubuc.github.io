@@ -128,10 +128,10 @@ header img {
   right: 35rem;
   float: right;
   background: radial-gradient(#eee, #17e690);
-  border: 1px solid #000;
+  border: 1px solid rgb(100, 212, 179);
   padding: .3rem;
-  box-shadow: 0 0 30px #111;
-  opacity: .8;  
+  box-shadow: 0 0 30px rgb(155, 149, 149);
+  opacity: .6;  
   font-size: 1.2em;
 }
 
@@ -144,13 +144,13 @@ header img {
 .weather{
   position: absolute;
   bottom: 15rem;
-  background-color: rgba(31, 33, 61, 0.5);
+  background-color: rgba(105, 241, 235, 0.5);
   border-radius: .5rem;
   left: 65%;
   padding: 1rem;
   padding-top: 0;
-  box-shadow: 1px 1px 10px #FFB103;
-  font-size: .5rem;
+  box-shadow: 1px 1px 10px #99d499;
+  font-size: .4rem;
   color: #E1F1FF;
 }
 
@@ -158,7 +158,7 @@ h3 .fco {
   text-align: center;
   font-size: 1.5rem;
   margin: .5rem auto;
-  box-shadow: 1px 1px 8px #202020;
+  box-shadow: 1px 1px 8px #b6f0e3;
 }
 
 .fc {
@@ -167,7 +167,7 @@ h3 .fco {
   justify-content: space-around;
   align-items: center;
   max-width: 100%;
-  background-color: #1F213D;
+  background-color: #93ebdc;
   margin: 0 0 .5rem 0;
   border-radius: .5rem;
 }
