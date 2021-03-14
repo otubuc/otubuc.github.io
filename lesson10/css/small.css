@@ -144,21 +144,21 @@ header img {
 .weather{
   position: absolute;
   bottom: 15rem;
-  background-color: rgba(105, 241, 235, 0.5);
+  background-color: rgba(10, 145, 138, 0.705);
   border-radius: .5rem;
   left: 65%;
   padding: 1rem;
   padding-top: 0;
-  box-shadow: 1px 1px 10px #99d499;
+  box-shadow: 1px 1px 10px #d7e2d7;
   font-size: .4rem;
-  color: #E1F1FF;
+  color: #021a14;
 }
 
 h3 .fco {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: .5rem auto;
-  box-shadow: 1px 1px 8px #b6f0e3;
+  box-shadow: 1px 1px 8px #d9ece8;
 }
 
 .fc {
@@ -166,9 +166,9 @@ h3 .fco {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  max-width: 100%;
-  background-color: #93ebdc;
-  margin: 0 0 .5rem 0;
+  max-width:100%;
+  background-color: #b9e6de;
+  margin: auto;
   border-radius: .5rem;
 }
 
@@ -181,13 +181,13 @@ section.tab img{
 section.tab h2{
   margin: auto;
   text-align: center;
-  color: #E1F1FF;
+  color: #012522;
 }
 
 section.tab h3{
   margin: 0 0 .5rem 0;
   text-align: center;
-  color: #E1F1FF;
+  color: #043b3b;
 }
 
 .main {
