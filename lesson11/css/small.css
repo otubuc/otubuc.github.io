@@ -35,7 +35,7 @@ nav ul li a {
     display: block;
     padding: 1rem 2;
     text-decoration: none;
-    color: Yellow;
+    color: rgb(0, 0, 0);
     border-top:  1px solid rgba(0, 0, 0, 0.3);
    
 }
@@ -128,9 +128,9 @@ header img {
   right: 35rem;
   float: right;
   background: radial-gradient(#eee, #17e690);
-  border: 1px solid rgb(100, 212, 179);
+  border: 1px solid rgb(242, 245, 244);
   padding: .3rem;
-  box-shadow: 0 0 30px rgb(155, 149, 149);
+  box-shadow: 0 0 30px rgb(58, 57, 57);
   opacity: .6;  
   font-size: 1.2em;
 }
@@ -297,6 +297,7 @@ h1 {
   font-size: 2em;
   text-align: center;
   margin: 10px;
+  color: #023655
   font-family: Nunito, sans-serif;
 }
 
