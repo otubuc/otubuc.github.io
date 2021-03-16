@@ -124,7 +124,7 @@ header img {
 
 .stats {
   position: absolute;
-  top: -430px;
+  top: -350px;
   right: 35rem;
   float: right;
   background: radial-gradient(#eee, #17e690);
