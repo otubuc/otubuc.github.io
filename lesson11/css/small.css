@@ -35,14 +35,14 @@ nav ul li a {
     display: block;
     padding: 1rem 2;
     text-decoration: none;
-    color: #ffffff;
+    color: Yellow;
     border-top:  1px solid rgba(0, 0, 0, 0.3);
    
 }
 
 nav ul li.active a{
-    background-color: rgb(255, 255, 255);
-    color: #22577A;
+    background-color: #22577A;
+    color: white;
 }
 
 nav ul li a:hover {
