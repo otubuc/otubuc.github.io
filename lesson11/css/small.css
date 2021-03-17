@@ -297,7 +297,7 @@ h1 {
   font-size: 2em;
   text-align: center;
   margin: 10px;
-  color: #023655
+  color: #023655;
   font-family: Nunito, sans-serif;
 }
 
@@ -495,7 +495,7 @@ input[type=submit]:hover {
   padding: 10px;
 }
 
-/* Create two columns that float next to eachother */
+/* Create two columns that float next to each other */
 .column {
   float: left;
   width: 50%;
@@ -588,3 +588,5 @@ input[type=submit]:hover {
     display: table;
     clear: both;
   }
+}
+}

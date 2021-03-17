@@ -50,7 +50,7 @@ nav ul li a {
 }
 
 
-/* Larger viewports */
+/* Larger view ports */
 @media only screen and (min-width: 60rem) {
 	header img {
         width: 100px;
@@ -119,7 +119,11 @@ nav ul li a {
        font-size: 1.2em;
       }
 
-      
+      article#index_article {
+        margin-top: 0;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+      }
     
 }
 

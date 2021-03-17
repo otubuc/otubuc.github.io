@@ -9,6 +9,14 @@
     .iframe {
         width: 400rem;
     }
+
+    article#index_article {
+  margin-top: 0;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+
    
 }
 
