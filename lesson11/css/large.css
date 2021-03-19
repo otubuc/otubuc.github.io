@@ -96,7 +96,7 @@ nav ul li a {
 /* ........form objects .........*/
     .article img {
         width: 600px;
-        height: 260px;
+        height: 230px;
         border: 2px solid rgb(158, 231, 207);
         border-radius: 10px 10px 10px 10px;
         box-shadow: 5px 5px 5px 5px;
@@ -124,6 +124,44 @@ nav ul li a {
         margin-bottom: 4rem;
         margin-top: 2rem;
       }
+/* ..................... Town Data JSON CSS.................*/
+
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        align-content: center;
+        text-align: center;
+        margin: .5rem;
+        background-color: white;
+    }
+    
+    .cards article {
+        padding: 10px;
+        border: 2px solid burlywood;
+        background-color: white;
+    }
+    
+    .tInfo {
+        padding: 8px;
+    }
+    
+    .tName {
+        font-size: 1.7rem;
+        margin-bottom: 8px;
+    }
+    
+    .tMoto {
+        margin: 0 auto 20px auto;
+    }
+    
+    .cards img {
+        max-width: 100%;
+        height: auto;
+        box-shadow: 5px 8px 10px 1px #888888;
+        padding: 0;
+        margin-bottom: 10px;
+    }
     
 }
 

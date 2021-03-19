@@ -7,7 +7,7 @@
     }
 
     .iframe {
-        width: 400rem;
+        max-width: 750px;
     }
 
     article#index_article {
@@ -26,4 +26,24 @@
       width: 100%;
     }
   }
+/*............. Town Data JSON JS..............*/
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    align-content: center;
+    text-align: center;
+    margin: .5rem;
+    background-color: white;
+}
+
+.cards img {
+  max-width: 600px;
+  height: auto;
+  box-shadow: 5px 8px 10px 1px #888888;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+
 /*end medium */
