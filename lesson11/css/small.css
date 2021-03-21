@@ -219,7 +219,7 @@ section.tab h3{
   padding:0%;
 }
 
-#footerfit {
+.footerfit {
     max-width: 1024px;
     margin-top: 0px;
     margin: auto;
@@ -595,7 +595,7 @@ input[type=submit]:hover {
 }
 
 .cards img {
-max-width: 400px;
+max-width: 300px;
 height: auto;
 box-shadow: 5px 8px 10px 1px #888888;
 padding: 5px;
