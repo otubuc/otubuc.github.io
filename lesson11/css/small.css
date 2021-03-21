@@ -386,7 +386,7 @@ textarea {
   width: 100%;
 }
 
-/* .......... Homepage ..........*/
+/* .......... Homepage JSON JS..........*/
 .towns{
   text-align: center;
   margin-left: 0px;
@@ -561,10 +561,10 @@ input[type=submit]:hover {
 .gallery img.lazy-image {
   opacity: 0.1;
   will-change: opacity;
-  transition: all 0.3s;
+  transition: all 1.5s;
 }
 .gallery img.lazy-image.loaded {
-  opacity: 1;
+  opacity: 25;
 }
 
 
