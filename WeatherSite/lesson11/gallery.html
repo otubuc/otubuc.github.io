@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- This start file was build by Charleson Otubu with help from Paul Chenney  -->
+    <title>Weather Gallery </title>
+    <meta name="description" content="Weather Gallery Page by Charleson Otubu. Student at BYUI Online.">
+    <meta name="author" content="Charleson Otubu">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- STYLE SHEETS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/lazyload.js"></script>
+    <!-- phone-default -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <script src="./js/scripts.js"></script>
+
+</head>
+
+<body>
+    <!-- This section holds site logo, title, tagline and navigation  -->
+    <header>
+        <picture>
+            <img src="images/logo-small-black.png" alt="The CWC logo">
+        </picture>
+        <section class="headings">
+            <h1>CloudTen Weather Center</h1>
+            <div class="m">Reliable Weather Forecasting</div>
+        </section>
+    </header>
+    <div>
+        <!-- Start of navigation  -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="sodaspring.html">Soda Spring</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <!-- End of navigation  -->
+    </div>
+
+
+    <main class="content">
+        <!-- Main content for the gallery starts here -->
+        <h2 class="page">Weather Gallery</h2>
+        <div class="gallery">
+            <picture class="image"> <img src="./images/Big_Fish-800x600.jpg" data-src="images/Big_Fish-800x600"
+                    alt="Scenic Idaho 1" loading="lazy" />Soda Springs resident catches 57-pound trout!</picture>
+            <picture class="image"> <img src="./images/1.jpg" data-src="images/1.jpg"
+                    alt="Preston Idaho Rain Storm" loading="lazy"/>Preston Idaho Rain Storm</picture>
+            <picture class="image"> <img src="./images/2.jpg" data-src="images/2.jpg"
+                    alt="Fish Haven Spring season" loading="lazy"/>Fish Haven Spring season</picture>
+            <picture class="image"> <img src="./images/3.jpg" data-src="images/3.jpg"
+                    alt="Soda Spring Rain Drops on Leaves 4" loading="lazy"/>Soda Spring Rain Drops on Leaves</picture>
+            <picture class="image"> <img src="./images/4.jpg" data-src="images/4.jpg"
+                    alt="Fish Haven City Council 5" loading="lazy"/>Heart of Fish Haven City Council</picture>
+            <picture class="image"> <img src="./images/5.jpg" data-src="images/5.jpg"
+                    alt="Preston Idaho Scenic Waterfall" loading="lazy"/>Preston Idaho Scenic Waterfall</picture>
+            <picture class="image"> <img src="./images/6.jpg" data-src="images/6.jpg"
+                    alt="Fish Haven Scenic RockyRiver 7" loading="lazy"/>Fish Haven Scenic RockyRiver</picture>
+            <picture class="image"> <img src="./images/7.jpg" data-src="images/7.jpg"
+                    alt="Soda spring Scenic Forest house 7" loading="lazy"/>Soda spring Scenic Forest house</picture>
+            <picture class="image"> <img src="./images/8.jpg" data-src="images/8.jpg"
+                    alt="Fish Haven Hilltop Winter house 8" loading="lazy"/>Fish Haven Hilltop Winter House</picture>
+
+        </div>
+    </main>
+    <br>
+    <br>
+    <!-- FOOTER HERE -->
+    <footer class="footerfit" class="footer">
+        &copy 2021 | Charleson Otubu | Abuja, Nigeria |
+        <a style=color:aliceblue; href="https://www.byui.edu/" target="_blank" rel="noreferrer">Brigham Young University Idaho Online</a>
+        <p> <span id="date"></span> </p>
+    </footer>
+    <script src="./js/date.js"></script>
+    <script src="./js/lazyload.js"></script>
+</body>
+
+
+</html>

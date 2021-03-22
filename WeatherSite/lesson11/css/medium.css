@@ -1,0 +1,69 @@
+/* 35em is also 560px when base font is 16px */
+@media only screen and (min-width: 35rem) {
+    
+
+    .iframe {
+        max-width: 800px;
+    }
+
+    
+
+/* start a new css for homepage city data */
+section {
+	max-width: 600px;
+  margin: .5rem auto;
+	
+}
+
+.cards article {
+  display: grid;
+	grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+.cards article:nth-child(odd) .cards img {
+	grid-column: 2;
+}
+
+.cards article:nth-child(odd) .data {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.cards img {
+  float: inherit;
+  width: 100%; 
+  height: auto;
+  padding:0;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    align-content: center;
+    background-color: #bcebe0;
+  }
+}
+
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    
+  }
+
+  
+
+
+/*end medium */
