@@ -1,43 +1,57 @@
-const requestURL = 'https:////byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
 fetch(requestURL)
-    .then(function(response) {
+    .then(function (response) {
         return response.json();
     })
-    .then(function(jsonObject) {
-        // console.table(jsonObject);  // temporary checking for valid response and data parsing
-        const towns = jsonObject['towns'];
-        towns.forEach(town => {
-            if (town.name == "Preston" || town.name == "Soda Springs" || town.name == "Fish Haven") {
-                let card = document.createElement('article')
-                let div = document.createElement('div')
-                let h2 = document.createElement('h2');
-                let h3 = document.createElement('h3');
-                let p1 = document.createElement('p');
-                let p2 = document.createElement('p');
-                let p3 = document.createElement('p');
-                let image = document.createElement('img');
 
-                div.setAttribute('class', 'tInfo')
-                h2.textContent = town.name;
-                h2.setAttribute('class', 'tName');
-                h3.textContent = town.motto;
-                h3.setAttribute('class', 'tMoto');
-                p1.textContent = "Year Founded: " + town.yearFounded;
-                p2.textContent = "Population: " + town.currentPopulation;
-                p3.textContent = "Average Rain Fall: " + town.averageRainfall;
-                image.setAttribute('src', `images/${town.photo}`);
-                image.setAttribute('alt', town.name);
+.then(function (jsonObject) {
+    // check for json object
+    // console.table(jsonObject);
 
-                div.appendChild(h2);
-                div.appendChild(h3);
-                div.appendChild(p1);
-                div.appendChild(p2);
-                div.appendChild(p3);
-                card.appendChild(div);
-                card.appendChild(image);
+const towns = jsonObject['towns'];
+    
+// loop through the array
+for (let i=0; i < towns.length; i++) {
+    // declare each variable
+    let card = document.createElement('section');
+    let h2 = document.createElement('h3');
+    let motto = document.createElement('h5');
+    let year = document.createElement('p');
+    let pop = document.createElement('p');
+    let rain = document.createElement('p');
+    let image = document.createElement('img');
+    let textd = document.createElement('div')
+    
+    // What each card will have, contatenation of the strings, declaring classes to make CSS easier
+    if (towns[i].name == 'Preston'|| towns[i].name == 'Fish Haven' || towns[i].name == 'Soda Springs') {
+        console.log(towns[i].photo);
+    
+    h2.textContent = towns[i].name;
+    motto.textContent = "Town Motto:" + " " + towns[i].motto;    
+    year.textContent = "Year Established:" + " " + towns[i].yearFounded;
+    pop.textContent = "Current Population:" + " " + towns[i].currentPopulation;
+    rain.textContent = "Annual Rainfall:" + " " +  towns[i].averageRainfall;
+    image.setAttribute('src', `images/${towns[i].photo}`);
+    image.setAttribute('alt', towns[i].name);
+    image.setAttribute('class', 'townimg');
+    card.setAttribute('class', "home_sect" );
+    textd.setAttribute('class', 'home_town_text');
 
-                document.querySelector('div.cards').appendChild(card);
-            }
-        });
+    // build the display by updating as I loop through. Use an "if" statement to select just the towns I want.
+    // if (towns[i].name == 'Preston'|| towns[i].name == 'Fish Haven' || towns[i].name == 'Soda Springs') {
+        card.appendChild(textd);
+        textd.appendChild(h2);
+        textd.appendChild(motto);
+        textd.appendChild(year);
+        textd.appendChild(pop);
+        textd.appendChild(rain);
+        card.appendChild(image);}
 
-    });
+    else {
+        card.setAttribute('class', 'home_hide');
+    }
+        
+     document.querySelector('div.town_div').appendChild(card);
+}
+});

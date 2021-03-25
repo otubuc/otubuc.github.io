@@ -1,0 +1,43 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+    
+    .article img {
+       width: 400px;
+       height: 220px;
+    }
+
+    .iframe {
+        max-width: 750px;
+    }
+
+    article#index_article {
+  margin-top: 0;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+
+   
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+/*............. Town Data JSON JS..............*/
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  
+}
+
+.cards img {
+  max-width: 600px;
+  height: auto;
+ 
+}
+
+
+/*end medium */

@@ -4,18 +4,16 @@
 <head>
     <meta charset="utf-8">
     <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- This start file was build by Paul Cheney  -->
-    <title>Home - CloudTen Weather Center </title>
-    <meta name="description" content="Weather homepage developed by Charleson Otubu. Student at BYUI Online.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- This start file was build by Charleson Otubu with help from Paul Chenney  -->
+    <title>Weather Gallery </title>
+    <meta name="description" content="Weather Gallery Page by Charleson Otubu. Student at BYUI Online.">
     <meta name="author" content="Charleson Otubu">
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- STYLE SHEETS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/lazyload.js"></script>
     <!-- phone-default -->
-    <link rel="shortcut icon" href="./images/favicon.ico">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
     <!-- enhance-tablet -->
@@ -24,31 +22,69 @@
     <!-- enhance-desktop -->
     <link href="css/large.css" rel="stylesheet">
     <script src="./js/scripts.js"></script>
-
     <style>
-        .responsive {
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
             width: 100%;
             height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
         }
     </style>
 </head>
 
 <body>
-
-    <!-- "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion."-->
-    <!--<div class="top-nav-left">505E, City Center Mall, SLC, Utah | Hotline: +234 703 083 5572 | info@cloud10.news</div>
-     class="top-nav-right"> class="top-nav-right"><a href="#">privacy policy </a> | <a href="#">Terms of Use </a>|
-        href="#"> Contact us </a>|<a href="#"> Help </a></p>-->
-        <header>
-            <picture>
-                <img src="images/logo-small-black.png" alt="The CWC logo">
-            </picture>
-            <section class="headings">
-                <h1>CloudTen Weather Center</h1>
-                <div class="m">Reliable Weather Forecasting</div>
-            </section>
-        </header>
+    <!-- This section holds site logo, title, tagline and navigation  -->
+    <header>
+        <picture>
+            <img src="images/logo-small-black.png" alt="The CWC logo">
+        </picture>
+        <section class="headings">
+            <h1>CloudTen Weather Center</h1>
+            <div class="m">Reliable Weather Forecasting</div>
+        </section>
+    </header>
     <div>
+        <!-- Start of navigation  -->
         <nav class="clearfix">
             <button onclick="toggleMenu()">&#9776; Menu</button>
             <ul id="primaryNav" class="hide">
@@ -58,63 +94,83 @@
                 <li><a href="sodaspring.html">Soda Spring</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-
             </ul>
         </nav>
     </div>
-    <!-- CONTENT HERE -->
+    <!-- End of navigation  -->
+
+    <!-- Main content for the storm center starts here -->
     <main class="content">
-        <h2 style="text-align: center; color: rgb(6, 107, 110);">Welcome to Fish Haven</h2>
+        <h2 class="page">Welcome to Fish Haven</h2>
+        <hr>
         <picture>
-            <img class="responsive" src="images/Preston-Music-Events-Eventbrite.jpg" alt="Fish Haven Music Festival" width="1024" height="350">
+            <source media="(max-width: 400px)" srcset="images/f-small.jpg">
+            <source media="(max-width: 600px)" srcset="images/f-medium.jpg">
+            <source media="(max-width: 1024px)" srcset="images/f-large.jpg">
+            <img src="images/f-large.jpg" alt="Preston Idaho">
         </picture>
         <section class="herodiv">
             <div class="stats" class="weather">
                 <h4>Weather Summary</h4>
-                    <p>Temperature: <span id="wcurrent"></span> &deg;F</p>
-                    <p>High: <span id="high"></span>&deg;F</p>
-                    <p>Wind Chill: <span id="wchill"></span></p>
-                    <p>Humidity: <span id="humidity"></span>%</p>
-                    <p>Wind Speed: <span id="wspeed"></span> mph</p>
+                <p>Temperature: <span id="wcurrent"></span> &deg;F</p>
+                <p>High: <span id="high"></span>&deg;F</p>
+                <p>Wind Chill: <span id="wchill"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="wspeed"></span> mph</p>
             </div>
-        </section>
-            <article class="article">
-                <p style="text-align: center; font-size: small; padding: 3px;">
-                    <marquee style="color: crimson;" width="100%" direction="left" height="25px">
-                        We give you reliable weather forecast for Preston. Go to our storm center to report your current weather situation. 
-                        Check out our town blogs to see useful information about Preston's news, events, sports, entertainment, movies, politics, and
-                        lots more.
-                    </marquee>
-                </p>
-            </article>  
-        <section>
-        <h3  style="color: rgb(2, 43, 43); text-align: center;" class="fco">5 Days Weather Forecast</h3>
-        <div class="fc"></div>
+            <div class="efishhaven"></div>
         </section>
         <article class="article">
-
-            <h2> Fish Haven Community Highlights</h2>
-            <hr />
-            <picture><img class="responsive" class="article img" src="./images/7.jpg" width="400" height="auto"
-                    alt="News"></picture>There are many variations of passages of Lorem Ipsum available, but the
-            majority have suffered alteration in some form, by injected humour, or randomised words which don't look
-            even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
-            isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-            tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It
-            uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
-            generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from
-            repetition, injected humour, or non-characteristic words etc.
+            <p style="text-align: center; font-size: small; padding: 3px;">
+                <marquee style="color: crimson;" width="100%" direction="left" height="25px">
+                    We give you reliable weather forecast for Preston. Go to our storm center to report your current
+                    weather situation.
+                    Check out our town blogs to see useful information about Preston's news, events, sports,
+                    entertainment, movies, politics, and
+                    lots more.
+                </marquee>
             </p>
-      </article>
-    </main>
-    </div>
+        </article>
+        <section>
+            <h3 style="font-size: 1.1em; color: rgb(2, 43, 43); text-align: center; class=" fco">5 Days Weather Forecast
+            </h3>
+            <div class="fc"></div>
 
-        <!-- FOOTER HERE -->
+            <article class="article">
+
+                <h2> Essential information about Fish Haven</h2>
+                <hr />
+                <img src="./images/bear-lake-on-a-beautiful.jpg " width="400" height="auto" alt="Beautiful Bear Lake">
+                <p style="font-size: .85rem;">
+                    <br>
+                    According to Wikipedia, Fish Haven, originally named Rush Creek, is an unincorporated community
+                    along the shores of Bear Lake in Bear Lake County, Idaho, United States. It is 4 km (2.5 miles)
+                    north of the Utah border.
+                </p>
+
+
+                <h3>History</h3>
+                <hr>
+                <p style="font-size: .85rem;">The first settlement at Fish Haven was made in 1864. A post office called
+                    Fish Haven was established in 1867, and remained in operation until 1962. The community was so named
+                    because nearby Bear Lake is a favorite fishing spot.</p>
+                <br>
+                <br>
+                <br>
+                
+            </article>
+        </section>
+
+    </main>
+    <br>
+    <br>
+    <!-- FOOTER HERE -->
+    <!-- Map -->
+
     <footer class="footerfit" class="footer">
-        <!-- Map -->
-        <article class="article"> <iframe class="iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5125.20673638594!2d-111.87078260093082!3d42.09224691604069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sng!4v1615635481523!5m2!1sen!2sng"
-                width="960" height="350" style="border:0;" allowfullscreen="false" loading="lazy"></iframe> </article>
+        <iframe class="iframe" title="Fish Haven Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5926.664115854487!2d-111.3925674772301!3d42.036059369958984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287%2C%20USA!5e0!3m2!1sen!2sng!4v1616599657935!5m2!1sen!2sng"
+            width="600" height="300" style="border: 1px solid grey;" allowfullscreen="" loading="lazy"></iframe>
         <br>
         <div class="container">
             <div style="text-align:center">
@@ -162,15 +218,18 @@
                 </div>
             </div>
         </div>
-
-        <hr>
+       
+        <footer class="footerfit" class="footer">
         &copy 2021 | Charleson Otubu | Abuja, Nigeria |
-        <a style="color:aliceblue;" href="https://www.byui.edu/" target="_blank" rel="noreferrer">Brigham Young University Idaho online</a>
-        <p><span id="date"></span> </p>
+        <a style=color:aliceblue; href="https://www.byui.edu/" target="_blank">Brigham Young University Idaho Online</a>
+        <p>weather data and information is provided by <a style="color:rgb(235, 252, 7);" href="https://openweathermap.org/"
+            target="_blank" rel="noreferrer">Open Weather </a> <hr> <span id="date"></span></p>
     </footer>
+
     <script src="./js/date.js"></script>
     <script src="js/weatherfull.js"></script>
     <script src="js/fhforecast.js"></script>
+    <script src="js/eventsfishhaven.js"></script>
 
 </body>
 

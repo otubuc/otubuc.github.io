@@ -1,0 +1,226 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 48rem) {
+   
+   
+    nav {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background: #0ebcfb; /* Old browsers */
+        background: -moz-linear-gradient(top,  #0ebcfb 0%, #22c2fc 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #0ebcfb 0%,#22c2fc 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #0ebcfb 0%,#22c2fc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ebcfb', endColorstr='#22c2fc',GradientType=0 ); /* IE6-9 */
+
+    }
+
+    #content {
+        max-width: 1024px;
+        margin-top: 0px;
+        margin: auto;
+        background-color: rgba(63, 247, 237, 0.13);
+    }
+
+    #fhcontent {
+        max-width: 1024px;
+        margin-top: 0px;
+        margin: auto;
+        background-color: rgba(63, 247, 237, 0.13);
+    }
+    #pcontent {
+        max-width: 1024px;
+        margin-top: 0px;
+        margin: auto;
+        background-color: rgba(63, 247, 237, 0.13);
+    }
+
+    .content {
+        max-width: 1024px;
+        margin-top: 0px;
+        margin: auto;
+        background-color: rgba(63, 247, 237, 0.13);
+    }
+
+
+    .iframe {
+        width: 960px;
+    }
+    
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide{
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li { 
+        display: flex;
+        float: left;
+        
+    }
+nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding: .6rem 2rem;
+    
+}
+
+
+/* Larger view ports */
+@media only screen and (min-width: 60rem) {
+	header img {
+        width: 100px;
+        height: auto;
+	}
+
+	.headings h1 {
+		font-size: 2rem;
+	}
+/* .......sub-title ........ */
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		text-align: center;
+    }
+    
+    #pancakes .announcement {
+        position: absolute;
+        width: 100%;
+        padding: .5rem;
+        margin-bottom: 5rem;
+       
+      }
+
+    .top-nav-right{
+        display: flex;
+        text-align: right;
+        font-size: .5rem;
+        background-color:  rgb(98, 221, 215);
+        padding: 10px;
+        color:  #023655;
+        margin-top: 0px;
+        
+    }
+
+    .video iframe{
+        float: left;
+        padding:5px;
+        width:33%;
+        box-sizing:border-box;
+        
+    }
+/* ........form objects .........*/
+    .article img {
+        width: 600px;
+        height: 230px;
+        border: 2px solid rgb(158, 231, 207);
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 5px 5px 5px 5px;
+    }
+
+    .img {
+        width: 290px;
+        border: 2px solid rgb(23, 24, 24);
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: cornsilk;
+       
+       }
+    
+    .responsive {
+        width: 100%;
+        height: auto;
+      }
+
+    form input.submitBtn {
+       font-size: 1.2em;
+      }
+
+      article#index_article {
+        margin-top: 0;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+      }
+/* ..................... Town Data JSON CSS.................*/
+
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        align-content: center;
+        text-align: center;
+        margin: .5rem;
+        background-color: white;
+    }
+    
+    .cards article {
+        padding: 10px;
+        border: 2px solid burlywood;
+        background-color: white;
+    }
+    
+    .tInfo {
+        padding: 8px;
+    }
+    
+    .tName {
+        font-size: 1.7rem;
+        margin-bottom: 8px;
+    }
+    
+    .tMoto {
+        margin: 0 auto 20px auto;
+    }
+    
+    .cards img {
+        max-width: 100%;
+        height: auto;
+        box-shadow: 5px 8px 10px 1px #888888;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .dat{
+        max-width: 1125px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        text-align: center;
+        margin: 1rem auto;
+        background-color: #E1F1FF;
+    }
+
+    .info{
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid #F52B66;
+        padding: 10rem;
+    }
+
+    .info:nth-child(odd) img{
+        grid-row: 2;
+    }
+
+    .dat .imgt{
+        align-content: center;
+    }
+
+    div.containergallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: .5rem;
+        justify-items: center;
+        align-items: center;
+        font-family: serif;
+    }
+    
+}
+
+
+
+} /*end large */

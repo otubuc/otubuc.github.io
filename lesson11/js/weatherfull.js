@@ -3,7 +3,7 @@ const apiURL =
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    //console.log(jsObject);
     document.getElementById("wcurrent").textContent = jsObject.weather[0].main + " " + jsObject.main.temp
     document.getElementById("high").textContent = jsObject.main.temp_max;
     document.querySelector('#humidity').textContent = jsObject.main.humidity;
