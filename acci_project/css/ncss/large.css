@@ -1,0 +1,199 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+   
+   
+    nav {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background: #0ebcfb; /* Old browsers */
+        background: -moz-linear-gradient(top,  #0ebcfb 0%, #22c2fc 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #0ebcfb 0%,#22c2fc 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #0ebcfb 0%,#22c2fc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ebcfb', endColorstr='#22c2fc',GradientType=0 ); /* IE6-9 */
+
+    }
+
+    .content {
+        max-width: 1024px;
+        margin-top: 0px;
+        margin: auto;
+        background-color: rgba(63, 247, 237, 0.13);
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide{
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li { 
+        display: flex;
+        float: left;
+        
+    }
+nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding: .6rem 2rem;
+    
+}
+
+.stats {
+    position: absolute;
+    width: 150px;
+    top: -270px;
+    right: 5rem;
+    float: right;
+    background: radial-gradient(#eee, #031d13);
+    border: 1px solid rgb(55, 231, 187);
+    padding: .3rem;
+    box-shadow: 0 0 30px #111;
+    opacity: .8;  
+    font-size: 1em;
+  }
+
+/* Larger viewports */
+@media only screen and (min-width: 60rem) {
+	header img {
+        width: 100px;
+        height: auto;
+	}
+
+	.headings h1 {
+		font-size: 2rem;
+	}
+/* .......page sub-title ........ */
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		text-align: center;
+    }
+    /*top announcement */
+    #pancakes.announcement {
+        position:absolute;
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 5rem;    
+      }
+
+    .top-nav-right{
+        display: flex;
+        text-align: right;
+        font-size: .5rem;
+        background-color:  rgb(98, 221, 215);
+        padding: 10px;
+        color:  #023655;
+        margin-top: 0px;
+        
+    }
+
+    .iframe {
+        width: 1000px;
+        align-content: center;
+    }
+
+    .video iframe{
+        float: left;
+        padding:5px;
+        width:33%;
+        box-sizing:border-box;
+        
+    }
+/* ........form objects .........*/
+    .article img {
+        float: right;
+        max-width: 500px;
+        height: auto;
+        border: 2px solid rgb(158, 231, 207);
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 5px 5px 5px 5px;
+    }
+
+    .img {
+        width: 290px;
+        border: 2px solid rgb(23, 24, 24);
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: cornsilk;
+       
+       }
+    
+    .responsive {
+        width: 100%;
+        height: auto;
+      }
+
+    form input.submitBtn {
+       font-size: 1.2em;
+      }
+
+      .fhsection{
+            display: block;
+            width: 1024px;
+            background-color: rgb(233, 248, 248);
+            padding: 3px;
+            color: #043a4e;
+            font-size: .8rem;
+            text-align: center;
+            
+
+
+      }
+    .mylist
+        {font-size: 1.2rem;
+
+
+    }
+    /* index json */
+    div.town_div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5rem;
+        padding-bottom: 0;
+        }  
+        section.home_sect {
+            display: block;
+          }
+          
+          article#index_article {
+            margin-top: 0;
+            margin-bottom: 4rem;
+            margin-top: 2rem;
+          }
+
+          section.events {
+            position: absolute;
+            top: -21.5rem;
+            bottom: 8rem;
+            left: -15rem;
+            display: flex;
+            flex-direction: column;
+            background-color:rgba(4, 50, 56, 0.5);
+            color: #ffffff;
+            text-align: center;
+            border-radius: .5rem;
+            box-shadow: 1px 1px 10px #f7f4f5;
+            margin: .5rem 20rem .5rem 20rem;
+            padding: 1rem;
+            border: none;
+        }
+    
+        .infohome{
+            padding-bottom: 20rem;
+        }
+    
+        .infohome h3{
+            font-size: 3rem;
+        }
+    
+}
+
+
+
+} /*end large */

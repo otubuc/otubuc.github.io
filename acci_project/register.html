@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- This start file was build by Charleson Otubu with help from Paul Chenney  -->
+    <title>Weather Report - Storm Center </title>
+    <meta name="description" content="Weather Report - Storm Center Page by Charleson Otubu. Student at BYUI Online.">
+    <meta name="author" content="Charleson Otubu">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- STYLE SHEETS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/lazyload.js"></script>
+    <!-- phone-default -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+   
+    <script src="./js/scripts.js"></script>
+
+</head>
+
+<body>
+    <!-- This section holds site logo, title, tagline and navigation  -->
+    <header>
+        <picture>
+            <img src="images/logo-small-black.png" alt="The CWC logo">
+        </picture>
+        <section class="headings">
+            <h1>CloudTen Weather Center</h1>
+            <div class="m">Reliable Weather Forecasting</div>
+        </section>
+    </header>
+    <div>
+        <!-- Start of navigation  -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="sodaspring.html">Soda Spring</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End of navigation  -->
+
+  <!-- Main content for the storm center starts here -->
+    <main class="content">
+        <form method="get" action="thanks.html">
+            <fieldset>
+             <legend>
+                 Welcome to the weather center eye-witness report. Please use the form below to submit information on
+                the current weather condition in your area.
+            </legend>
+        </fieldset>
+            <fieldset>
+                <legend>Your Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="example@gmail.com"
+                        required></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="07030835572" required></label>
+                <label class="top">Zip Code*<input type="number" name="zipcode" placeholder="90024" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+
+                <label class="top">Are you in Danger?</label>
+                <label class="sbs"><input type="radio" name="audience" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="audience" value="no"> No</label>
+                <label class="sbs"><input type="radio" name="audience" value="maybe"> Maybe</label>
+
+                <label class="top">Storm Date<input type="date" name="stormDate" value="date"></label>
+
+                <label class="top">Storm Type<select name="subject">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="flashflood">Flash Flood</option>
+                        <option value="hail">Hail</option>
+                        <option value="hurricane">Hurricane</option>
+                        <option value="thunderstorm">Thunderstorm</option>
+                        <option value="tornado">Tornado</option>
+                    </select>
+                </label>
+
+                <div id="rate"><label for="rating">Storm Severity (on a scale of 1-10)</label></div>
+                    <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span><script src="js/rating.js">
+                        </script>
+                    </label>
+            
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Please Provide Additional Information</legend>
+                <label class="top">Comments:</label>
+                <textarea id="area" name="comment" rows="4" cols="50">
+    </textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit Storm Report" class="submitBtn">
+        </form>  
+
+       
+
+
+
+    </main>
+    <br>
+    <br>
+  <!-- Footer Start -->
+  <!-- Start Footer bottom Area -->
+  <footer class="footer-distributed">
+    
+    <div class="footer-left">     
+      <h3>ABUJA<span> Chamber</span></h3>
+
+      <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
+
+        <a href="#">Blog</a>
+
+        <a href="#">Pricing</a>
+
+        <a href="#">About</a>
+
+        <a href="#">Faq</a>
+
+        <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">All Rights Reserved | &copy 2021 </p>
+      <p style="color:azure" class="update">last Updated: <span id="modify"></span>.</p>
+
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>KM 8, YA'ARADUA MUSA RD, </span> LUGBE FCT, ABUJA</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+234.703.083.5572</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@acci.com.ng">support@acci.com.ng</a></p>
+      </div>
+
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the ACCI</span>
+        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+        vehicula
+        sit amet.
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+
+      </div>
+
+    </div>
+    <script>
+      document.getElementById("modify").innerHTML = document.lastModified
+    </script>
+  </footer>
+    
+</body>
+
+</html>
