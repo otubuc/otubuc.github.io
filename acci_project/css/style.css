@@ -1,3 +1,16 @@
+// Navigation Variables
+$content-width: 1000px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$nav-background: #262626;
+$nav-font-color: #ffffff;
+$link-hover-color: #2581DC;
+
+// Outer navigation wrapper
+.navigation {
+  height: $nav-height;
+  background: $nav-background;
+}
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
@@ -30,133 +43,123 @@
   }
   
   #topbar .social-links a {
-	float: right;
-	color: rgb(245, 8, 8);
-	padding: 4px 12px;
 	display: block;
-	line-height: 1px;
-	border-left: 1px solid #e00707;
-	margin-bottom: 10px;
+	float: right;
+	color: rgb(7, 122, 97);
+	padding: 8px 15px;
+	line-height: .5px;
+	border-right: 1px solid #056e75;
+	
   }
   
   #topbar .social-links a:hover {
-	color: #2396f5;
+	color: #f80e0e;
   }
   
   #topbar .social-links a:first-child {
-	border-left: 0;
+	border-right: 0;
   }
 
-  /* Social Media styling */
   
-  a {
-	color: #4d4d4d;
-	text-decoration: none;
+/* end of header navigation */
+ /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/* Nav Menu Essentials */
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 50%; -ms-text-size-adjust: 50%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
 }
 
-.fb a, .fb:before, .fb { background: #3b5999; color: #3b5999; }
-.tw a, .tw:before, .tw { background: #55acee; color: #55acee; }
-.in a, .in:before, .in { background: #e4405f; color: #e4405f; }
-.gh a, .gh:before, .gh { background: #333333; color: #333333; }
 
-
-
-ul#buttons {
-	padding: 0;
-	margin: 0;
-	position: absolute;
-	top: 6%;
-	left: 85%;
-	transform: translate(-50%,-50%);
-	list-style: none;
-	display: grid;
-	grid-template-columns: repeat(4,1fr);
-	grid-gap: 10px;
+nav {
+    display: flex;
+    background-color: #ff0404;
+    font-family: sans-serif;
+    text-align: center;
+    align-content: center;
+    flex-flow: column;
+    font-size: 1em;
+	padding: 10px;
 }
 
-ul#buttons:before {
-	content: "We're Social";
-	font-size: 2em;
-	font-family: Arial;
-	font-weight: 300;
-	color: #4d4d4d;
-	position: absolute;
-	width: 100%;
-	text-align: center;
-	margin-top: -60px;
-}
-
-ul#buttons li {
-	width: 60px;
-	height: 60px;
-	line-height: 60px;
-	text-align: center;
-	box-sizing: border-box;
-	background: transparent;
-	border-radius: 12px;
-	position: relative;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 	overflow: hidden;
-	transition: .5s;
-	box-shadow: 0px 8px 16px -6px,
-				0px 0px 16px -6px;
+   
 }
 
-ul#buttons li a {
-	display: block;
-	widows: 100%;
-	height: 100%;
-	font-size: 1.25em;
-	background: transparent;
-	transition: .5s;
-	animation: icon-out .5s forwards;
-	animation-timing-function: cubic-bezier(0.5, -0.6, 1, 1);
+nav ul li {
+	display: inline;
+	padding: 10px;
+}
+nav ul li a {
+	text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-top:  1px solid rgba(0, 0, 0, 0.3);
+   
 }
 
-ul#buttons li:before {
-	content: "";
-	width: 90px;
-	height: 90px;
-	display: block;
-	position: absolute;
-	transform: rotate(-45deg) translate(-110%, -23px);
-	z-index: -2;
-	animation: back-out .5s forwards;
-	animation-timing-function: cubic-bezier(0.5, -0.6, 1, 1);
+nav ul li.active a{
+    background-color:#074e91;
+    color: #ffffff;
 }
 
-ul#buttons li:hover a {
-	animation: icon-in .5s forwards;
-	animation-timing-function: cubic-bezier(0, 0, 0.4, 1.6);
+nav ul li a:hover {
+    background-color: #373838;
+    transform: scale(1.1);
 }
 
-ul#buttons li:hover:before { 
-	animation: back-in .5s forwards;
-	animation-timing-function: cubic-bezier(0, 0, 0.4, 1.6);
+nav ul.hide{
+    display: none;
 }
 
-@keyframes back-in {
-    0% { transform: rotate(-45deg) translate(-110%, -23px); }
-	80% { transform: rotate(-45deg) translate(5%, -23px); }
-	100% { transform: rotate(-45deg) translate(0%, -23px); }
-}
+#nav-menu-container {
+	float: right;
+	margin: 0;
+  }
 
-@keyframes back-out {
-    0% { transform: rotate(-45deg) translate(0%, -23px); }
-	20% { transform: rotate(-45deg) translate(5%, -23px); }
-	100% { transform: rotate(-45deg) translate(-110%, -23px); }
-}
+.sub {
+		font-style: italic;
+		letter-spacing: 1pt;
+		color: rgb(6, 59, 109);
+		text-align: center;
+		font-size: .9rem;
+	}
+	.brand {
+		position: absolute;
+		padding-left: 20px;
+		float: left;
+		line-height: $nav-height;
+		text-transform: uppercase;
+		font-size: 1.4em;
+		a,
+		a:visited {
+		  color: $nav-font-color;
+		  text-decoration: none;
+		}
+	  }
+	/* New testig Nagivation CSS */
 
-@keyframes icon-in {
-    0% { font-size: 1.25em; }
-	80% { color: #fff; font-size: 1.5em; }
-	100% { color: #fff; font-size: 1.35em; }
-}
+	
 
-@keyframes icon-out {
-	0% { color: #fff; font-size: 1.35em; }
-	20% { color: #fff; font-size: 1.5em; }
-	100% { font-size: 1.25em; }
-}
+/* ...... side social media styling........*/
+
+
+  
+
 /* ...... end of social media styling........*/
 
 .content {
@@ -198,6 +201,7 @@ h1 {
     font-size: 24px;
     font-weight: 400;
     text-align: center;
+	align-items: center;
 }
 
 img {
@@ -641,3 +645,10 @@ img {
 	}
 
 }
+
+  /*----- Clearfix: Force an Element not to collapse -----*/
+  .clearfix::before {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
