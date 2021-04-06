@@ -28,7 +28,7 @@ fetch(requestURL)
             console.log(company[i].photo);
 
             h2.textContent = company[i].name;
-            services.textContent = "Company Services:" + " " + company[i].services;
+            address.textContent = "Company Services:" + " " + company[i].address;
             website.textContent = "Year Established:" + " " + company[i].website;
             email.textContent = "email address:" + " " + company[i].email;
             telephone.textContent = "company telephone:" + " " + company[i].telephone;
@@ -39,7 +39,7 @@ fetch(requestURL)
             textd.setAttribute('class', 'home_company_text');
 
             // build the display by updating as I loop through. Use an "if" statement to select just the towns I want.
-            // if (towns[i].name == 'Preston'|| towns[i].name == 'Fish Haven' || towns[i].name == 'Soda Springs') {
+
             card.appendChild(textd);
             textd.appendChild(h2);
             textd.appendChild(services);
