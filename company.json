@@ -1,0 +1,94 @@
+@ @ - 1, 5 + 1, 18 @ @ {
+    "company": [
+
+        {
+            "name": "CloudTen Telecoms",
+            "photo": "cloudtenlogo.jpg",
+            "address": "No 2, Lingu Crescent, Wuse 2, Abuja.",
+            "website": "www.hellocloudten.com",
+            "telephone": 0703 083 5572,
+            "email": "hellocloudten@gmail.com",
+            "services": "Mobile Telecommunications",
+        },
+
+        {
+            "name": "Next Cash & Carry",
+            "photo": "next3.jpg",
+            "address": "Plot 762 Ahmedu Bello Way, Kado, Abuja.",
+            "website": "www.nextcashandcarry.com.ng",
+            "telephone": 0816 683 4978,
+            "email": "nextcashandcarry@gmail.com",
+            "services": "Super store",
+        },
+
+        {
+            "name": "Oxford Manor College",
+            "photo": "omclogo.jpg",
+            "address": "No. 9, Magaji Muazu Crescent, Katampe Ext. Abuja.",
+            "website": "www.oxfordmanorcollege.org",
+            "telephone": 0817 606 7809,
+            "email": "info@oxfordmanorcollege.org",
+            "services": "high school",
+        },
+
+        {
+            "name": "Regent Primary School",
+            "photo": "regent.jpg",
+            "address": "No 1 Euphrates street, Maitama Abuja.",
+            "website": "www.regentschool.com",
+            "telephone": 0703 779 3322,
+            "email": "info@regentschoolabuja.com",
+            "services": "Elementary School",
+        },
+
+        {
+            "name": "MTN Nigeria Limited",
+            "photo": "mtn.jpg",
+            "address": "No 4 Madeira St, Maitama, Abuja",
+            "website": "www.mtnonline.com",
+            "telephone": 0903 000 9682,
+            "email": "info@mtnonline.com",
+            "services": "Mobile Telecommunications",
+        },
+
+        {
+            "name": "Zenith Bank PLC",
+            "photo": "zenith.jpg",
+            "address": "Ahmadu Bello Way, Area 11 Block A Efab Mall, Garki, Abuja",
+            "website": "www.hellocloudten.com",
+            "telephone": 01 262 0727,
+            "email": "zenithdirect@zenithbank.com",
+            "services": "banking and finance",
+        },
+
+        {
+            "name": "Cambridge Prep School",
+            "photo": "cpslogo.jpg",
+            "address": "No 4, Asheik Jarma str, Jabi, Abuja.",
+            "website": "www.cpsabuja.com",
+            "telephone": 0805 775 3448,
+            "email": "hello@cpsabuja.com",
+            "services": "Kindergarten",
+        },
+
+        {
+            "name": "Ethel Ventures Limited",
+            "photo": "ethel.jpg",
+            "address": "PolyPlaza, Ademola Adetokunbo Cres. Wuse 2, Abuja.",
+            "website": "www.ethelventures.com",
+            "telephone": 0903 000 1114,
+            "email": "info@ethelventures.com",
+            "services": "computer accessories",
+        },
+
+        {
+            "name": "Chicken Republic",
+            "photo": "chickenrep.png",
+            "address": "No 3 Damaturu Cres, Gwarinpa Estate, Abuja.",
+            "website": "www.chicken-republic.com/",
+            "telephone": 0809 015 1447,
+            "email": "franchising@foodconceptsplc.com",
+            "services": "Fast food restaurant",
+        },
+    ]
+}
