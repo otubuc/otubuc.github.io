@@ -1,0 +1,690 @@
+/* Closable Weather PopUp Window */
+
+#body {
+    background: rgb(2, 17, 2);
+}
+
+#example {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#icon-showcase {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px 1em 1em 1em;
+    align-items: center;
+}
+
+#icon-showcase>div {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+}
+
+#icon-tag {
+    border-radius: 5px 50% 50% 50%;
+    background: lightyellow;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.3em;
+    color: #c5c095;
+}
+
+
+/* Aspect Ratio Fix */
+
+#icon-tag::before {
+    content: "";
+    width: 1px;
+    margin-left: -1px;
+    float: left;
+    height: 0;
+    padding-top: 100%;
+}
+
+
+/*========================*/
+
+
+/*===============*/
+
+
+/* WeatherWidget */
+
+
+/* Localization */
+
+.weather_temp::before {
+    content: 'Current Temp';
+}
+
+.weather_wind::before {
+    content: 'Wind Speed';
+}
+
+.weather_aqi::before {
+    content: 'Air Quality';
+}
+
+.weather_temp::before,
+.weather_wind::before,
+.weather_aqi::before,
+.weather_forecast::before {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-stretch: extra-condensed;
+    font-size: .5em;
+}
+
+
+/* Main Styling */
+
+.weather_container {
+    display: flex;
+    width: max-content;
+    position: relative;
+}
+
+.weather_loading_spinner {
+    position: absolute;
+    border: 16px solid #ff000000;
+    border-radius: 50%;
+    border-top: 16px solid #6c6a6a7d;
+    width: 50%;
+    padding-top: 50%;
+    right: 0;
+    left: 0;
+    top 10%;
+    margin: auto;
+    animation: spin .7s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.weather_left_pane,
+.weather_right_pane {
+    transition: width 2s, height 2s;
+    transition-timing-function: ease-in;
+}
+
+
+/* Left Pane */
+
+.weather_left_pane {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.weather_temp,
+.weather_wind,
+.weather_aqi,
+.weather_forecast {
+    border-radius: .3em;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+}
+
+.weather_forecast {
+    display: flex;
+    font-size: .5em;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.weather_forecast_day_container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 7px;
+}
+
+.weather_forecast_icon {
+    flex: 1;
+}
+
+.weather_forecast_min_temp {
+    color: #ffffffb5;
+}
+
+.weather_wind_icon {
+    display: inline-block;
+    font-family: 'Wingdings', sans-serif;
+}
+
+.weather_wind_direction {
+    padding: 0 5px;
+}
+
+.weather_wind_unit,
+.weather_aqi_unit {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .7em;
+    margin-left: .3em;
+}
+
+
+/* Right pane */
+
+.weather_right_pane {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.weather_icon {
+    margin: 5px;
+    padding: 10px;
+}
+
+.weather_location {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1em;
+    border-radius: .3em;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 5px;
+    padding: 0 20px;
+}
+
+
+/* End of Right Pane */
+
+
+/* End of Main Styling */
+
+
+/* Start of Icon Animation CSS*/
+
+
+/* Fog Icon */
+
+#fog-icon {
+    margin: 10%;
+}
+
+#fog-icon #fog-left {
+    opacity: .78;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 50;
+    animation: fogleft 7s linear infinite;
+}
+
+#fog-icon #fog-right {
+    fill: none;
+    stroke: #f5f5f5;
+    stroke-width: 32;
+    animation: fogright 10s linear infinite;
+}
+
+@keyframes fogleft {
+    25% {
+        transform: translate(18.75%, -1%)
+    }
+    50% {
+        opacity: 1;
+        transform: translate(37.5%, 0);
+    }
+    75% {
+        tranform: translate(56.25%, 1%);
+    }
+    100% {
+        transform: translateX(75%);
+    }
+}
+
+@keyframes fogright {
+    25% {
+        transform: translate(-18.75%, 1%)
+    }
+    50% {
+        opacity: .76;
+        transform: translate(-37.5%, 0);
+    }
+    75% {
+        transform: translate(-56.25%, -1%);
+    }
+    100% {
+        transform: translateX(-75%);
+    }
+}
+
+
+/* End of Fog Icon*/
+
+
+/* Thunderstorm Icon */
+
+#thunderstorm-icon #cloud {
+    fill: grey;
+}
+
+#thunderstorm-icon #lightning-highlight {
+    fill: yellow;
+    animation: flash 5s cubic-bezier(0.15, 0.95, 0.71, -0.54) infinite;
+}
+
+#thunderstorm-icon #thunderbolt1,
+#thunderstorm-icon #thunderbolt2 {
+    fill: yellow;
+    animation: flash 5s cubic-bezier(0.15, 0.95, 0.71, -0.54) infinite;
+}
+
+#thunderstorm-icon #thunderbolt1 {
+    animation-delay: .1s;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0;
+    }
+}
+
+
+/* End of Thunderstorm Icon */
+
+
+/* Clouded Icon */
+
+#clouds-icon #right-cloud {
+    fill: grey;
+    animation: slideIn 1s ease-in-out;
+}
+
+#clouds-icon #left-cloud {
+    fill: #8b8b8b;
+    animation: slideInLeft 1s ease-in-out;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#clouds-icon #top-cloud {
+    fill: #686565;
+    animation: slideInTop 950ms ease-in-out;
+    animation-delay: .8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* End of Clouded Icon */
+
+
+/* Cloudy Icon */
+
+#cloudy-icon #cloud {
+    fill: grey;
+    animation: slideIn 930ms ease-in-out;
+}
+
+#cloudy-icon #sun {
+    fill: rgb(243, 230, 43);
+    opacity: 0;
+    animation: sunAppear .5s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 930ms;
+}
+
+.sb {
+    fill: rgb(241, 168, 31);
+    opacity: 0;
+    animation: rotateIn .4s ease-out, pulse 2s linear infinite;
+    animation-fill-mode: forwards;
+}
+
+#sb1,
+#sb2,
+#sb3,
+#sb4 {
+    transform-origin: 51.5% 63%;
+}
+
+#sb5,
+#sb6,
+#sb7,
+#sb8 {
+    transform-origin: 51.5% 63%;
+}
+
+#sb9 {
+    transform-origin: 51.5% 63%;
+}
+
+#sb9 {
+    animation-delay: 1.4s, 2s;
+}
+
+#sb8 {
+    animation-delay: 1.5s, 2.1s;
+}
+
+#sb7 {
+    animation-delay: 1.6s, 2.2s;
+}
+
+#sb6 {
+    animation-delay: 1.7s, 2.1s;
+}
+
+#sb5 {
+    animation-delay: 1.8s, 2.2s;
+}
+
+#sb4 {
+    animation-delay: 1.9s, 2.3s;
+}
+
+#sb3 {
+    animation-delay: 2.0s, 2.4s;
+}
+
+#sb2 {
+    animation-delay: 2.1s, 2.5s;
+}
+
+#sb1 {
+    animation-delay: 2.2s, 2.6s;
+}
+
+@keyframes rotateIn {
+    0% {
+        opacity: 0;
+        transform: rotate(-200deg);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+}
+
+@keyframes sunAppear {
+    0% {
+        opacity: 0;
+        transform: translate(-15%, 50%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    0% {
+        transform: scale(1);
+    }
+}
+
+
+/* End cloudy-icon*/
+
+
+/* Sunny icon */
+
+#sunny-icon {
+    fill: orange;
+}
+
+#sunny-icon #sun {
+    fill: orange;
+    animation: scaleOut 1s cubic-bezier(.56, 1.65, .66, .78);
+    transform-origin: 50% 50%;
+}
+
+#ssunbeams {
+    fill: orange;
+    transform: scale(0);
+    animation: scaleOut .8s cubic-bezier(.2, .97, 1, 1), rotate 25s linear infinite;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+    animation-delay: 1s, 2s;
+}
+
+@keyframes scaleOut {
+    0% {
+        transform: scale(0.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleOutRotate {
+    0% {
+        transform: scale(0.2) rotate(-360deg);
+    }
+    50% {
+        transform: scale(1) rotate(3deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-360deg) scale(1);
+    }
+    12.5% {
+        transform: rotate(-315deg) scale(1.1)
+    }
+    25% {
+        transform: rotate(-270deg) scale(1)
+    }
+    37.5% {
+        transform: rotate(-225deg) scale(1.1)
+    }
+    50% {
+        transform: rotate(-180deg) scale(1)
+    }
+    62.5% {
+        transform: rotate(-135deg) scale(1.1)
+    }
+    75% {
+        transform: rotate(-90deg) scale(1)
+    }
+    87.5% {
+        transform: rotate(-45deg) scale(1.1)
+    }
+    100% {
+        transform: rotate(0deg) scale(1)
+    }
+}
+
+
+/* End Sunny icon */
+
+
+/* End Icon Animation CSS */
+
+
+/*========================*/
+
+
+/* Odometer */
+
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-minimal {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    position: relative;
+}
+
+.odometer.odometer-auto-theme .odometer-digit,
+.odometer.odometer-theme-minimal .odometer-digit {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    position: relative;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,
+.odometer.odometer-theme-minimal .odometer-digit .odometer-digit-spacer {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    visibility: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,
+.odometer.odometer-theme-minimal .odometer-digit .odometer-digit-inner {
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon,
+.odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon {
+    display: block;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner,
+.odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon-inner {
+    display: block;
+    -webkit-backface-visibility: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-value,
+.odometer.odometer-theme-minimal .odometer-digit .odometer-value {
+    display: block;
+    -webkit-transform: translateZ(0);
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value,
+.odometer.odometer-theme-minimal .odometer-digit .odometer-value.odometer-last-value {
+    position: absolute;
+}
+
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner,
+.odometer.odometer-theme-minimal.odometer-animating-up .odometer-ribbon-inner {
+    -webkit-transition: -webkit-transform 2s;
+    -moz-transition: -moz-transform 2s;
+    -ms-transition: -ms-transform 2s;
+    -o-transition: -o-transform 2s;
+    transition: transform 2s;
+}
+
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner,
+.odometer.odometer-theme-minimal.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner,
+.odometer.odometer-theme-minimal.odometer-animating-down .odometer-ribbon-inner {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner,
+.odometer.odometer-theme-minimal.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+    -webkit-transition: -webkit-transform 2s;
+    -moz-transition: -moz-transform 2s;
+    -ms-transition: -ms-transform 2s;
+    -o-transition: -o-transform 2s;
+    transition: transform 2s;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
