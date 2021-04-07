@@ -1,1041 +1,1041 @@
-                                /*--------------------------------------------------------------
+                                        /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
-                            
-                            #topbar {
-                                padding: 10px 0;
-                                font-size: 14px;
-                            }
-                            
-                            #topbar .contact-info a {
-                                line-height: 1;
-                                color: #555;
-                            }
-                            
-                            #topbar .contact-info a:hover {
-                                color: #50d8af;
-                            }
-                            
-                            #topbar .contact-info i {
-                                color: #50d8af;
-                                padding: 4px;
-                            }
-                            
-                            #topbar .contact-info .fa-phone {
-                                padding-left: 20px;
-                                margin-left: 20px;
-                                border-left: 1px solid #e9e9e9;
-                            }
-                            
-                            #topbar .social-links a {
-                                float: right;
-                                color: #555;
-                                padding: 4px 12px;
-                                display: inline-block;
-                                line-height: 1px;
-                                border-left: 1px solid #e9e9e9;
-                            }
-                            
-                            #topbar .social-links a:hover {
-                                color: #50d8af;
-                            }
-                            
-                            #topbar .social-links a:first-child {
-                                border-right: 0;
-                            }
-                            
-                            * {
-                                box-sizing: border-box;
-                                padding: 0;
-                                margin: 0;
-                            }
-                            
-                            body {
-                                font-family: "Josefin Sans", sans-serif;
-                            }
-                            
-                            .navbar {
-                                font-size: 18px;
-                                background-image: linear-gradient(260deg, #f30b0b 0%, #04723f 100%);
-                                padding-bottom: 5px;
-                            }
-                            
-                            .main-nav {
-                                list-style-type: none;
-                                display: none;
-                            }
-                            
-                            .nav-links,
-                            .logo {
-                                text-decoration: none;
-                                color: rgba(255, 255, 255, 0.7);
-                            }
-                            
-                            .main-nav li {
-                                text-align: center;
-                                margin: 15px auto;
-                            }
-                            
-                            .logo {
-                                display: inline-block;
-                                font-size: 22px;
-                                margin-top: 15px;
-                                margin-left: 15px;
-                            }
-                            
-                            .navbar-toggle {
-                                position: absolute;
-                                top: 10px;
-                                right: 20px;
-                                cursor: pointer;
-                                color: rgba(255, 255, 255, 0.8);
-                                font-size: 24px;
-                            }
-                            
-                            .active {
-                                display: block;
-                            }
-                            
-                            @media screen and (min-width: 768px) {
-                                .navbar {
-                                    display: flex;
-                                    justify-content: space-between;
-                                    padding-bottom: 0;
-                                    height: 100px;
-                                    align-items: center;
-                                }
-                                .main-nav {
-                                    display: flex;
-                                    margin-right: 30px;
-                                    flex-direction: row;
-                                    justify-content: flex-end;
-                                }
-                                .main-nav li {
-                                    margin: 0;
-                                }
-                                .nav-links {
-                                    margin-left: 40px;
-                                }
-                                .logo {
-                                    margin-top: 0;
-                                }
-                                .navbar-toggle {
-                                    display: none;
-                                }
-                                .logo:hover,
-                                .nav-links:hover {
-                                    color: rgba(255, 255, 255, 1);
-                                }
-                            }
-                            
-                            .sub {
-                                font-style: italic;
-                                letter-spacing: 1pt;
-                                color: rgb(3, 18, 68);
-                                text-align: center;
-                                font-size: .9rem;
-                            }
-                            
-                            #blink {
-                                float: right;
-                                font-size: 16px;
-                                margin-right: 15px;
-                                font-weight: bold;
-                                color: #f70808;
-                                transition: 0.3s;
-                            }
-                            /* ...... content  section........*/
-                            
-                            .responsive {
-                                display: block;
-                                margin: 0 auto;
-                                max-width: 100%;
-                            }
-                            /* ...... end of social media styling........*/
-                            
-                            .content {
-                                width: 1200px;
-                                margin: auto;
-                                padding: 55px;
-                            }
-                            /* ...... cards styling........*/
-                            /* Font */
-                            
-                            @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-                            /* Design */
-                            
-                            *,
-                            *::before,
-                            *::after {
-                                box-sizing: border-box;
-                            }
-                            
-                            html {
-                                background-color: #ecf9ff;
-                            }
-                            
-                            body {
-                                color: #272727;
-                                font-family: 'Quicksand', serif;
-                                font-style: normal;
-                                font-weight: 400;
-                                letter-spacing: 0;
-                                padding: 1rem;
-                            }
-                            
-                            .main {
-                                max-width: 1200px;
-                                margin: 0 auto;
-                            }
-                            
-                            h1 {
-                                font-size: 24px;
-                                font-weight: 400;
-                                text-align: center;
-                                align-items: center;
-                            }
-                            
-                            img {
-                                height: auto;
-                                max-width: 100%;
-                                vertical-align: middle;
-                                border: 1px solid white;
-                                box-shadow: 8px;
-                            }
-                            
-                            .btn {
-                                color: #ffffff;
-                                padding: 0.8rem;
-                                font-size: 14px;
-                                text-transform: uppercase;
-                                border-radius: 4px;
-                                font-weight: 400;
-                                display: block;
-                                width: 100%;
-                                cursor: pointer;
-                                border: 1px solid rgba(255, 255, 255, 0.2);
-                                background: transparent;
-                            }
-                            
-                            .btn:hover {
-                                background-color: rgba(255, 255, 255, 0.12);
-                            }
-                            
-                            .cards {
-                                display: flex;
-                                flex-wrap: wrap;
-                                list-style: none;
-                                margin: 0;
-                                padding: 0;
-                            }
-                            
-                            .cards_item {
-                                display: flex;
-                                padding: 1rem;
-                            }
-                            
-                            @media (min-width: 40rem) {
-                                .cards_item {
-                                    width: 50%;
-                                }
-                            }
-                            
-                            @media (min-width: 56rem) {
-                                .cards_item {
-                                    width: 33.3333%;
-                                }
-                            }
-                            
-                            .card {
-                                background-color: white;
-                                border-radius: 0.25rem;
-                                box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-                                display: flex;
-                                flex-direction: column;
-                                overflow: hidden;
-                            }
-                            
-                            .card_content {
-                                padding: 1rem;
-                                background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
-                            }
-                            
-                            .card_title {
-                                color: #ffffff;
-                                font-size: 1.1rem;
-                                font-weight: 700;
-                                letter-spacing: 1px;
-                                text-transform: capitalize;
-                                margin: 0px;
-                            }
-                            
-                            .card_text {
-                                color: #ffffff;
-                                font-size: 0.875rem;
-                                line-height: 1.5;
-                                margin-bottom: 1.25rem;
-                                font-weight: 400;
-                            }
-                            
-                            .made_by {
-                                font-weight: 400;
-                                font-size: 13px;
-                                margin-top: 35px;
-                                text-align: center;
-                            }
-                            /* ---------- membership pricing --------- */
-                            
-                            * {
-                                box-sizing: border-box;
-                            }
-                            
-                            .columns {
-                                float: left;
-                                width: 25%;
-                                padding: 8px;
-                            }
-                            
-                            .price {
-                                list-style-type: none;
-                                border: 1px solid #eee;
-                                margin: 0;
-                                padding: 0;
-                                -webkit-transition: 0.3s;
-                                transition: 0.3s;
-                            }
-                            
-                            .price:hover {
-                                box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
-                            }
-                            
-                            .price .header {
-                                background-color: #111;
-                                color: white;
-                                font-size: 25px;
-                            }
-                            
-                            .price li {
-                                border-bottom: 1px solid #eee;
-                                padding: 20px;
-                                text-align: center;
-                            }
-                            
-                            .price .grey {
-                                background-color: #eee;
-                                font-size: 20px;
-                            }
-                            
-                            .button {
-                                background-color: #4CAF50;
-                                border: none;
-                                color: white;
-                                padding: 10px 25px;
-                                text-align: center;
-                                text-decoration: none;
-                                font-size: 18px;
-                            }
-                            
-                            @media only screen and (max-width: 800px) {
-                                .columns {
-                                    width: 50%;
-                                }
-                            }
-                            
-                            @media only screen and (max-width: 600px) {
-                                .columns {
-                                    width: 100%;
-                                }
-                            }
-                            /*---------------ModAL---------------------*/
-                            
-                            .modal {
-                                display: none;
-                                position: fixed;
-                                padding-top: 50px;
-                                left: 0;
-                                top: 0;
-                                width: 100%;
-                                height: 100%;
-                                background-color: rgb(0, 0, 0);
-                                background-color: rgba(0, 0, 0, 0.5);
-                            }
-                            
-                            .modal-content {
-                                position: relative;
-                                background-color: rgb(144, 248, 9);
-                                padding: 20px;
-                                margin: auto;
-                                width: 50%;
-                                height: auto;
-                                -webkit-animation-name: animatetop;
-                                -webkit-animation-duration: 0.4s;
-                                animation-name: animatetop;
-                                animation-duration: 0.4s
-                            }
-                            
-                            .close-btn {
-                                float: right;
-                                color: rgb(250, 6, 6);
-                                font-size: 24px;
-                                font-weight: bold;
-                            }
-                            
-                            .close-btn:hover {
-                                color: rgb(46, 110, 230);
-                            }
-                            
-                            @-webkit-keyframes animatetop {
-                                from {
-                                    top: -300px;
-                                    opacity: 0
-                                }
-                                to {
-                                    top: 0;
-                                    opacity: 1
-                                }
-                            }
-                            
-                            @keyframes animatetop {
-                                from {
-                                    top: -300px;
-                                    opacity: 0
-                                }
-                                to {
-                                    top: 0;
-                                    opacity: 1
-                                }
-                            }
-                            /*--------------------weather display---------*/
-                            
-                            .stats {
-                                position: absolute;
-                                width: 270px;
-                                top: 350px;
-                                right: 5rem;
-                                float: right;
-                                background: radial-gradient(#eee, #0ed88b);
-                                border: 1px solid rgb(55, 231, 187);
-                                padding: .3rem;
-                                box-shadow: 0 0 30px #111;
-                                opacity: .8;
-                                font-size: .8em;
-                            }
-                            
-                            @media only screen and (max-width: 600px) {
-                                .stats {
-                                    top: 450px;
-                                    left: 20px;
-                                }
-                            }
-                            
-                            @media only screen and (max-width: 300px) {
-                                .stats {
-                                    top: 610px;
-                                    left: 7px;
-                                    font-size: .6em;
-                                }
-                            }
-                            /*-------------3 Day weather forecast--------*/
-                            
-                            .weather {
-                                position: absolute;
-                                bottom: 15rem;
-                                background-color: rgba(132, 218, 213, 0.705);
-                                border-radius: .5rem;
-                                left: 65%;
-                                padding: 1rem;
-                                padding-top: 0;
-                                box-shadow: 1px 1px 10px #d7e2d7;
-                                font-size: .4rem;
-                                color: #000a08;
-                            }
-                            
-                            .fco {
-                                text-align: center;
-                                font-size: 1rem;
-                                margin: .5rem auto;
-                                box-shadow: 1px 1px 8px #d9ece8;
-                            }
-                            
-                            .fc {
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-around;
-                                align-items: center;
-                                max-width: 500px;
-                                background-color: #36c0a7;
-                                margin: auto;
-                                border-radius: .5rem;
-                            }
-                            
-                            section.tab img {
-                                width: 100%;
-                                box-shadow: 1px 1px 8px #E1F1FF;
-                                border-radius: .5rem;
-                            }
-                            
-                            section.tab h2 {
-                                margin: auto;
-                                text-align: center;
-                                color: #012522;
-                            }
-                            
-                            section.tab h3 {
-                                margin: 0 0 .5rem 0;
-                                text-align: center;
-                                color: #043b3b;
-                            }
-                            /*------------------Cookie Notice--------*/
-                            
-                            @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
-                            .cookie-alert {
-                                position: fixed;
-                                bottom: 15px;
-                                right: 15px;
-                                width: 320px;
-                                margin: 0 !important;
-                                z-index: 999;
-                                opacity: 0;
-                                transform: translateY(100%);
-                                transition: all 500ms ease-out;
-                            }
-                            
-                            .cookie-alert.show {
-                                opacity: 1;
-                                transform: translateY(0%);
-                                transition-delay: 1000ms;
-                            }
-                            /*----------directory json styling ---------*/
-                            
-                            div.company_div {
-                                display: block;
-                                margin: auto;
-                                padding: 2%;
-                            }
-                            
-                            img.companyimg {
-                                width: 96%;
-                                padding: 2%;
-                                max-width: 400px;
-                                box-shadow: 0 4px 8px 0 rgb(0 0 0 / 80%)
-                            }
-                            
-                            section.home_sect {
-                                box-shadow: 0 4px 8px 0 rgb(0 0 0 / 80%);
-                                text-align: center;
-                                padding-top: 1rem;
-                                padding-bottom: 1rem;
-                                margin-top: 2rem;
-                                margin-bottom: 0;
-                            }
-                            
-                            section.home_hide {
-                                display: none;
-                            }
-                            
-                            @media only screen and (min-width: 30rem) {
-                                section.home_sect {
-                                    display: grid;
-                                    grid-template-columns: 1fr 1fr;
-                                    grid-gap: 1rem;
-                                    padding: 2rem;
-                                }
-                                section.home_sect:nth-child(6) img {
-                                    grid-column: 1/2;
-                                }
-                                section.home_sect:nth-child(3) div.home_company_text {
-                                    grid-column: 2/3;
-                                    grid-row: 1;
-                                }
-                                /*-------------- Registration page ----------*/
-                                form label.top input,
-                                form label.top select {
-                                    -webkit-appearance: none;
-                                    width: 100%;
-                                    display: block;
-                                    color: rgb(49, 48, 48);
-                                    background-color: rgba(230, 178, 178, 0.1);
-                                    font-size: 1rem;
-                                    border: solid 1px #999;
-                                    border-radius: 6px;
-                                    padding: .75rem;
-                                    max-width: 20rem;
-                                }
-                                form legend {
-                                    color: #41042e;
-                                    margin: 0 1rem;
-                                    padding: 0 .5rem;
-                                    font-size: 1.5em;
-                                }
-                                form label.top,
-                                form div {
-                                    display: block;
-                                    padding-top: 1rem;
-                                    color: rgb(4, 52, 58);
-                                    font-size: 1rem;
-                                    text-align: left;
-                                }
-                                form fieldset {
-                                    margin: 2em 2em;
-                                    border: 2px solid #41042e;
-                                    border-radius: 8px;
-                                    padding: .5rem 2%;
-                                }
-                                form label.sbs {
-                                    display: block;
-                                    padding: .75rem 0;
-                                    color: rgb(4, 52, 58);
-                                }
-                                form input.submitBtn {
-                                    border: none;
-                                    background-color: #41042e;
-                                    color: white;
-                                    border-radius: 1rem;
-                                    padding: .85rem 1.5rem;
-                                    margin: 0 0 2rem 2%;
-                                    width: 96%;
-                                    max-width: 10rem;
-                                }
-                                form label.top input:required {
-                                    border-left: #41042e solid 8px;
-                                }
-                                form label.top input:required:valid {
-                                    border-left: #0dda7a solid 8px;
-                                }
-                                .flexly {
-                                    display: flex;
-                                    align-items: center;
-                                }
-                                #ratingvalue {
-                                    margin: 0 15px;
-                                    color: #f70b0b;
-                                }
-                                textarea {
-                                    border: solid 2px rgb(11, 110, 52);
-                                    border-radius: 5px;
-                                    padding: .75rem;
-                                    width: 100%;
-                                }
-                                @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
-                                * {
-                                    margin: 0;
-                                    padding: 0;
-                                    box-sizing: border-box;
-                                    -webkit-box-sizing: border-box;
-                                    -moz-box-sizing: border-box;
-                                    -webkit-font-smoothing: antialiased;
-                                    -moz-font-smoothing: antialiased;
-                                    -o-font-smoothing: antialiased;
-                                    font-smoothing: antialiased;
-                                    text-rendering: optimizeLegibility;
-                                }
-                                .contain {
-                                    font-family: "Roboto", Helvetica, Arial, sans-serif;
-                                    font-weight: 100;
-                                    font-size: 12px;
-                                    line-height: 30px;
-                                    color: #777;
-                                    background: #4CAF50;
-                                    max-width: 600px;
-                                    width: 100%;
-                                    margin: 0 auto;
-                                    position: relative;
-                                }
-                                #contact input[type="text"],
-                                #contact input[type="email"],
-                                #contact input[type="tel"],
-                                #contact input[type="url"],
-                                #contact textarea,
-                                #contact button[type="submit"] {
-                                    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
-                                }
-                                #contact {
-                                    background: #F9F9F9;
-                                    padding: 25px;
-                                    margin: 150px 0;
-                                    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-                                }
-                                #contact h3 {
-                                    display: block;
-                                    font-size: 30px;
-                                    font-weight: 300;
-                                    margin-bottom: 10px;
-                                }
-                                #contact h4 {
-                                    margin: 5px 0 15px;
-                                    display: block;
-                                    font-size: 13px;
-                                    font-weight: 400;
-                                }
-                                fieldset {
-                                    border: medium none !important;
-                                    margin: 0 0 10px;
-                                    min-width: 100%;
-                                    padding: 0;
-                                    width: 100%;
-                                }
-                                #contact input[type="text"],
-                                #contact input[type="email"],
-                                #contact input[type="tel"],
-                                #contact input[type="url"],
-                                #contact textarea {
-                                    width: 100%;
-                                    border: 1px solid #ccc;
-                                    background: #FFF;
-                                    margin: 0 0 5px;
-                                    padding: 10px;
-                                }
-                                #contact input[type="text"]:hover,
-                                #contact input[type="email"]:hover,
-                                #contact input[type="tel"]:hover,
-                                #contact input[type="url"]:hover,
-                                #contact textarea:hover {
-                                    -webkit-transition: border-color 0.3s ease-in-out;
-                                    -moz-transition: border-color 0.3s ease-in-out;
-                                    transition: border-color 0.3s ease-in-out;
-                                    border: 1px solid #aaa;
-                                }
-                                #contact textarea {
-                                    height: 100px;
-                                    max-width: 100%;
-                                    resize: none;
-                                }
-                                #contact button[type="submit"] {
-                                    cursor: pointer;
-                                    width: 50%;
-                                    border: none;
-                                    background: #4CAF50;
-                                    color: #FFF;
-                                    margin: 0 0 5px;
-                                    padding: 10px;
-                                    font-size: 15px;
-                                }
-                                #contact button[type="submit"]:hover {
-                                    background: #43A047;
-                                    -webkit-transition: background 0.3s ease-in-out;
-                                    -moz-transition: background 0.3s ease-in-out;
-                                    transition: background-color 0.3s ease-in-out;
-                                }
-                                #contact button[type="submit"]:active {
-                                    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-                                }
-                                .copyright {
-                                    text-align: center;
-                                }
-                                #contact input:focus,
-                                #contact textarea:focus {
-                                    outline: 0;
-                                    border: 1px solid #aaa;
-                                }
-                                 ::-webkit-input-placeholder {
-                                    color: #888;
-                                }
-                                 :-moz-placeholder {
-                                    color: #888;
-                                }
-                                 ::-moz-placeholder {
-                                    color: #888;
-                                }
-                                 :-ms-input-placeholder {
-                                    color: #888;
-                                }
-                                /*-------------- End of Registration page ----------*/
-                                /*------------------------------End of Events styling-----------------------------*/
-                                @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-                                body {
-                                    margin: 0;
-                                    padding: 0;
-                                    font-family: 'Roboto Condensed', sans-serif;
-                                }
-                                #eventsection {
-                                    display: grid;
-                                    grid-gap: 0;
-                                    grid-template-columns: 1fr 1fr;
-                                    grid-template-rows: 1fr 1fr;
-                                    grid-template-areas: "main main" "event event";
-                                    background-size: cover;
-                                    background-position: center;
-                                    min-height: 100vh;
-                                }
-                                @media (min-width: 1200px) {
-                                    section {
-                                        grid-template-areas: "main event" "main event";
+                                    
+                                    #topbar {
+                                        padding: 10px 0;
+                                        font-size: 14px;
                                     }
-                                }
-                                .leftBox {
-                                    grid-area: main;
-                                    padding: 50px;
-                                    box-sizing: border-box;
-                                }
-                                section .leftBox .content {
-                                    color: #fff;
-                                    background-color: rgba(0, 0, 0, 0.5);
-                                    padding: 40px;
-                                    transition: 0.5s;
-                                }
-                                section .leftBox .content:hover {
-                                    background-color: #e91e63;
-                                }
-                                section .leftBox .content h1 {
-                                    margin: 0;
-                                    padding: 0;
-                                    font-size: 50px;
-                                    text-transform: uppercase;
-                                }
-                                section .leftBox .content p {
-                                    margin: 10px 0 0;
-                                    padding: 0;
-                                }
-                                section .events {
-                                    grid-area: event;
-                                    background-color: rgba(0, 0, 0, 0.5);
-                                    box-sizing: border-box;
-                                }
-                                section .events ul {
-                                    margin: 0;
-                                    padding: 40px;
-                                    list-style: none;
-                                }
-                                section .events ul li {
-                                    background-color: #fff;
-                                    box-sizing: border-box;
-                                    display: grid;
-                                    grid-template-columns: 30% 1fr;
-                                    grid-template-rows: 1fr;
-                                    grid-gap: 0;
-                                    grid-template-areas: "time time" "detail detail";
-                                    margin-bottom: 20px;
-                                }
-                                @media (min-width: 768px) {
-                                    section .events ul li {
-                                        grid-template-areas: "time detail" "time detail";
+                                    
+                                    #topbar .contact-info a {
+                                        line-height: 1;
+                                        color: #555;
                                     }
-                                }
-                                section .events ul li .time {
-                                    grid-area: time;
-                                    position: relative;
-                                    padding: 8% 40%;
-                                    background-color: #262626;
-                                    box-sizing: border-box;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    width: 100%;
-                                    transition: 0.5s;
-                                }
-                                section .events ul li:hover .time {
-                                    background-color: #e91e63;
-                                }
-                                section .events ul li .time h2 {
-                                    margin: 0;
-                                    padding: 0;
-                                    color: #fff;
-                                    font-size: 60px;
-                                    line-height: 30px;
-                                }
-                                section .events ul li .time h2 span {
-                                    font-size: 30px;
-                                }
-                                section .events ul li .details {
-                                    grid-area: detail;
-                                    padding: 20px 20px 32px;
-                                    background-color: #fff;
-                                    box-sizing: border-box;
-                                }
-                                section .events ul li .details h3 {
-                                    margin: 0;
-                                    padding: 0;
-                                    font-size: 22px;
-                                }
-                                section .events ul li .details p {
-                                    margin: 10px 0 0;
-                                    padding: 0;
-                                    font-size: 16px;
-                                }
-                                section .events ul li .details a {
-                                    display: inline-block;
-                                    text-decoration: none;
-                                    padding: 10px 15px;
-                                    border: 2px solid #262626;
-                                    margin-top: 16px;
-                                    font-size: 18px;
-                                    transition: 0.5s;
-                                }
-                                section .events ul li .details a:hover {
-                                    background-color: #e91e63;
-                                    color: #fff;
-                                    border-color: #e91e63;
-                                }
-                                /*------------------------------End of Events styling-----------------------------*/
-                                /* ..... footer Section ....*/
-                                * {
-                                    font-family: Open Sans;
-                                }
-                                .footer-distributed {
-                                    background: rgb(109, 109, 109);
-                                    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-                                    box-sizing: border-box;
-                                    max-width: 1200px;
-                                    text-align: left;
-                                    font: bold 16px sans-serif;
-                                    padding: 55px 50px;
-                                    margin: auto;
-                                }
-                                #footer-distributed {
-                                    background: rgb(255, 255, 255);
-                                    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-                                    box-sizing: border-box;
-                                    max-width: 1200px;
-                                    text-align: left;
-                                    font: bold 16px sans-serif;
-                                    padding: 5px;
-                                    margin: auto;
-                                    vertical-align: center;
-                                }
-                                .footer-distributed .footer-left,
-                                .footer-distributed .footer-center,
-                                .footer-distributed .footer-right {
-                                    display: inline-block;
-                                    vertical-align: top;
-                                }
-                                /* Footer left */
-                                .footer-distributed .footer-left {
-                                    width: 40%;
-                                }
-                                /* The company logo */
-                                .footer-distributed h3 {
-                                    color: #ffffff;
-                                    font: normal 36px 'Open Sans', cursive;
-                                    margin: 0;
-                                }
-                                .footer-distributed h3 span {
-                                    color: rgb(255, 255, 255);
-                                }
-                                /* Footer links */
-                                .footer-distributed .footer-links {
-                                    color: #ffffff;
-                                    margin: 20px 0 12px;
-                                    padding: 0;
-                                }
-                                .footer-distributed .footer-links a {
-                                    display: inline-block;
-                                    line-height: 1.8;
-                                    font-weight: 400;
-                                    text-decoration: none;
-                                    color: inherit;
-                                }
-                                .footer-distributed .footer-company-name {
-                                    color: rgb(255, 255, 255);
-                                    font-size: 14px;
-                                    font-weight: normal;
-                                    margin: 0;
-                                }
-                                /* Footer Center */
-                                .footer-distributed .footer-center {
-                                    width: 35%;
-                                }
-                                .footer-distributed .footer-center i {
-                                    background-color: #33383b;
-                                    color: #ffffff;
-                                    font-size: 25px;
-                                    width: 38px;
-                                    height: 38px;
-                                    border-radius: 50%;
-                                    text-align: center;
-                                    line-height: 42px;
-                                    margin: 10px 15px;
-                                    vertical-align: middle;
-                                }
-                                .footer-distributed .footer-center i.fa-envelope {
-                                    font-size: 17px;
-                                    line-height: 38px;
-                                }
-                                .footer-distributed .footer-center p {
-                                    display: inline-block;
-                                    color: #ffffff;
-                                    font-weight: 400;
-                                    vertical-align: middle;
-                                    margin: 0;
-                                }
-                                .footer-distributed .footer-center p span {
-                                    display: block;
-                                    font-weight: normal;
-                                    font-size: 14px;
-                                    line-height: 2;
-                                }
-                                .footer-distributed .footer-center p a {
-                                    color: rgb(255, 255, 255);
-                                    text-decoration: none;
-                                    ;
-                                }
-                                .footer-distributed .footer-links a:before {
-                                    content: "|";
-                                    font-weight: 300;
-                                    font-size: 20px;
-                                    left: 0;
-                                    color: #fff;
-                                    display: inline-block;
-                                    padding-right: 5px;
-                                }
-                                .footer-distributed .footer-links .link-1:before {
-                                    content: none;
-                                }
-                                /* Footer Right */
-                                .footer-distributed .footer-right {
-                                    width: 20%;
-                                }
-                                .footer-distributed .footer-company-about {
-                                    line-height: 20px;
-                                    color: #fcf9fb;
-                                    font-size: 13px;
-                                    font-weight: normal;
-                                    margin: 0;
-                                }
-                                .footer-distributed .footer-company-about span {
-                                    display: block;
-                                    color: #ffffff;
-                                    font-size: 14px;
-                                    font-weight: bold;
-                                    margin-bottom: 20px;
-                                }
-                                .footer-distributed .footer-icons {
-                                    margin-top: 25px;
-                                }
-                                .footer-distributed .footer-icons a {
-                                    display: inline-block;
-                                    width: 35px;
-                                    height: 35px;
-                                    cursor: pointer;
-                                    background-color: #fa06b1;
-                                    border-radius: 2px;
-                                    font-size: 20px;
-                                    color: #ffffff;
-                                    text-align: center;
-                                    line-height: 35px;
-                                    margin-right: 3px;
-                                    margin-bottom: 5px;
-                                }
-                                /* If I don't want the footer to be responsive, I can remove these media queries */
-                                @media (max-width: 880px) {
-                                    .footer-distributed {
-                                        font: bold 14px sans-serif;
+                                    
+                                    #topbar .contact-info a:hover {
+                                        color: #50d8af;
                                     }
-                                    .footer-distributed .footer-left,
-                                    .footer-distributed .footer-center,
-                                    .footer-distributed .footer-right {
+                                    
+                                    #topbar .contact-info i {
+                                        color: #50d8af;
+                                        padding: 4px;
+                                    }
+                                    
+                                    #topbar .contact-info .fa-phone {
+                                        padding-left: 20px;
+                                        margin-left: 20px;
+                                        border-left: 1px solid #e9e9e9;
+                                    }
+                                    
+                                    #topbar .social-links a {
+                                        float: right;
+                                        color: #555;
+                                        padding: 4px 12px;
+                                        display: inline-block;
+                                        line-height: 1px;
+                                        border-left: 1px solid #e9e9e9;
+                                    }
+                                    
+                                    #topbar .social-links a:hover {
+                                        color: #50d8af;
+                                    }
+                                    
+                                    #topbar .social-links a:first-child {
+                                        border-right: 0;
+                                    }
+                                    
+                                    * {
+                                        box-sizing: border-box;
+                                        padding: 0;
+                                        margin: 0;
+                                    }
+                                    
+                                    body {
+                                        font-family: "Josefin Sans", sans-serif;
+                                    }
+                                    
+                                    .navbar {
+                                        font-size: 18px;
+                                        background-image: linear-gradient(260deg, #f30b0b 0%, #04723f 100%);
+                                        padding-bottom: 5px;
+                                    }
+                                    
+                                    .main-nav {
+                                        list-style-type: none;
+                                        display: none;
+                                    }
+                                    
+                                    .nav-links,
+                                    .logo {
+                                        text-decoration: none;
+                                        color: rgba(255, 255, 255, 0.7);
+                                    }
+                                    
+                                    .main-nav li {
+                                        text-align: center;
+                                        margin: 15px auto;
+                                    }
+                                    
+                                    .logo {
+                                        display: inline-block;
+                                        font-size: 22px;
+                                        margin-top: 15px;
+                                        margin-left: 15px;
+                                    }
+                                    
+                                    .navbar-toggle {
+                                        position: absolute;
+                                        top: 10px;
+                                        right: 20px;
+                                        cursor: pointer;
+                                        color: rgba(255, 255, 255, 0.8);
+                                        font-size: 24px;
+                                    }
+                                    
+                                    .active {
+                                        display: block;
+                                    }
+                                    
+                                    @media screen and (min-width: 768px) {
+                                        .navbar {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            padding-bottom: 0;
+                                            height: 100px;
+                                            align-items: center;
+                                        }
+                                        .main-nav {
+                                            display: flex;
+                                            margin-right: 30px;
+                                            flex-direction: row;
+                                            justify-content: flex-end;
+                                        }
+                                        .main-nav li {
+                                            margin: 0;
+                                        }
+                                        .nav-links {
+                                            margin-left: 40px;
+                                        }
+                                        .logo {
+                                            margin-top: 0;
+                                        }
+                                        .navbar-toggle {
+                                            display: none;
+                                        }
+                                        .logo:hover,
+                                        .nav-links:hover {
+                                            color: rgba(255, 255, 255, 1);
+                                        }
+                                    }
+                                    
+                                    .sub {
+                                        font-style: italic;
+                                        letter-spacing: 1pt;
+                                        color: rgb(3, 18, 68);
+                                        text-align: center;
+                                        font-size: .9rem;
+                                    }
+                                    
+                                    #blink {
+                                        float: right;
+                                        font-size: 16px;
+                                        margin-right: 15px;
+                                        font-weight: bold;
+                                        color: #f70808;
+                                        transition: 0.3s;
+                                    }
+                                    /* ...... content  section........*/
+                                    
+                                    .responsive {
+                                        display: block;
+                                        margin: 0 auto;
+                                        max-width: 100%;
+                                    }
+                                    /* ...... end of social media styling........*/
+                                    
+                                    .content {
+                                        width: 1200px;
+                                        margin: auto;
+                                        padding: 55px;
+                                    }
+                                    /* ...... cards styling........*/
+                                    /* Font */
+                                    
+                                    @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+                                    /* Design */
+                                    
+                                    *,
+                                    *::before,
+                                    *::after {
+                                        box-sizing: border-box;
+                                    }
+                                    
+                                    html {
+                                        background-color: #ecf9ff;
+                                    }
+                                    
+                                    body {
+                                        color: #272727;
+                                        font-family: 'Quicksand', serif;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        letter-spacing: 0;
+                                        padding: 1rem;
+                                    }
+                                    
+                                    .main {
+                                        max-width: 1200px;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    h1 {
+                                        font-size: 24px;
+                                        font-weight: 400;
+                                        text-align: center;
+                                        align-items: center;
+                                    }
+                                    
+                                    img {
+                                        height: auto;
+                                        max-width: 100%;
+                                        vertical-align: middle;
+                                        border: 1px solid white;
+                                        box-shadow: 8px;
+                                    }
+                                    
+                                    .btn {
+                                        color: #ffffff;
+                                        padding: 0.8rem;
+                                        font-size: 14px;
+                                        text-transform: uppercase;
+                                        border-radius: 4px;
+                                        font-weight: 400;
                                         display: block;
                                         width: 100%;
-                                        margin-bottom: 40px;
+                                        cursor: pointer;
+                                        border: 1px solid rgba(255, 255, 255, 0.2);
+                                        background: transparent;
+                                    }
+                                    
+                                    .btn:hover {
+                                        background-color: rgba(255, 255, 255, 0.12);
+                                    }
+                                    
+                                    .cards {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        list-style: none;
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+                                    
+                                    .cards_item {
+                                        display: flex;
+                                        padding: 1rem;
+                                    }
+                                    
+                                    @media (min-width: 40rem) {
+                                        .cards_item {
+                                            width: 50%;
+                                        }
+                                    }
+                                    
+                                    @media (min-width: 56rem) {
+                                        .cards_item {
+                                            width: 33.3333%;
+                                        }
+                                    }
+                                    
+                                    .card {
+                                        background-color: white;
+                                        border-radius: 0.25rem;
+                                        box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+                                        display: flex;
+                                        flex-direction: column;
+                                        overflow: hidden;
+                                    }
+                                    
+                                    .card_content {
+                                        padding: 1rem;
+                                        background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+                                    }
+                                    
+                                    .card_title {
+                                        color: #ffffff;
+                                        font-size: 1.1rem;
+                                        font-weight: 700;
+                                        letter-spacing: 1px;
+                                        text-transform: capitalize;
+                                        margin: 0px;
+                                    }
+                                    
+                                    .card_text {
+                                        color: #ffffff;
+                                        font-size: 0.875rem;
+                                        line-height: 1.5;
+                                        margin-bottom: 1.25rem;
+                                        font-weight: 400;
+                                    }
+                                    
+                                    .made_by {
+                                        font-weight: 400;
+                                        font-size: 13px;
+                                        margin-top: 35px;
                                         text-align: center;
                                     }
-                                    .footer-distributed .footer-center i {
-                                        margin-left: 0;
+                                    /* ---------- membership pricing --------- */
+                                    
+                                    * {
+                                        box-sizing: border-box;
                                     }
-                                }
-                                /*----- Clearfix: Force an Element not to collapse -----*/
-                                .clearfix::before {
-                                    content: "";
-                                    display: table;
-                                    clear: both;
-                                    1
-                                }
+                                    
+                                    .columns {
+                                        float: left;
+                                        width: 25%;
+                                        padding: 8px;
+                                    }
+                                    
+                                    .price {
+                                        list-style-type: none;
+                                        border: 1px solid #eee;
+                                        margin: 0;
+                                        padding: 0;
+                                        -webkit-transition: 0.3s;
+                                        transition: 0.3s;
+                                    }
+                                    
+                                    .price:hover {
+                                        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+                                    }
+                                    
+                                    .price .header {
+                                        background-color: #111;
+                                        color: white;
+                                        font-size: 25px;
+                                    }
+                                    
+                                    .price li {
+                                        border-bottom: 1px solid #eee;
+                                        padding: 20px;
+                                        text-align: center;
+                                    }
+                                    
+                                    .price .grey {
+                                        background-color: #eee;
+                                        font-size: 20px;
+                                    }
+                                    
+                                    .button {
+                                        background-color: #4CAF50;
+                                        border: none;
+                                        color: white;
+                                        padding: 10px 25px;
+                                        text-align: center;
+                                        text-decoration: none;
+                                        font-size: 18px;
+                                    }
+                                    
+                                    @media only screen and (max-width: 800px) {
+                                        .columns {
+                                            width: 50%;
+                                        }
+                                    }
+                                    
+                                    @media only screen and (max-width: 600px) {
+                                        .columns {
+                                            width: 100%;
+                                        }
+                                    }
+                                    /*---------------ModAL---------------------*/
+                                    
+                                    .modal {
+                                        display: none;
+                                        position: fixed;
+                                        padding-top: 50px;
+                                        left: 0;
+                                        top: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background-color: rgb(0, 0, 0);
+                                        background-color: rgba(0, 0, 0, 0.5);
+                                    }
+                                    
+                                    .modal-content {
+                                        position: relative;
+                                        background-color: rgb(144, 248, 9);
+                                        padding: 20px;
+                                        margin: auto;
+                                        width: 50%;
+                                        height: auto;
+                                        -webkit-animation-name: animatetop;
+                                        -webkit-animation-duration: 0.4s;
+                                        animation-name: animatetop;
+                                        animation-duration: 0.4s
+                                    }
+                                    
+                                    .close-btn {
+                                        float: right;
+                                        color: rgb(250, 6, 6);
+                                        font-size: 24px;
+                                        font-weight: bold;
+                                    }
+                                    
+                                    .close-btn:hover {
+                                        color: rgb(46, 110, 230);
+                                    }
+                                    
+                                    @-webkit-keyframes animatetop {
+                                        from {
+                                            top: -300px;
+                                            opacity: 0
+                                        }
+                                        to {
+                                            top: 0;
+                                            opacity: 1
+                                        }
+                                    }
+                                    
+                                    @keyframes animatetop {
+                                        from {
+                                            top: -300px;
+                                            opacity: 0
+                                        }
+                                        to {
+                                            top: 0;
+                                            opacity: 1
+                                        }
+                                    }
+                                    /*--------------------weather display---------*/
+                                    
+                                    .stats {
+                                        position: absolute;
+                                        width: 270px;
+                                        top: 350px;
+                                        right: 5rem;
+                                        float: right;
+                                        background: radial-gradient(#eee, #0ed88b);
+                                        border: 1px solid rgb(55, 231, 187);
+                                        padding: .3rem;
+                                        box-shadow: 0 0 30px #111;
+                                        opacity: .8;
+                                        font-size: .8em;
+                                    }
+                                    
+                                    @media only screen and (max-width: 600px) {
+                                        .stats {
+                                            top: 450px;
+                                            left: 20px;
+                                        }
+                                    }
+                                    
+                                    @media only screen and (max-width: 300px) {
+                                        .stats {
+                                            top: 610px;
+                                            left: 7px;
+                                            font-size: .6em;
+                                        }
+                                    }
+                                    /*-------------3 Day weather forecast--------*/
+                                    
+                                    .weather {
+                                        position: absolute;
+                                        bottom: 15rem;
+                                        background-color: rgba(132, 218, 213, 0.705);
+                                        border-radius: .5rem;
+                                        left: 65%;
+                                        padding: 1rem;
+                                        padding-top: 0;
+                                        box-shadow: 1px 1px 10px #d7e2d7;
+                                        font-size: .4rem;
+                                        color: #000a08;
+                                    }
+                                    
+                                    .fco {
+                                        text-align: center;
+                                        font-size: 1rem;
+                                        margin: .5rem auto;
+                                        box-shadow: 1px 1px 8px #d9ece8;
+                                    }
+                                    
+                                    .fc {
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-around;
+                                        align-items: center;
+                                        max-width: 500px;
+                                        background-color: #36c0a7;
+                                        margin: auto;
+                                        border-radius: .5rem;
+                                    }
+                                    
+                                    section.tab img {
+                                        width: 100%;
+                                        box-shadow: 1px 1px 8px #E1F1FF;
+                                        border-radius: .5rem;
+                                    }
+                                    
+                                    section.tab h2 {
+                                        margin: auto;
+                                        text-align: center;
+                                        color: #012522;
+                                    }
+                                    
+                                    section.tab h3 {
+                                        margin: 0 0 .5rem 0;
+                                        text-align: center;
+                                        color: #043b3b;
+                                    }
+                                    /*------------------Cookie Notice--------*/
+                                    
+                                    @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+                                    .cookie-alert {
+                                        position: fixed;
+                                        bottom: 15px;
+                                        right: 15px;
+                                        width: 320px;
+                                        margin: 0 !important;
+                                        z-index: 999;
+                                        opacity: 0;
+                                        transform: translateY(100%);
+                                        transition: all 500ms ease-out;
+                                    }
+                                    
+                                    .cookie-alert.show {
+                                        opacity: 1;
+                                        transform: translateY(0%);
+                                        transition-delay: 1000ms;
+                                    }
+                                    /*----------directory json styling ---------*/
+                                    
+                                    div.company_div {
+                                        display: block;
+                                        margin: auto;
+                                        padding: 2%;
+                                    }
+                                    
+                                    img.companyimg {
+                                        width: 96%;
+                                        padding: 2%;
+                                        max-width: 400px;
+                                        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 80%)
+                                    }
+                                    
+                                    section.home_sect {
+                                        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 80%);
+                                        text-align: center;
+                                        padding-top: 1rem;
+                                        padding-bottom: 1rem;
+                                        margin-top: 2rem;
+                                        margin-bottom: 0;
+                                    }
+                                    
+                                    section.home_hide {
+                                        display: none;
+                                    }
+                                    
+                                    @media only screen and (min-width: 30rem) {
+                                        section.home_sect {
+                                            display: grid;
+                                            grid-template-columns: 1fr 1fr;
+                                            grid-gap: 1rem;
+                                            padding: 2rem;
+                                        }
+                                        section.home_sect:nth-child(6) img {
+                                            grid-column: 1/2;
+                                        }
+                                        section.home_sect:nth-child(3) div.home_company_text {
+                                            grid-column: 2/3;
+                                            grid-row: 1;
+                                        }
+                                        /*-------------- Registration page ----------*/
+                                        form label.top input,
+                                        form label.top select {
+                                            -webkit-appearance: none;
+                                            width: 100%;
+                                            display: block;
+                                            color: rgb(49, 48, 48);
+                                            background-color: rgba(230, 178, 178, 0.1);
+                                            font-size: 1rem;
+                                            border: solid 1px #999;
+                                            border-radius: 6px;
+                                            padding: .75rem;
+                                            max-width: 20rem;
+                                        }
+                                        form legend {
+                                            color: #41042e;
+                                            margin: 0 1rem;
+                                            padding: 0 .5rem;
+                                            font-size: 1.5em;
+                                        }
+                                        form label.top,
+                                        form div {
+                                            display: block;
+                                            padding-top: 1rem;
+                                            color: rgb(4, 52, 58);
+                                            font-size: 1rem;
+                                            text-align: left;
+                                        }
+                                        form fieldset {
+                                            margin: 2em 2em;
+                                            border: 2px solid #41042e;
+                                            border-radius: 8px;
+                                            padding: .5rem 2%;
+                                        }
+                                        form label.sbs {
+                                            display: block;
+                                            padding: .75rem 0;
+                                            color: rgb(4, 52, 58);
+                                        }
+                                        form input.submitBtn {
+                                            border: none;
+                                            background-color: #41042e;
+                                            color: white;
+                                            border-radius: 1rem;
+                                            padding: .85rem 1.5rem;
+                                            margin: 0 0 2rem 2%;
+                                            width: 96%;
+                                            max-width: 10rem;
+                                        }
+                                        form label.top input:required {
+                                            border-left: #41042e solid 8px;
+                                        }
+                                        form label.top input:required:valid {
+                                            border-left: #0dda7a solid 8px;
+                                        }
+                                        .flexly {
+                                            display: flex;
+                                            align-items: center;
+                                        }
+                                        #ratingvalue {
+                                            margin: 0 15px;
+                                            color: #f70b0b;
+                                        }
+                                        textarea {
+                                            border: solid 2px rgb(11, 110, 52);
+                                            border-radius: 5px;
+                                            padding: .75rem;
+                                            width: 100%;
+                                        }
+                                        @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+                                        * {
+                                            margin: 0;
+                                            padding: 0;
+                                            box-sizing: border-box;
+                                            -webkit-box-sizing: border-box;
+                                            -moz-box-sizing: border-box;
+                                            -webkit-font-smoothing: antialiased;
+                                            -moz-font-smoothing: antialiased;
+                                            -o-font-smoothing: antialiased;
+                                            font-smoothing: antialiased;
+                                            text-rendering: optimizeLegibility;
+                                        }
+                                        .contain {
+                                            font-family: "Roboto", Helvetica, Arial, sans-serif;
+                                            font-weight: 100;
+                                            font-size: 12px;
+                                            line-height: 30px;
+                                            color: rgb(58, 55, 55);
+                                            background: #4fa051;
+                                            max-width: 600px;
+                                            width: 100%;
+                                            margin: 0 auto;
+                                            position: relative;
+                                        }
+                                        #contact input[type="text"],
+                                        #contact input[type="email"],
+                                        #contact input[type="tel"],
+                                        #contact input[type="url"],
+                                        #contact textarea,
+                                        #contact button[type="submit"] {
+                                            font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+                                        }
+                                        #contact {
+                                            background: #F9F9F9;
+                                            padding: 25px;
+                                            margin: 150px 0;
+                                            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+                                        }
+                                        #contact h3 {
+                                            display: block;
+                                            font-size: 30px;
+                                            font-weight: 300;
+                                            margin-bottom: 10px;
+                                        }
+                                        #contact h4 {
+                                            margin: 5px 0 15px;
+                                            display: block;
+                                            font-size: 13px;
+                                            font-weight: 400;
+                                        }
+                                        fieldset {
+                                            border: medium none !important;
+                                            margin: 0 0 10px;
+                                            min-width: 100%;
+                                            padding: 0;
+                                            width: 100%;
+                                        }
+                                        #contact input[type="text"],
+                                        #contact input[type="email"],
+                                        #contact input[type="tel"],
+                                        #contact input[type="url"],
+                                        #contact textarea {
+                                            width: 100%;
+                                            border: 1px solid #ccc;
+                                            background: #FFF;
+                                            margin: 0 0 5px;
+                                            padding: 10px;
+                                        }
+                                        #contact input[type="text"]:hover,
+                                        #contact input[type="email"]:hover,
+                                        #contact input[type="tel"]:hover,
+                                        #contact input[type="url"]:hover,
+                                        #contact textarea:hover {
+                                            -webkit-transition: border-color 0.3s ease-in-out;
+                                            -moz-transition: border-color 0.3s ease-in-out;
+                                            transition: border-color 0.3s ease-in-out;
+                                            border: 1px solid #aaa;
+                                        }
+                                        #contact textarea {
+                                            height: 100px;
+                                            max-width: 100%;
+                                            resize: none;
+                                        }
+                                        #contact button[type="submit"] {
+                                            cursor: pointer;
+                                            width: 50%;
+                                            border: none;
+                                            background: #4CAF50;
+                                            color: #FFF;
+                                            margin: 0 0 5px;
+                                            padding: 10px;
+                                            font-size: 15px;
+                                        }
+                                        #contact button[type="submit"]:hover {
+                                            background: #43A047;
+                                            -webkit-transition: background 0.3s ease-in-out;
+                                            -moz-transition: background 0.3s ease-in-out;
+                                            transition: background-color 0.3s ease-in-out;
+                                        }
+                                        #contact button[type="submit"]:active {
+                                            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+                                        }
+                                        .copyright {
+                                            text-align: center;
+                                        }
+                                        #contact input:focus,
+                                        #contact textarea:focus {
+                                            outline: 0;
+                                            border: 1px solid #aaa;
+                                        }
+                                         ::-webkit-input-placeholder {
+                                            color: #888;
+                                        }
+                                         :-moz-placeholder {
+                                            color: #888;
+                                        }
+                                         ::-moz-placeholder {
+                                            color: #888;
+                                        }
+                                         :-ms-input-placeholder {
+                                            color: #888;
+                                        }
+                                        /*-------------- End of Registration page ----------*/
+                                        /*------------------------------End of Events styling-----------------------------*/
+                                        @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+                                        body {
+                                            margin: 0;
+                                            padding: 0;
+                                            font-family: 'Roboto Condensed', sans-serif;
+                                        }
+                                        #eventsection {
+                                            display: grid;
+                                            grid-gap: 0;
+                                            grid-template-columns: 1fr 1fr;
+                                            grid-template-rows: 1fr 1fr;
+                                            grid-template-areas: "main main" "event event";
+                                            background-size: cover;
+                                            background-position: center;
+                                            min-height: 100vh;
+                                        }
+                                        @media (min-width: 1200px) {
+                                            section {
+                                                grid-template-areas: "main event" "main event";
+                                            }
+                                        }
+                                        .leftBox {
+                                            grid-area: main;
+                                            padding: 50px;
+                                            box-sizing: border-box;
+                                        }
+                                        section .leftBox .content {
+                                            color: #fff;
+                                            background-color: rgba(0, 0, 0, 0.5);
+                                            padding: 40px;
+                                            transition: 0.5s;
+                                        }
+                                        section .leftBox .content:hover {
+                                            background-color: #e91e63;
+                                        }
+                                        section .leftBox .content h1 {
+                                            margin: 0;
+                                            padding: 0;
+                                            font-size: 50px;
+                                            text-transform: uppercase;
+                                        }
+                                        section .leftBox .content p {
+                                            margin: 10px 0 0;
+                                            padding: 0;
+                                        }
+                                        section .events {
+                                            grid-area: event;
+                                            background-color: rgba(0, 0, 0, 0.5);
+                                            box-sizing: border-box;
+                                        }
+                                        section .events ul {
+                                            margin: 0;
+                                            padding: 40px;
+                                            list-style: none;
+                                        }
+                                        section .events ul li {
+                                            background-color: #fff;
+                                            box-sizing: border-box;
+                                            display: grid;
+                                            grid-template-columns: 30% 1fr;
+                                            grid-template-rows: 1fr;
+                                            grid-gap: 0;
+                                            grid-template-areas: "time time" "detail detail";
+                                            margin-bottom: 20px;
+                                        }
+                                        @media (min-width: 768px) {
+                                            section .events ul li {
+                                                grid-template-areas: "time detail" "time detail";
+                                            }
+                                        }
+                                        section .events ul li .time {
+                                            grid-area: time;
+                                            position: relative;
+                                            padding: 8% 40%;
+                                            background-color: #262626;
+                                            box-sizing: border-box;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            width: 100%;
+                                            transition: 0.5s;
+                                        }
+                                        section .events ul li:hover .time {
+                                            background-color: #e91e63;
+                                        }
+                                        section .events ul li .time h2 {
+                                            margin: 0;
+                                            padding: 0;
+                                            color: #fff;
+                                            font-size: 60px;
+                                            line-height: 30px;
+                                        }
+                                        section .events ul li .time h2 span {
+                                            font-size: 30px;
+                                        }
+                                        section .events ul li .details {
+                                            grid-area: detail;
+                                            padding: 20px 20px 32px;
+                                            background-color: #fff;
+                                            box-sizing: border-box;
+                                        }
+                                        section .events ul li .details h3 {
+                                            margin: 0;
+                                            padding: 0;
+                                            font-size: 22px;
+                                        }
+                                        section .events ul li .details p {
+                                            margin: 10px 0 0;
+                                            padding: 0;
+                                            font-size: 16px;
+                                        }
+                                        section .events ul li .details a {
+                                            display: inline-block;
+                                            text-decoration: none;
+                                            padding: 10px 15px;
+                                            border: 2px solid #262626;
+                                            margin-top: 16px;
+                                            font-size: 18px;
+                                            transition: 0.5s;
+                                        }
+                                        section .events ul li .details a:hover {
+                                            background-color: #e91e63;
+                                            color: #fff;
+                                            border-color: #e91e63;
+                                        }
+                                        /*------------------------------End of Events styling-----------------------------*/
+                                        /* ..... footer Section ....*/
+                                        * {
+                                            font-family: Open Sans;
+                                        }
+                                        .footer-distributed {
+                                            background: rgb(109, 109, 109);
+                                            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+                                            box-sizing: border-box;
+                                            max-width: 1200px;
+                                            text-align: left;
+                                            font: bold 16px sans-serif;
+                                            padding: 55px 50px;
+                                            margin: auto;
+                                        }
+                                        #footer-distributed {
+                                            background: rgb(255, 255, 255);
+                                            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+                                            box-sizing: border-box;
+                                            max-width: 1200px;
+                                            text-align: left;
+                                            font: bold 16px sans-serif;
+                                            padding: 5px;
+                                            margin: auto;
+                                            vertical-align: center;
+                                        }
+                                        .footer-distributed .footer-left,
+                                        .footer-distributed .footer-center,
+                                        .footer-distributed .footer-right {
+                                            display: inline-block;
+                                            vertical-align: top;
+                                        }
+                                        /* Footer left */
+                                        .footer-distributed .footer-left {
+                                            width: 40%;
+                                        }
+                                        /* The company logo */
+                                        .footer-distributed h3 {
+                                            color: #ffffff;
+                                            font: normal 36px 'Open Sans', cursive;
+                                            margin: 0;
+                                        }
+                                        .footer-distributed h3 span {
+                                            color: rgb(255, 255, 255);
+                                        }
+                                        /* Footer links */
+                                        .footer-distributed .footer-links {
+                                            color: #ffffff;
+                                            margin: 20px 0 12px;
+                                            padding: 0;
+                                        }
+                                        .footer-distributed .footer-links a {
+                                            display: inline-block;
+                                            line-height: 1.8;
+                                            font-weight: 400;
+                                            text-decoration: none;
+                                            color: inherit;
+                                        }
+                                        .footer-distributed .footer-company-name {
+                                            color: rgb(255, 255, 255);
+                                            font-size: 14px;
+                                            font-weight: normal;
+                                            margin: 0;
+                                        }
+                                        /* Footer Center */
+                                        .footer-distributed .footer-center {
+                                            width: 35%;
+                                        }
+                                        .footer-distributed .footer-center i {
+                                            background-color: #33383b;
+                                            color: #ffffff;
+                                            font-size: 25px;
+                                            width: 38px;
+                                            height: 38px;
+                                            border-radius: 50%;
+                                            text-align: center;
+                                            line-height: 42px;
+                                            margin: 10px 15px;
+                                            vertical-align: middle;
+                                        }
+                                        .footer-distributed .footer-center i.fa-envelope {
+                                            font-size: 17px;
+                                            line-height: 38px;
+                                        }
+                                        .footer-distributed .footer-center p {
+                                            display: inline-block;
+                                            color: #ffffff;
+                                            font-weight: 400;
+                                            vertical-align: middle;
+                                            margin: 0;
+                                        }
+                                        .footer-distributed .footer-center p span {
+                                            display: block;
+                                            font-weight: normal;
+                                            font-size: 14px;
+                                            line-height: 2;
+                                        }
+                                        .footer-distributed .footer-center p a {
+                                            color: rgb(255, 255, 255);
+                                            text-decoration: none;
+                                            ;
+                                        }
+                                        .footer-distributed .footer-links a:before {
+                                            content: "|";
+                                            font-weight: 300;
+                                            font-size: 20px;
+                                            left: 0;
+                                            color: #fff;
+                                            display: inline-block;
+                                            padding-right: 5px;
+                                        }
+                                        .footer-distributed .footer-links .link-1:before {
+                                            content: none;
+                                        }
+                                        /* Footer Right */
+                                        .footer-distributed .footer-right {
+                                            width: 20%;
+                                        }
+                                        .footer-distributed .footer-company-about {
+                                            line-height: 20px;
+                                            color: #fcf9fb;
+                                            font-size: 13px;
+                                            font-weight: normal;
+                                            margin: 0;
+                                        }
+                                        .footer-distributed .footer-company-about span {
+                                            display: block;
+                                            color: #ffffff;
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                            margin-bottom: 20px;
+                                        }
+                                        .footer-distributed .footer-icons {
+                                            margin-top: 25px;
+                                        }
+                                        .footer-distributed .footer-icons a {
+                                            display: inline-block;
+                                            width: 35px;
+                                            height: 35px;
+                                            cursor: pointer;
+                                            background-color: #fa06b1;
+                                            border-radius: 2px;
+                                            font-size: 20px;
+                                            color: #ffffff;
+                                            text-align: center;
+                                            line-height: 35px;
+                                            margin-right: 3px;
+                                            margin-bottom: 5px;
+                                        }
+                                        /* If I don't want the footer to be responsive, I can remove these media queries */
+                                        @media (max-width: 880px) {
+                                            .footer-distributed {
+                                                font: bold 14px sans-serif;
+                                            }
+                                            .footer-distributed .footer-left,
+                                            .footer-distributed .footer-center,
+                                            .footer-distributed .footer-right {
+                                                display: block;
+                                                width: 100%;
+                                                margin-bottom: 40px;
+                                                text-align: center;
+                                            }
+                                            .footer-distributed .footer-center i {
+                                                margin-left: 0;
+                                            }
+                                        }
+                                        /*----- Clearfix: Force an Element not to collapse -----*/
+                                        .clearfix::before {
+                                            content: "";
+                                            display: table;
+                                            clear: both;
+                                            1
+                                        }
