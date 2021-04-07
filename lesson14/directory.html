@@ -29,6 +29,48 @@
             width: 100%;
             height: 400px;
         }
+        
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 0 10px;
+        }
+        
+        .img {
+            border: 1px solid rgb(97, 96, 96);
+            vertically-align-item: middle;
+        }
+        /* Remove extra left and right margins, due to padding */
+        
+        .row {
+            margin: 0 -5px;
+            grid-row-gap: 20px;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive columns */
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        /* Style the counter cards */
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+    </style>
     </style>
 
 </head>
@@ -115,175 +157,292 @@
 
     <!-- Call To Action 2 End -->
     <main>
-
-        <section class="main">
-            <h3 style="text-align: center; color: rgb(6, 107, 110);">Membership Directory
-            </h3>
-            <p style="text-align: center; font-size: .9rem; color: rgb(6, 107, 110);">Listing of our members.</p>
-            <div class="company_div"></div>
-        </section>
-
-        <section class="main" id="events">
-            <h2 style="text-align:center" class="main" class="events">Upcoming Events</h2>
-            <p style="text-align:center">Below are a few planned events for 2021 by the chamber.</p>
-            <br>
-
-            <div class="events">
-                <ul>
-                    <li>
-                        <div class="time">
-                            <h2>24-29<br><span>May</span></h2>
-                        </div>
-                        <div class="details">
-                            <h3>Abuja International Trade Fair and Exhibition</h3>
-                            <p style="text-align: left;">
-                                <img class="responsive" style="float: right; border: 1px solid rgb(248, 6, 19); margin: 2px" src="images/Abuja-fair-image.jpg" alt="Past tradefair picture"> Trade fairs play important roles in marketing as well as business
-                                networking in market sectors that use them. People will seek to meet people and companies at their own level in the supply chain, as well as potential suppliers and potential buyers.
-                            </p>
-                            <a href="join.html">View Details</a>
-                        </div>
-                        <div style="clear: both;"></div>
-                    </li>
-                    <li>
-                        <div class="time">
-                            <h2>14-16<br><span>September</span></h2>
-                        </div>
-                        <div class="details">
-                            <h3>HALAL EXPO NIGERIA 2021</h3>
-                            <p style="text-align: right;">
-                                <img class="responsive" style="float: left; border: 1px solid rgb(248, 6, 19);" src="images/Halal-Expo-2020-2.png" width="400" alt=" Halal Expo 2021 ">Nigeria has over 100 million Muslim population which makes it an ideal
-                                marketplace and a place worth trillions of Dollars. As the Halal movement gains traction, the global industry sets its sights on Nigeria’s growing demand for Halal products. Home to one of the world’s largest Muslim population
-                                next to Indonesia, India, Nigeria does have one of the world’s most viable Halal markets.</p>
-                            <a href="join.html ">View Details</a>
-                        </div>
-                        <div style="clear: both; "></div>
-                    </li>
-                    <li>
-                        <div class="time ">
-                            <h2>1-30<br><span>November</span></h2>
-                        </div>
-                        <div class="details ">
-                            <h3>Abuja Carnivals</h3>
-                            <p style="text-align: left;">
-                                <img class="responsive" style="float: right; border: 1px solid rgb(248, 6, 19);" src="images/9648486402b34e3f9bfbce59fd4fb87b.jpg" width="400" alt=" abuja Canival Parade">Abuja Carnival is one of the most exhilarating Nigerian
-                                cultural jamborees that hold annually (mostly in November or December). It includes street parades, boat regattas and Nigerian States cultural competition. Visit Abuja and have a feel of Nigeria's hospitality.</p>
-                            <a href="join.html ">View Details</a>
-                        </div>
-                        <div style="clear: both; "></div>
-                    </li>
-                </ul>
-            </div>
-
-
-        </section>
-
-        <br>
         <div class="main ">
+            <section class="main">
+                <picture class="embed-responsive">
+                    <h2 class="text">Membership Directory.</h2>
+                    <img src="images/abuja-cattle-range.jpg" alt="Zuma Rock Range">
+                </picture>
+            </section>
             <br>
-            <h3 style="text-align:center ">Membership Category</h3>
-            <p style="text-align:center ">Membership of the Chamber is open to registered companies which meet the Chamber’s stringent conditions for good corporate citizenship.</p>
+            <section class="main">
+                <h2>Responsive Column Cards</h2>
+                <p>Resize the browser window to see the effect.</p>
+                <div class=" row ">
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/200/100/?image=33 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
 
-            <div class="columns ">
-                <ul class="price ">
-                    <li class="header ">Non-Profit</li>
-                    <li class="grey ">$ 100.00 / year</li>
-                    <li>Directory Listing</li>
-                    <li>Mentions on newsletter</li>
-                    <li>Business Training</li>
-                    <li>2 Trade-fair Entry Tickets</li>
-                    <li class="grey "><a href="# " class="button ">Sign Up</a></li>
-                </ul>
-            </div>
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/200/100/?image=23 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
 
-            <div class="columns ">
-                <ul class="price ">
-                    <li class="header " style="background-color:#4CAF50 ">Bronze</li>
-                    <li class="grey ">$ 200.00 / year</li>
-                    <li>Directory Listing</li>
-                    <li>3 Trade-fair Entry Tickets</li>
-                    <li>Mention in publications</li>
-                    <li>Business Training</li>
-                    <li class="grey "><a href="# " class="button ">Sign Up</a></li>
-                </ul>
-            </div>
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/200/100/?image=9 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
 
-            <div class="columns ">
-                <ul class="price ">
-                    <li class="header " style="background-color:#0773a5;">Silver</li>
-                    <li class="grey ">$ 400.00 / year</li>
-                    <li>Director Listings</li>
-                    <li>1 month Ad on Website</li>
-                    <li>Social Media Tags</li>
-                    <li>Luncheon Tickets</li>
-                    <li class="grey "><a href="# " class="button ">Sign Up</a></li>
-                </ul>
-            </div>
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/200/100/?image=8 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
 
-            <div class="columns ">
-                <ul class="price ">
-                    <li class="header " style="background-color:#af3157;">Gold</li>
-                    <li class="grey ">$ 1000.00 / year</li>
-                    <li>Directory Listings </li>
-                    <li>3 months Ad on website</li>
-                    <li>4X6 Exhibition Booth</li>
-                    <li>10 Trade-fair Tickets</li>
-                    <li class="grey "><a href="# " class="button ">Sign Up</a></li>
-                </ul>
-            </div>
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/200/100/?image=6 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/200/100/?image=3 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/300/150/?image=4 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/300/150/?image=2 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/300/150/?image=45 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/300/150/?image=19 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/300/150/?image=10 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/300/150/?image=18 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/300/150/?image=11 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/300/150/?image=17 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                    <div class="column ">
+                        <div class="card ">
+                            <picture><img src="https://picsum.photos/300/150/?image=15 " alt=" " width="200 " </picture>
+                                <h3>Company Name Goes here</h3>
+                                <ul class="price ">
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                    <li>The company address her too</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section> <br>
+            <section class="main">
+                <h3 style="text-align:center ">Membership Category</h3>
+                <p style="text-align:center ">Membership of the Chamber is open to registered companies which meet the Chamber’s stringent conditions for good corporate citizenship.</p>
+
+                <div class="columns ">
+                    <ul class="price ">
+                        <li class="header ">Non-Profit</li>
+                        <li class="grey ">$ 100.00 / year</li>
+                        <li>Directory Listing</li>
+                        <li>Mentions on newsletter</li>
+                        <li>Business Training</li>
+                        <li>2 Trade-fair Entry Tickets</li>
+                        <li class="grey "><a href="# " class="button ">Sign Up</a></li>
+                    </ul>
+                </div>
+
+                <div class="columns ">
+                    <ul class="price ">
+                        <li class="header " style="background-color:#4CAF50 ">Bronze</li>
+                        <li class="grey ">$ 200.00 / year</li>
+                        <li>Directory Listing</li>
+                        <li>3 Trade-fair Entry Tickets</li>
+                        <li>Mention in publications</li>
+                        <li>Business Training</li>
+                        <li class="grey "><a href="# " class="button ">Sign Up</a></li>
+                    </ul>
+                </div>
+
+                <div class="columns ">
+                    <ul class="price ">
+                        <li class="header " style="background-color:#0773a5; ">Silver</li>
+                        <li class="grey ">$ 400.00 / year</li>
+                        <li>Director Listings</li>
+                        <li>1 month Ad on Website</li>
+                        <li>Social Media Tags</li>
+                        <li>Luncheon Tickets</li>
+                        <li class="grey "><a href="# " class="button ">Sign Up</a></li>
+                    </ul>
+                </div>
+
+                <div class="columns ">
+                    <ul class="price ">
+                        <li class="header " style="background-color:#af3157; ">Gold</li>
+                        <li class="grey ">$ 1000.00 / year</li>
+                        <li>Directory Listings </li>
+                        <li>3 months Ad on website</li>
+                        <li>4X6 Exhibition Booth</li>
+                        <li>10 Trade-fair Tickets</li>
+                        <li class="grey "><a href="# " class="button ">Sign Up</a></li>
+                    </ul>
+                </div>
         </div>
+        </section>
         <br>
         <br>
-        <div class="main ">
-            <br>
-            <br>
-            <h3 style="text-align: center; ">Company Advertisement</h3>
-            <p style="text-align: center; ">Contact our marketing department to advertise your business products and services to a larger audience both local and international. </p>
-            <ul class="cards ">
-                <li class="cards_item ">
-                    <div class="card ">
-                        <div class="card_image "><img src="images/julius-berger-nigeria.jpg" width="500" height="300" alt="Julius Berger Nigeria PLC"></div>
-                        <div class="card_content ">
-                            <h2 class="card_title ">Julius Berger Nigeria PLC</h2>
-                            <p class="card_text ">Is a Nigerian construction company, headquartered in Abuja, with additional permanent locations in Lagos and Uyo. The company is represented across Nigeria in structural engineering and infrastructure works, and in southern
-                                Nigeria through domestic and international oil and gas industry projects.<br> It is known for constructing most of Nigeria's infrastructures, major expressways, and even some residential buildings for the Chevron Nigeria
-                                headquarters in Lagos. JB is an Abuja based public liability company.</p>
-                            <br>
-                            <a href="https://www.julius-berger.com//" target="_blank " rel="noreferrer "> <button class="btn card_btn ">Read More</button></a>
-                        </div>
-                    </div>
-                </li>
-                <li class="cards_item ">
-                    <div class="card ">
-                        <div class="card_image "><img src="images/mtn-nigeria.jpeg" alt="MTN Nigeria PLC" width="500" height="300"></div>
-                        <div class="card_content ">
-                            <h2 class="card_title ">MTN Nigeria Limited </h2>
-                            <p class="card_text ">Formerly M-Cell, is a South African multinational mobile telecommunications company, operating in many African, European and Asian countries. Its head office is in Johannesburg. As of September 2020, MTN recorded 273.44 million
-                                subscribers, making it the ninth largest mobile network operator in the world, and the largest in Africa. --Active in over 20 countries, one-third of company revenue come from Nigeria, where it holds about 35% market share.
-                            </p>
-                            <p class="card_text ">MTN Group is the primary sponsor of Abuja Marathon. </p>
-                            <a href=" https://www.mtnonline.com/" target="_blank " rel="noreferrer "> <button class="btn card_btn ">Read More</button></a>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="cards_item ">
-                    <div class="card ">
-                        <div class="card_image "><img src="images/next3.jpg" alt="Next Cash & Carry" width="500" height="300"></div>
-                        <div class="card_content ">
-                            <h2 class="card_title ">Next Cash & Carry</h2>
-                            <p class="card_text ">One stop Shop with 'Everything under One Roof'! Visit our website to enjoy non-stop shopping. Delivery & store pick up to commence in Abuja for now. One of the biggest reasons that so many stores are failing is that people
-                                aren't shopping the same way they used to.
-                                <br> Rather than spending whole afternoons walking around the mall, many people prefer to shop in their pajamas at home. Shopping isn 't a pastime like it used to be — it's more transactional. It is owned by an Igbo man.
-                                Employees are 99% of Igbo tribe.</p>
-                            <a href=" https://nextcashandcarry.com.ng/" target="_blank " rel="noreferrer "> <button class="btn card_btn ">Read More</button></a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
+        <br>
+        <br>
+        <br>
+        <br>
     </main>
-    <!-- Articles Styling Here  -->
+
+    <!-- Articles Styling Here -->
 
     <!-- Footer Start -->
     <!-- Start Footer bottom Area -->
@@ -294,22 +453,22 @@
             <h3>ABUJA<span> Chamber</span></h3>
 
             <p class="footer-links ">
-                <a href="index.html" class="link-1 ">Home</a>
+                <a href="index.html " class="link-1 ">Home</a>
 
-                <a href="abuja.html">Abuja City</a>
+                <a href="abuja.html ">Abuja City</a>
 
-                <a href="join.html">Join ACCI</a>
+                <a href="join.html ">Join ACCI</a>
 
-                <a href="directory.html">Directory</a>
+                <a href="directory.html ">Directory</a>
 
-                <a href="contact.html">Contact Us</a>
+                <a href="contact.html ">Contact Us</a>
             </p>
 
-            <p class="footer-company-name">All Rights Reserved | ACCI &copy 2021 </p>
-            <p>weather data by <a style="color:rgb(235, 252, 7);" href="https://openweathermap.org/" target="_blank" rel="noreferrer">Open Weather </a>
-                <hr> <span id="date"></span>
+            <p class="footer-company-name ">All Rights Reserved | ACCI &copy 2021 </p>
+            <p>weather data by <a style="color:rgb(51, 54, 2); " href="https://openweathermap.org/ " target="_blank " rel="noreferrer ">Open Weather </a>
+                <hr> <span id="date "></span>
             </p>
-            <p style="color:rgb(235, 252, 7);" class="update">Today's Date: <span id="currentdate"></span></p>
+            <p style="color:rgb(41, 44, 2); " class="update ">Today's Date: <span id="currentdate "></span></p>
 
         </div>
 
@@ -346,11 +505,11 @@
 
         </div>
     </footer>
-    <script src="js/currentdate.js">
+    <script src="js/currentdate.js ">
     </script>
-    <script src="js/getCompany.js">
+    <script src="js/getCompany.js ">
     </script>
-    <script src="js/modal.js">
+    <script src="js/modal.js ">
     </script>
     <script src="js/weather.js "></script>
 
