@@ -7,7 +7,10 @@ fetch('https//github.com/otubuc/otubuc.github.io/blob/master/lesson14/lib/compan
     credentials: "include",
     body: JSON.stringify('1: 6')
 });
-
+Access - Control - Allow - Origin;
+';'
+"*"
+https //github.com/otubuc/otubuc.github.io/blob/master/lesson14/lib/company.json
 const requestURL = 'https://github.com/otubuc/otubuc.github.io/blob/master/lesson14/lib/company.json';
 fetch(requestURL)
     .then(function(response) {
