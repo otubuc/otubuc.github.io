@@ -112,101 +112,77 @@
                 </ul>
         </section>
     </header>
-
     <!-- Call To Action 2 End -->
     <main>
-        <section class="main">
-            <div id="demo" class="carousel slide" data-ride="carousel">
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/abuja-horse.jpg" alt="Welcome to the city gate" width="1024" height="350">
-                        <div class="carousel-caption">
-                            <h3 style="color: rgb(255, 255, 255); box-shadow: grey; "></h3>
-                            <p style="color: rgb(252, 252, 252); opacity: 100%;">
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/hilton-abuja.jpg" alt="The hilton Hotel Abuja" width="480" height="350">
-                        <div class="carousel-caption">
-                            <h3 style="color: rgb(10, 9, 9); box-shadow: grey; "></h3>
-                            <p style="color: rgb(12, 11, 11); opacity: 100%;"></p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/Aso-Rock.jpg " alt="Aso rock - Presidential villa" width="512" height="350">
-                        <div class="carousel-caption">
-                            <h3 style="color: rgb(255, 255, 255); box-shadow: grey; "></h3>
-                            <p style="color: rgb(255, 255, 255); opacity: 100%;"></p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>
-
-        </section>
-        <br>
         <section>
+            <div class="contain">
+                <form id="contact" method="get" action="thanks.html">
+                    <h3>Membership Application</h3>
+                    <h4>Please provide your correct details for membership review.</h4>
 
+                    <fieldset>
+                        <legend>Your Personal Information</legend>
+                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Your Business Information</legend>
+                        <input placeholder="Business name" type="text" tabindex="4" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Business Address" type="text" tabindex="5" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Web Site" type="url" tabindex="6" required>
+                    </fieldset>
 
-        </section>
-        <div class="stats" class="weather">
-            <h5 style="text-align: center; font-weight: bold;
-            color: #f7fcfb;
-            transition: 0.3s;">Weather Outlook</h5>
-            <hr>
-            <p>Temperature: <span id="wcurrent"></span> &deg;C</p>
-            <p>High: <span id="high"></span>&deg;C</p>
-            <p>Wind Chill: <span id="wchill"></span></p>
-            <p>Humidity: <span id="humidity"></span>%</p>
-            <p>Wind Speed: <span id="wspeed"></span> mph</p>
-        </div>
-        <br>
-        <section class="main" class="page">
-            <div class="left">
-                <h2> Vision and Mission</h2>
-                <hr>
-                <p style="text-align: right;">
-                    <picture><img class="responsive" alt="CEO Abuccima" style="float: left; border: 1px solid white; margin: 2px" src="images/DSxPY9HW4AAQGXU.jpg" width="500"></picture>Abuja Chamber of Commerce and Industry was established in August of 1986 as
-                    a Company Limited by Guarantee with the principal objective of promoting economic and industrial development within the FCT in particular and Nigeria in general.It is a non-partisan, non-sectarian, member-funded organization that solely
-                    represents the common interests of the business community in the FCT. The Chamber is privately funded by Corporations, Foundations, and Members, therefore its energies are directed by the interests of the business community and the
-                    general public.</p>
-                <p style="text-align: right;"> Presently, The Abuja Chamber of Commerce and Industry has established associations and linkages with business groups, trade associations, international chambers, government agencies, trade offices, and foreign embassies, etc. so as to
-                    accomplish its goal of enhancing sustainable growth and development of businesses in the FCT.</p>
+                    <fieldset>
+                        <textarea placeholder="Write Your Business Description  Here" tabindex="7" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend> Company Type</legend>
+                        <label><select name="subject" tabindex="8">
+                                      <option value="">Please Select Company Type &#9662;</option>
+                                      <option value="incorporated">Incorporated Trustees (Non-Profit)</option>
+                                      <option value="unregistered">Unregistered Club or Association</option>
+                                      <option value="limited">Private Limited Liability</option>
+                                      <option value="plc">Public Liability</option>
+                                      <option value="partner">Partnership</option>
+                                  </select>
+                              </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend> Membership Category</legend>
+                        <label><select name="subject" tabindex="8">
+                                      <option value="">Please Select Membership Category &#9662;</option>
+                                      <option value="incorporated">NON-PROFIT - ($100.00)</option>
+                                      <option value="unregistered">BRONZE - ($200.00)</option>
+                                      <option value="limited">SILVER - ($400.00)</option>
+                                      <option value="plc">GOLD - ($1000.00)</option>
+                                      
+                                  </select>
+                              </label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" id="Agree" name="IAgree" value="IAgree" tabindex="9" required>
+                        <label for="Agree"> I AGREE <br>By submitting this form, I agree to the terms of use, privacy policy, and data use policy of ACCI. I understand that the provision of false or misleading information will lead to the cancellation of my membership.</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </fieldset>
+
+                </form>
             </div>
-            <br>
-            <div class="right">
-                <h2>Goals and Objectives</h2>
-                <hr>
-                <p>
-                    <picture><img class="responsive" alt="Hilton Hotel Abuja" style="float: right; border: 1px solid rgb(248, 6, 19); margin: 2px" src="images/Approved_Image.jpg" width="500"></picture>To serve, support and enhance the businesses of our members
-                    as well as contribute to the development of our national economy. To be the foremost chamber of commerce in Nigeria. Our key objective is to make the Chamber more accessible to local businesses and increasing membership is a priority
-                    in our future plans.We continually strive to improve the level of service. To be the foremost Chamber of Commerce in Nigeria and to be a key player in Africa.</p>
-                <p>
-                    <a href="lib/DRAFT-ACCI-MEMART-2019-.pdf" target="_blank" rel="noreferrer"> Download the full report.</a>
-                </p>
-
-                <br>
-                <br>
-            </div>
-
-            <div class="left">
         </section>
-        <br>
-        <br>
         <section class="main" id="events">
             <h2 style="text-align:center" class="main" class="events">Upcoming Events</h2>
-            <p style="text-align:center">Resize the browser window to see the effect.</p>
+            <p style="text-align:center">Register to attend upcoming events. Early booking attracts 10% discounts.</p>
             <br>
 
             <div class="events">
@@ -257,10 +233,7 @@
 
 
         </section>
-        <section class="time" class="main ">
-            <h3 style="color: rgb(2, 43, 43); text-align: center; " class="fco ">3 Days Weather Forecast</h3>
-            <div class="fc "></div>
-        </section>
+
         <br>
         <br>
         <div class="main ">
