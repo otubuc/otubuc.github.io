@@ -39,7 +39,7 @@
             border-radius: 20px;
         }
 
-       
+
 
 
         .img {
@@ -81,6 +81,100 @@
             text-align: center;
             background-color: #f1f1f1;
             border-radius: 20px;
+        }
+
+        * {
+            font: 1em/1.4 Calibri, sans-serif;
+        }
+
+        .control-view fieldset {
+            border: none;
+        }
+
+        /* visually hidden */
+        .control-view legend,
+        .control-view input {
+            position: absolute !important;
+            clip: rect(1px 1px 1px 1px);
+            /* IE6, IE7 */
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 0 !important;
+            border: 0 !important;
+            height: 1px !important;
+            width: 1px !important;
+            overflow: hidden;
+        }
+
+        .control-view label:not(:first-of-type) {
+            margin-left: 1em;
+        }
+
+        .control-view input:checked+label {
+            border-bottom: 2px solid silver;
+        }
+
+        /* grid view (default) */
+
+        .gallery-widget ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .gallery-widget li {
+            margin: 0.5rem;
+            border: 1px solid silver;
+            padding: 0.5rem;
+            flex: 0 0 calc(33% - 2rem - 2px);
+            width: calc(33% - 2rem - 2px);
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        @media screen and (max-width: 600px) {
+            .gallery-widget li {
+                width: calc(66% - 2rem - 2px);
+               
+            }
+        }
+
+        .gallery-widget img {
+            width: 100%;
+        }
+
+        .gallery-widget p {
+            margin: 0.5rem 0 0;
+            display: flex;
+            flex-flow: column nowrap;
+            line-height: 1;
+        }
+
+        .gallery-widget small {
+            margin: 0.5rem 0 0;
+        }
+
+        /* list view (changes) */
+
+        .gallery-widget.list-view ul {
+            flex-flow: column nowrap;
+        }
+
+        .gallery-widget.list-view li {
+            margin: 0;
+            border: none;
+            border-bottom: 1px solid silver;
+            padding: 0.5rem 0;
+            flex-flow: row nowrap;
+            flex: 0 0 100%;
+            width: 100%;
+        }
+
+        .gallery-widget.list-view img {
+            flex: 0 0 5rem;
+            align-self: flex-start;
+            width: 5rem;
+            margin-right: 1rem;
         }
     </style>
     </style>
@@ -179,222 +273,99 @@
                 </picture>
             </section>
             <br>
-            <section class="main">
-                <h2>2021 Members Listing</h2>
-                <p>To change view, click on the right side toggle boxes accordingly.</p>
-                <div class=" row ">
-                    <div class="column ">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/200/100/?image=33 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
+            <div class="gallery-widget">
+                <form class="control-view">
+                    <fieldset>
+                        <legend>Display:</legend>
+                        <input type="radio" name="view" id="control-grid-view" checked="" />
+                        <label for="control-grid-view">Gridview</label> <input type="radio" name="view"
+                            id="control-list-view" />
+                        <label for="control-list-view">ListView</label>
+                    </fieldset>
+                </form>
+                <ul>
+                    <li>
+                        <picture><img src="images/cloudtenlogo.jfif" alt="cloudTen telecoms " width="200 "> </picture>
+                        <p>
+                            <span id="item3-description">CloudTen Telecoms</span>
+                            <small>Add: No 2, Lingu Crescent, Wuse 2, Abuja. </small>
+                               <small> Website: www.hellocloudten.com </small>
+                               <small> Telephone: 0703 083 5572 </small>
+                               <small> E-mail:  hellocloudten@gmail.com </small>
+                               <small>Service:  Mobile Telecommunications</small>                           
+                        </p>
+                    </li>
+                    <li>
+                        <picture><img src="images/zenith.jpg" alt="Zenith Bank " width="200 "> </picture>
+                        <p>
+                            <span id="item3-description">Zenith Bank PLC</span>
+                            <small>Add: Ahmadu Bello Way, Area 11, Garki, Abuja. </small>
+                               <small> Website: www.zenithbank.com </small>
+                               <small> Telephone: 01 262 0727 </small>
+                               <small> E-mail:  zenithdirect@zenithbank.com </small>
+                               <small>Service:  Banking and Finance</small>  
 
-                    <div class="column ">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/200/100/?image=23 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
+                        </p>
+                    </li>
+                    <li>
+                        <picture><img src="images/mtn-nigeria.jpeg" alt=" " width="200 "> </picture>
+                        <p>
+                            <span id="item3-description">MTN Nigeria Limited</span>
+                            <small>Add: No 4 Madeira St, Maitama, Abuja. </small>
+                               <small> Website: www.mtnonline.com </small>
+                               <small> Telephone: 0903 000 9682 </small>
+                               <small> E-mail:  info@mtnonline.com </small>
+                               <small>Service:  Mobile Telecommunications</small> 
+                        </p>
+                    </li>
+                    <li>
+                        <picture><img src="images/regent.jfif" alt=" The Regent School" width="200 "> </picture>
+                        <p>
+                            <span id="item3-description">Regent Primary School</span>
+                            <small>Add: No 1 Euphrates street, Maitama Abuja. </small>
+                               <small> Website: www.regentschool.com </small>
+                               <small> Telephone: 0703 779 3322 </small>
+                               <small> E-mail:  info@regentschoolabuja.com </small>
+                               <small>Service:  Elementary School</small> 
+                        </p>
+                    </li>
+                    <li>
+                        <picture><img src="images/ethel.jfif" alt="Ethel Ventures " width="200 "> </picture>
+                        <p>
+                            <span id="item3-description">Ethel Ventures Limited</span>
+                            <small>Add: Ademola Adetokunbo Cres. Wuse 2, Abuja. </small>
+                               <small> Website: www.ethelventures.com </small>
+                               <small> Telephone: 0903 000 1114 </small>
+                               <small> E-mail:  info@ethelventures.com </small>
+                               <small>Service:  computer accessories</small> 
+                        </p>
+                    </li>
+                    <li>
+                        <picture><img src="images/omclogo.jpg" alt=" " width="200 "> </picture>
+                        <p>
+                            <span id="item3-description">Oxford Manor College</span>
+                            <small>Add: 9, Magaji Muazu Cres. Katampe Ext. Abuja. </small>
+                               <small> Website: www.oxfordmanorcollege.org </small>
+                               <small> Telephone: 0817 606 7809 </small>
+                               <small> E-mail:  info@oxfordmanorcollege.org </small>
+                               <small>Service:  Secondary School</small> 
+                        </p>
+                    </li>
 
-                    <div class="column ">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/200/100/?image=9 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
-
-                    <div class="column ">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/200/100/?image=8 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
-
-                    <div class="column ">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/200/100/?image=6 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
-
-                    <div class="column ">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/200/100/?image=3 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
-
-                    <div class="column ">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/300/150/?image=4 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
-
-                    <div class="column ">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/300/150/?image=2 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
-
-                    <div class="column ">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/300/150/?image=45 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
-
-                    <div class="column ">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/300/150/?image=19 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
-
-                    <div class="column ">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/300/150/?image=10 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
-
-                    <div class="column " class="price">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/300/150/?image=18 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
-
-                    <div class="column ">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/300/150/?image=11 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
-
-                    <div class="column ">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/300/150/?image=17 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
-
-                    <div class="column ">
-                        <div class="card ">
-                            <picture><img src="https://picsum.photos/300/150/?image=15 " alt=" " width="200 " </picture>
-                                <h3>Company Name Goes here</h3>
-                                <ul class="price ">
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                    <li>The company address her too</li>
-                                </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </section> <br>
+                    <li>
+                        <picture><img src="images/chickenrep.jpg" alt=" chicken-republic" width="200 "> </picture>
+                        <p>
+                            <span id="item3-description">Chicken Republic</span>
+                            <small>Add: 3, Damaturu Cres, Gwarinpa, Abuja. </small>
+                               <small> Website: www.chicken-republic.com</small>
+                               <small> Telephone: 0809 015 1447 </small>
+                               <small> E-mail:  franchising@foodconceptsplc.com </small>
+                               <small>Service:  Fast food restaurant</small> 
+                        </p>
+                    </li>
+                </ul>
+            </div>
+           
 
     </main>
 
@@ -422,11 +393,10 @@
             </p>
 
             <p class="footer-company-name ">All Rights Reserved | ACCI &copy 2021 </p>
-            <p>weather data by <a style="color:rgb(51, 54, 2); " href="https://openweathermap.org/ " target="_blank "
-                    rel="noreferrer ">Open Weather </a>
-                <hr> <span id="date "></span>
+            <p>weather data by <a style="color:rgb(49, 53, 2);" href="https://openweathermap.org/" target="_blank" rel="noreferrer">Open Weather </a>
+                <hr> <span id="date"></span>
             </p>
-            <p style="color:rgb(41, 44, 2); " class="update ">Today's Date: <span id="currentdate "></span></p>
+            <p style="color:rgb(53, 56, 3);" class="update">Today's Date: <span id="currentdate"></span></p>
 
         </div>
 
@@ -472,6 +442,7 @@
     <script src="js/modal.js ">
     </script>
     <script src="js/weather.js "></script>
+    <script src="js/listing.js "></script>
 
 
 
