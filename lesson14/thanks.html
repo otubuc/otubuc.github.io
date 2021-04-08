@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Abuja Chamber of Commerce</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.jpg" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- My fontAwesome library-->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <!-- Document title -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/weather.css" rel="stylesheet">
+    <script src="js/js-menu.js">
+    </script>
+    <style>
+        /* Make the image fully responsive */
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="main">
+        <!--==========================
+    Top Bar
+  ============================-->
+        <section id="topbar" class="d-none d-lg-block">
+            <div class="social-links float-right">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div>
+                <a id="blink" href="join.html"> JOIN NOW</a>
+                <script type="text/javascript">
+                    var blink = document.getElementById('blink');
+                    setInterval(function() {
+                        blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+                    }, 1500);
+                </script>
+            </div>
+            <div class="contact-info float-left">
+                <i class="fa fa-envelope-o"></i> <a href="mailto:info@acci.com">info@acci.com</a>
+                <i class="fa fa-phone"></i> 0703 083 5572
+                <i class="fas fa-bolt"></i> <button style="padding: 5px; border-radius: 10px; background-color: red; color: white;" id="modal-btn">Weather Alert - Click Now!</button>
+            </div>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <div id='example'>
+                        <div id='weather_widget'></div>
+                        <div id='weather_widget_abuja'></div>
+                        <div id='weather_widget_amsterdam'></div>
+                        <div id='weather_widget_newyork'></div>
+                    </div>
+
+
+                    <!--<div id="icon-showcase">
+                    <div id="icon-tag"><p>Animation Showcase</p></div>
+                </div> -->
+                </div>
+            </div>
+        </section>
+
+        <div>
+            <h1 style="color: red; font-size: 2rem;"><strong>Abuja Chamber of Commerce and Industry</strong></h1>
+            <p class="sub">Abuja - The HeartBeat of Nigeria</p>
+        </div>
+
+
+        <section>
+            <nav class="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">Menu
+                    <i class="fas fa-bars"></i>
+                </span>
+                <a href="#" class="logo">
+                    <picture>
+                        <img src="images/retina.png" width="100" height="90" alt="logo">
+                    </picture>
+                </a>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="index.html" class="nav-links">Home</a>
+                    </li>
+                    <li>
+                        <a href="abuja.html" class="nav-links">Abuja City</a>
+                    </li>
+                    <li class="active">
+                        <a href="join.html" class="nav-links">Join ACCI</a>
+                    </li>
+                    <li>
+                        <a href="directory.html" class="nav-links">Directory</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-links">Contact Us</a>
+                    </li>
+                </ul>
+        </section>
+    </header>
+    <!-- Call To Action 2 End -->
+    <main>
+        <section class="main" id="events">
+            <h2 style="text-align:center" class="main" class="events">Thank you for your Application.</h2>
+            <br>
+            <br>
+
+        <article>
+                <h3 style="color: red; text-align:center;">Your membership application has been successfully submitted.</h3>
+                <p style="text-align:center;"> Our Administrative staf  will review your application and revert to you within 48 working hours.</p>
+        </article>
+        <br>
+        <br>
+        <br>
+        <section class="main" id="events">
+            <h2 style="text-align:center" class="main" class="events">Upcoming Events</h2>
+            <p style="text-align:center">Register to attend upcoming events. Early booking attracts 10% discounts.</p>
+            <br>
+
+            <div class="events">
+                <ul>
+                    <li>
+                        <div class="time">
+                            <h2>24-29<br><span>May</span></h2>
+                        </div>
+                        <div class="details">
+                            <h3>Abuja International Trade Fair and Exhibition</h3>
+                            <p style="text-align: left;">
+                                <img class="responsive" style="float: right; border: 1px solid rgb(248, 6, 19); margin: 2px" src="images/Abuja-fair-image.jpg" alt="Past tradefair picture"> Trade fairs play important roles in marketing as well as business
+                                networking in market sectors that use them. People will seek to meet people and companies at their own level in the supply chain, as well as potential suppliers and potential buyers.
+                            </p>
+                            <a href="join.html">View Details</a>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </li>
+                    <li>
+                        <div class="time">
+                            <h2>14-16<br><span>September</span></h2>
+                        </div>
+                        <div class="details">
+                            <h3>HALAL EXPO NIGERIA 2021</h3>
+                            <p style="text-align: right;">
+                                <img class="responsive" style="float: left; border: 1px solid rgb(248, 6, 19);" src="images/Halal-Expo-2020-2.png" width="400" alt=" Halal Expo 2021 ">Nigeria has over 100 million Muslim population which makes it an ideal
+                                marketplace and a place worth trillions of Dollars. As the Halal movement gains traction, the global industry sets its sights on Nigeria’s growing demand for Halal products. Home to one of the world’s largest Muslim population
+                                next to Indonesia, India, Nigeria does have one of the world’s most viable Halal markets.</p>
+                            <a href="join.html ">View Details</a>
+                        </div>
+                        <div style="clear: both; "></div>
+                    </li>
+                    <li>
+                        <div class="time ">
+                            <h2>1-30<br><span>November</span></h2>
+                        </div>
+                        <div class="details ">
+                            <h3>Abuja Carnivals</h3>
+                            <p style="text-align: left;">
+                                <img class="responsive" style="float: right; border: 1px solid rgb(248, 6, 19);" src="images/9648486402b34e3f9bfbce59fd4fb87b.jpg" width="400" alt=" abuja Canival Parade">Abuja Carnival is one of the most exhilarating Nigerian
+                                cultural jamborees that hold annually (mostly in November or December). It includes street parades, boat regattas and Nigerian States cultural competition. Visit Abuja and have a feel of Nigeria's hospitality.</p>
+                            <a href="join.html ">View Details</a>
+                        </div>
+                        <div style="clear: both; "></div>
+                    </li>
+                </ul>
+            </div>
+
+
+        </section>
+
+        <br>
+        <br>
+        <div class="main ">
+            <br>
+            <h3 style="text-align:center ">Membership Category</h3>
+            <p style="text-align:center ">Membership of the Chamber is open to registered companies which meet the Chamber’s stringent conditions for good corporate citizenship.</p>
+
+            <div class="columns ">
+                <ul class="price ">
+                    <li class="header ">Non-Profit</li>
+                    <li class="grey ">$ 100.00 / year</li>
+                    <li>Directory Listing</li>
+                    <li>Mentions on newsletter</li>
+                    <li>Business Training</li>
+                    <li>2 Trade-fair Entry Tickets</li>
+                    <li class="grey "><a href="# " class="button ">Sign Up</a></li>
+                </ul>
+            </div>
+
+            <div class="columns ">
+                <ul class="price ">
+                    <li class="header " style="background-color:#4CAF50;">Bronze</li>
+                    <li class="grey ">$ 200.00 / year</li>
+                    <li>Directory Listing</li>
+                    <li>3 Trade-fair Entry Tickets</li>
+                    <li>Mention in publications</li>
+                    <li>Business Training</li>
+                    <li class="grey "><a href="# " class="button ">Sign Up</a></li>
+                </ul>
+            </div>
+
+            <div class="columns ">
+                <ul class="price ">
+                    <li class="header " style="background-color:#0773a5;">Silver</li>
+                    <li class="grey ">$ 400.00 / year</li>
+                    <li>Director Listings</li>
+                    <li>1 month Ad on Website</li>
+                    <li>Social Media Tags</li>
+                    <li>Luncheon Tickets</li>
+                    <li class="grey "><a href="# " class="button ">Sign Up</a></li>
+                </ul>
+            </div>
+
+            <div class="columns ">
+                <ul class="price ">
+                    <li class="header " style="background-color:#af3157;">Gold</li>
+                    <li class="grey ">$ 1000.00 / year</li>
+                    <li>Directory Listings </li>
+                    <li>3 months Ad on website</li>
+                    <li>4X6 Exhibition Booth</li>
+                    <li>10 Trade-fair Tickets</li>
+                    <li class="grey "><a href="# " class="button ">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="main ">
+            <br>
+            <br>
+            <h3 style="text-align: center; ">Company Advertisement</h3>
+            <p style="text-align: center; ">Contact our marketing department to advertise your business products and services to a larger audience both local and international. </p>
+            <ul class="cards ">
+                <li class="cards_item ">
+                    <div class="card ">
+                        <div class="card_image "><img src="images/julius-berger-nigeria.jpg" width="500" height="300" alt="Julius Berger Nigeria PLC"></div>
+                        <div class="card_content ">
+                            <h2 class="card_title ">Julius Berger Nigeria PLC</h2>
+                            <p class="card_text ">Is a Nigerian construction company, headquartered in Abuja, with additional permanent locations in Lagos and Uyo. The company is represented across Nigeria in structural engineering and infrastructure works, and in southern
+                                Nigeria through domestic and international oil and gas industry projects.<br> It is known for constructing most of Nigeria's infrastructures, major expressways, and even some residential buildings for the Chevron Nigeria
+                                headquarters in Lagos. Good firm.</p>
+                            <br>
+                            <a href="https://www.julius-berger.com//" target="_blank " rel="noreferrer "> <button class="btn card_btn ">Read More</button></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards_item ">
+                    <div class="card ">
+                        <div class="card_image "><img src="images/mtn-nigeria.jpeg" alt="MTN Nigeria PLC" width="500" height="300"></div>
+                        <div class="card_content ">
+                            <h2 class="card_title ">MTN Nigeria Limited </h2>
+                            <p class="card_text ">Formerly M-Cell, is a South African multinational mobile telecommunications company, operating in many African, European and Asian countries. Its head office is in Johannesburg. As of September 2020, MTN recorded 273.44 million
+                                subscribers, making it the ninth largest mobile network operator in the world, and the largest in Africa. --Active in over 20 countries, one-third of company revenue come from Nigeria, where it holds about 35% market share.
+                            </p>
+                            <p class="card_text ">MTN Group is the primary sponsor of Abuja Marathon. </p>
+                            <a href=" https://www.mtnonline.com/" target="_blank " rel="noreferrer "> <button class="btn card_btn ">Read More</button></a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cards_item ">
+                    <div class="card ">
+                        <div class="card_image "><img src="images/next3.jpg" alt="Next Cash & Carry" width="500" height="300"></div>
+                        <div class="card_content ">
+                            <h2 class="card_title ">Next Cash & Carry</h2>
+                            <p class="card_text ">One stop Shop with 'Everything under One Roof'! Visit our website to enjoy non-stop shopping. Delivery & store pick up to commence in Abuja for now. One of the biggest reasons that so many stores are failing is that people
+                                aren't shopping the same way they used to.
+                                <br> Rather than spending whole afternoons walking around the mall, many people prefer to shop in their pajamas at home. Shopping isn 't a pastime like it used to be — it's more transactional. It is owned by an Igbo man.
+                                Employees are 95% of Igbo extraction and very little for other tribes.</p>
+                            <a href=" https://nextcashandcarry.com.ng/" target="_blank " rel="noreferrer "> <button class="btn card_btn ">Read More</button></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+    <!-- Articles Styling Here  -->
+
+    <!-- Footer Start -->
+    <!-- Start Footer bottom Area -->
+    <footer class="footer-distributed ">
+        <iframe id="footer-distributed " title="ACCI Location Map " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.8054976090457!2d7.390899614786372!3d8.990037893547937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e73a990a36d67%3A0x145a2a2f5fdfa745!2sAbuja%20Chamber%20Of%20Commerce%20and%20Industry!5e0!3m2!1sen!2sng!4v1617254729999!5m2!1sen!2sng "
+            width="100% " height="350 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe> <br>
+        <div class="footer-left ">
+            <h3>ABUJA<span> Chamber</span></h3>
+
+            <p class="footer-links ">
+                <a href="index.html" class="link-1 ">Home</a>
+
+                <a href="abuja.html">Abuja City</a>
+
+                <a href="join.html">Join ACCI</a>
+
+                <a href="directory.html">Directory</a>
+
+                <a href="contact.html">Contact Us</a>
+            </p>
+
+            <p class="footer-company-name">All Rights Reserved | ACCI &copy 2021 </p>
+            <p>weather data by <a style="color:rgb(41, 44, 2);" href="https://openweathermap.org/" target="_blank" rel="noreferrer">Open Weather </a>
+                <hr> <span id="date"></span>
+            </p>
+            <p style="color:rgb(38, 41, 2);" class="update">Today's Date: <span id="currentdate"></span></p>
+
+        </div>
+
+        <div class="footer-center ">
+
+            <div>
+                <i class="fa fa-map-marker "></i>
+                <p><span>KM 8, MUSA YA'ARADUA RD, </span> LUGBE FCT, ABUJA</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone "></i>
+                <p>+234.703.083.5572</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope "></i>
+                <p><a href="mailto:support@acci.com.ng ">info@acci.ng</a></p>
+            </div>
+
+        </div>
+        <div class="footer-right ">
+            <p class="footer-company-about ">
+                <span>About Abuja</span> Abuja is the capital city of Nigeria which was built largely in the 1980s, is dominated by Aso Rock, an enormous monolith. It rises up behind the Presidential Complex, in the Three Arms Zone on the eastern edge
+                of the city.
+
+                <div class="footer-icons ">
+
+                    <a href="# "><i class="fa fa-facebook "></i></a>
+                    <a href="# "><i class="fa fa-twitter "></i></a>
+                    <a href="# "><i class="fa fa-linkedin "></i></a>
+                    <a href="# "><i class="fa fa-github "></i></a>
+
+                </div>
+
+        </div>
+    </footer>
+    <script src="js/currentdate.js">
+    </script>
+    <script src="js/weatherfull.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/weather.js "></script>
+    <script src="js/forecast.js "></script>
+
+
+</body>
+
+</html>
