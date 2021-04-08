@@ -12,7 +12,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+        rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <!-- My fontAwesome library-->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -23,7 +25,56 @@
     <script src="js/js-menu.js">
     </script>
     <style>
+        .accordion {
+            background-color: rgb(233, 229, 229);
+            color: #000000;
+            cursor: pointer;
+            padding: 18px;
+            max-width: 80%;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            vertical-align: middle;
 
+        }
+
+        #active,
+        .accordion:hover {
+            background-color: rgb(235, 202, 142);
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: rgb(243, 150, 150);
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: rgb(191, 247, 247);
+            max-height: 0;
+            height: 500px;
+            max-width: 80%;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            vertical-align: middle;
+        }
+
+        .img {
+            float: left;
+            padding: 10px;
+            border-radius: 10px;
+        }
     </style>
 
 </head>
@@ -44,7 +95,7 @@
                 <a id="blink" href="join.html"> JOIN NOW</a>
                 <script type="text/javascript">
                     var blink = document.getElementById('blink');
-                    setInterval(function() {
+                    setInterval(function () {
                         blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
                     }, 1500);
                 </script>
@@ -52,7 +103,9 @@
             <div class="contact-info float-left">
                 <i class="fa fa-envelope-o"></i> <a href="mailto:info@acci.com">info@acci.com</a>
                 <i class="fa fa-phone"></i> 0703 083 5572
-                <i class="fas fa-bolt"></i> <button style="padding: 5px; border-radius: 10px; background-color: red; color: white;" id="modal-btn">Weather Alert - Click Now!</button>
+                <i class="fas fa-bolt"></i> <button
+                    style="padding: 5px; border-radius: 10px; background-color: red; color: white;"
+                    id="modal-btn">Weather Alert - Click Now!</button>
             </div>
             <div class="modal">
                 <div class="modal-content">
@@ -117,12 +170,140 @@
             </picture>
         </section>
         <article class="main ">
-            <h3>Abuja Brief</h3>
-            <p>
-                <img src="images/Abuja-fair-image.jpg" width=" 400 " float="left " alt=" Zuma Rock Range "></p>
+            <aside>
+                <br>
+                <h2 style="text-align: center;">Sights and Sounds of Abuja</h2>
+                <p style="font-size: .9em;">
+                    <picture><img class="img" src="images/Aso-Rock.jpg" alt="Aso Rock " width="80%"> </picture>Abuja is
+                    the capital city of Nigeria, in the middle of the country. The skyline of the city, which
+                    was built largely in the 1980s, is dominated by Aso Rock, an enormous monolith. It rises up behind
+                    the Presidential Complex, which houses the residence and offices of the Nigerian president in the
+                    Three Arms Zone on the eastern edge of the city. Nearby are the National Assembly and the Supreme
+                    Court of Nigeria.
+                </p>
+                <button class="accordion">Hotels and Accommodations</button>
+                <div class="panel">
+                    <picture><img class="img" src="images/hilton-abuja.jpg" alt="Hilton Hotel " width="500"> </picture>
+                    <br>
+                    <p> Transcorp Hilton Abuja - 7*</p>
+                    <p>Sharaton Abuja Hotel - 5*</p>
+                    <p>Le Meridien Abuja - 5 *</p>
+                    <p> Palace View Hotel Gwarinpa - 7*</p>
+                    <p>The Edge by Wellness</p>
+                    <p>Valencia Hotel - Wuse 2</p>
+                </div>
+
+
+                <button class="accordion">Radio Stations, DJs, TV Stations, </button>
+                <div class="panel">
+                    <p>
+                        <picture><img class="img" src="images/nigeria-info.jfif" alt="Zenith Bank " width="200">
+                        </picture>The City of abuja is blessed with numerous radio stations, satelite TV stations,
+                        NetFlix is
+                        availble and so much more. The Online
+                        and print media are at every turn. We boast of world-class djs such as Don Jazzy, DJ Jimmy Jat,
+                        DJ Spindall, DJ Magic, etc. The city ight life is peaceful and engaging.
+                        Abuja boasts of some of the best night clubs in the world.
+                    </p>
+                </div>
+
+                <button class="accordion">Economy, Banking and Finance</button>
+                <div class="panel">
+                    <p>
+                        <picture><img class="img" src="images/zenith.jpg" alt="Zenith Bank " width="200"> </picture>
+                        Report on e-banking system in Nigeria reveals that e-payment machinery, especially the card
+                        technology, is presently enjoying the highest popularity in Nigeria banking market. ...
+                        Nigeria's 24 banks operate over 9,000 ATM machines across the country's 36 states and Federal
+                        Capital Territory. With deep internet penetration, Abuja financial market is roborst and easy to
+                        access.
+                        Foreign Exchange is available through beaureau de change, banks and other mediums. All the major
+                        credit cards
+                        are accepted at all the major hotels, restaurants, shopping malls, and banking institutions
+                        throughout the Federal Capital Territory.
+                    </p>
+                </div>
+
+                <button class="accordion">Events and Venues</button>
+                <div class="panel">
+                    <a href="#">Silver Bord Cinema:</a>
+                    <p> Address: 1161, Memorial Drive, By Musa Yar'adua Center, Central Business District, Abuja
+                        Phone: 0816 398 7390</p>
+                    <a href="#">Jabi Lake Mall:</a>
+                    <p>Address: Plot 1265 Jabi Lake Mall, 240102, Abuja
+                        Phone: 0814 185 3172</p>
+                    <a href="#">Ceddi Plaza:</a>
+                    <p>Address: 264, Tafawa Balewa way, Central Business District, Abuja
+                        Phone: 0816 398 7390</p>
+                    <a href="#">Millenium Park:</a>
+                    <p>
+                        <picture><img class="img" src="images/millenium_park_abuja.jpg" alt="Millenium Park "
+                                width="200"> </picture> The Millennium Park was inaugurated by Her Majesty Queen
+                        Elizabeth II of the United Kingdom on 4 December 2003. <br>Address: Three Arms Zone, Central
+                        Business District, Abuja.
+                        Phone: 0816 719 1939
+                    </p>
+                </div>
+
+                <button class="accordion">Security, Safety and movements</button>
+                <div class="panel">
+                    <p>
+                        <picture><img class="img" src="images/abujacarnival-fulai.jpg" alt=" " width="200 ">
+                        </picture>A recent spate of kidnappings and violent crimes has shaken Nigeria's capital Abuja,
+                        which has been regarded as a relatively safe haven in a country facing major security
+                        challenges. The national
+                        police chief, Mohammed Adamu, has sought to allay concerns by saying that Abuja actually has one
+                        of the lowest crime rates in the world.
+                    <p>Travelers must use caution while in Abuja. The U.S. State Department notes that several
+                        kidnappings have taken place in the city, and crimes against tourists such as armed robbery,
+                        burglary and rape are also prevalent throughout Nigeria, including Abuja.</p>
+                    </p>
+                </div>
+
+                <button class="accordion">Religion, Culture and Tradition </button>
+                <div class="panel">
+                    <p> <picture><img class="img" src="images/National-Church.jpg" alt=" National-Church" width="200 ">
+                    </picture>Abuja is home to people of all race, culture, religion and other affiliations. As the capital of nigeria, 
+                        it has citizens from every country in the world. It is rich in diversity. Islam and christianity are the two 
+                    main religion of the city. </p>
+                    <p><picture><img class="img" src="images/mosque.jfif" alt="mosque " width="200 ">
+                    </picture></p>
+                </div>
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.maxHeight) {
+                                panel.style.maxHeight = null;
+                            } else {
+                                panel.style.maxHeight = panel.scrollHeight + "px";
+                            }
+                        });
+                    }
+                </script>
+            </aside>
+
         </article>
         <section class="main ">
+            <h2 style="text-align: center;">Schooling in Abuja.</h2>
+            <p style="font-size: .9em;">
+                <picture><img class="img" src="images/aisa.webp" alt="American International School of Abuja "
+                        width="80%"> </picture>
+                AISA (The American International School of Abuja) is located in Abuja which is the geographical center of Nigeria. This allows opportunities to
+                enhance the educational experience for our students and provide numerous leisure and cultural experience
+                for our teachers. Abuja as a global and commercial hub is rich with people who are culturally diverse.
+                Most countries have moved their embassies and consulates from Lagos to Abuja. The largest American
+                diplomatic presence in Africa is located here in Abuja.</p>
 
+                <p>From exquisite cuisines and fine dinings, non-stop nightlife, and a 24-hours operating city, Abuja has
+                an endless list of planned activities. Activities include and are not limited to the yearly Nigerian day
+                celebration, Marine ball, monthly jazz festival (Jamrock) and the weekly Friday hangouts. Many local
+                Commissions and Embassies host events and invite the local expats. Abuja offers you a ceaseless
+                lifestyle of fun and economic stability.</p>
+            </p>
         </section> <br>
         <br>
         <section class="main " id="events ">
@@ -139,8 +320,13 @@
                         <div class="details ">
                             <h3>Abuja International Trade Fair and Exhibition</h3>
                             <p style="text-align: left; ">
-                                <img class="responsive " style="float: right; border: 1px solid rgb(248, 6, 19); margin: 2px " src="images/Abuja-fair-image.jpg " alt="Past tradefair picture "> Trade fairs play important roles in marketing as well as business
-                                networking in market sectors that use them. People will seek to meet people and companies at their own level in the supply chain, as well as potential suppliers and potential buyers.
+                                <img class="responsive "
+                                    style="float: right; border: 1px solid rgb(248, 6, 19); margin: 2px "
+                                    src="images/Abuja-fair-image.jpg " alt="Past tradefair picture "> Trade fairs play
+                                important roles in marketing as well as business
+                                networking in market sectors that use them. People will seek to meet people and
+                                companies at their own level in the supply chain, as well as potential suppliers and
+                                potential buyers.
                             </p>
                             <a href="join.html ">View Details</a>
                         </div>
@@ -153,9 +339,15 @@
                         <div class="details ">
                             <h3>HALAL EXPO NIGERIA 2021</h3>
                             <p style="text-align: right; ">
-                                <img class="responsive " style="float: left; border: 1px solid rgb(248, 6, 19); " src="images/Halal-Expo-2020-2.png " width="400 " alt=" Halal Expo 2021 ">Nigeria has over 100 million Muslim population which makes it an
-                                ideal marketplace and a place worth trillions of Dollars. As the Halal movement gains traction, the global industry sets its sights on Nigeria’s growing demand for Halal products. Home to one of the world’s largest Muslim
-                                population next to Indonesia, India, Nigeria does have one of the world’s most viable Halal markets.</p>
+                                <img class="responsive " style="float: left; border: 1px solid rgb(248, 6, 19); "
+                                    src="images/Halal-Expo-2020-2.png " width="400 " alt=" Halal Expo 2021 ">Nigeria has
+                                over 100 million Muslim population which makes it an
+                                ideal marketplace and a place worth trillions of Dollars. As the Halal movement gains
+                                traction, the global industry sets its sights on Nigeria’s growing demand for Halal
+                                products. Home to one of the world’s largest Muslim
+                                population next to Indonesia, India, Nigeria does have one of the world’s most viable
+                                Halal markets.
+                            </p>
                             <a href="join.html ">View Details</a>
                         </div>
                         <div style="clear: both; "></div>
@@ -167,8 +359,13 @@
                         <div class="details ">
                             <h3>Abuja Carnivals</h3>
                             <p style="text-align: left; ">
-                                <img class="responsive " style="float: right; border: 1px solid rgb(248, 6, 19); " src="images/9648486402b34e3f9bfbce59fd4fb87b.jpg " width="400 " alt=" abuja Canival Parade ">Abuja Carnival is one of the most exhilarating
-                                Nigerian cultural jamborees that hold annually (mostly in November or December). It includes street parades, boat regattas and Nigerian States cultural competition. Visit Abuja and have a feel of Nigeria's hospitality.</p>
+                                <img class="responsive " style="float: right; border: 1px solid rgb(248, 6, 19); "
+                                    src="images/9648486402b34e3f9bfbce59fd4fb87b.jpg " width="400 "
+                                    alt=" abuja Canival Parade ">Abuja Carnival is one of the most exhilarating
+                                Nigerian cultural jamborees that hold annually (mostly in November or December). It
+                                includes street parades, boat regattas and Nigerian States cultural competition. Visit
+                                Abuja and have a feel of Nigeria's hospitality.
+                            </p>
                             <a href="join.html ">View Details</a>
                         </div>
                         <div style="clear: both; "></div>
@@ -182,7 +379,8 @@
         <div class="main ">
             <br>
             <h3 style="text-align:center ">Membership Category</h3>
-            <p style="text-align:center ">Membership of the Chamber is open to registered companies which meet the Chamber’s stringent conditions for good corporate citizenship.</p>
+            <p style="text-align:center ">Membership of the Chamber is open to registered companies which meet the
+                Chamber’s stringent conditions for good corporate citizenship.</p>
 
             <div class="columns ">
                 <ul class="price ">
@@ -238,45 +436,65 @@
             <br>
             <br>
             <h3 style="text-align: center; ">Company Advertisement</h3>
-            <p style="text-align: center; ">Contact our marketing department to advertise your business products and services to a larger audience both local and international. </p>
+            <p style="text-align: center; ">Contact our marketing department to advertise your business products and
+                services to a larger audience both local and international. </p>
             <ul class="cards ">
                 <li class="cards_item ">
                     <div class="card ">
-                        <div class="card_image "><img src="images/julius-berger-nigeria.jpg " width="500 " height="300 " alt="Julius Berger Nigeria PLC "></div>
+                        <div class="card_image "><img src="images/julius-berger-nigeria.jpg " width="500 " height="300 "
+                                alt="Julius Berger Nigeria PLC "></div>
                         <div class="card_content ">
                             <h2 class="card_title ">Julius Berger Nigeria PLC</h2>
-                            <p class="card_text ">Is a Nigerian construction company, headquartered in Abuja, with additional permanent locations in Lagos and Uyo. The company is represented across Nigeria in structural engineering and infrastructure works, and in southern
-                                Nigeria through domestic and international oil and gas industry projects.<br> It is known for constructing most of Nigeria's infrastructures, major expressways, and even some residential buildings for the Chevron Nigeria
+                            <p class="card_text ">Is a Nigerian construction company, headquartered in Abuja, with
+                                additional permanent locations in Lagos and Uyo. The company is represented across
+                                Nigeria in structural engineering and infrastructure works, and in southern
+                                Nigeria through domestic and international oil and gas industry projects.<br> It is
+                                known for constructing most of Nigeria's infrastructures, major expressways, and even
+                                some residential buildings for the Chevron Nigeria
                                 headquarters in Lagos. JB is an Abuja based public liability company.</p>
                             <br>
-                            <a href="https://www.julius-berger.com// " target="_blank " rel="noreferrer "> <button class="btn card_btn ">Read More</button></a>
+                            <a href="https://www.julius-berger.com// " target="_blank " rel="noreferrer "> <button
+                                    class="btn card_btn ">Read More</button></a>
                         </div>
                     </div>
                 </li>
                 <li class="cards_item ">
                     <div class="card ">
-                        <div class="card_image "><img src="images/mtn-nigeria.jpeg " alt="MTN Nigeria PLC " width="500 " height="300 "></div>
+                        <div class="card_image "><img src="images/mtn-nigeria.jpeg " alt="MTN Nigeria PLC " width="500 "
+                                height="300 "></div>
                         <div class="card_content ">
                             <h2 class="card_title ">MTN Nigeria Limited </h2>
-                            <p class="card_text ">Formerly M-Cell, is a South African multinational mobile telecommunications company, operating in many African, European and Asian countries. Its head office is in Johannesburg. As of September 2020, MTN recorded 273.44 million
-                                subscribers, making it the ninth largest mobile network operator in the world, and the largest in Africa. --Active in over 20 countries, one-third of company revenue come from Nigeria, where it holds about 35% market share.
+                            <p class="card_text ">Formerly M-Cell, is a South African multinational mobile
+                                telecommunications company, operating in many African, European and Asian countries. Its
+                                head office is in Johannesburg. As of September 2020, MTN recorded 273.44 million
+                                subscribers, making it the ninth largest mobile network operator in the world, and the
+                                largest in Africa. --Active in over 20 countries, one-third of company revenue come from
+                                Nigeria, where it holds about 35% market share.
                             </p>
                             <p class="card_text ">MTN Group is the primary sponsor of Abuja Marathon. </p>
-                            <a href=" https://www.mtnonline.com/ " target="_blank " rel="noreferrer "> <button class="btn card_btn ">Read More</button></a>
+                            <a href=" https://www.mtnonline.com/ " target="_blank " rel="noreferrer "> <button
+                                    class="btn card_btn ">Read More</button></a>
                         </div>
                     </div>
                 </li>
 
                 <li class="cards_item ">
                     <div class="card ">
-                        <div class="card_image "><img src="images/next3.jpg " alt="Next Cash & Carry " width="500 " height="300 "></div>
+                        <div class="card_image "><img src="images/next3.jpg " alt="Next Cash & Carry " width="500 "
+                                height="300 "></div>
                         <div class="card_content ">
                             <h2 class="card_title ">Next Cash & Carry</h2>
-                            <p class="card_text ">One stop Shop with 'Everything under One Roof'! Visit our website to enjoy non-stop shopping. Delivery & store pick up to commence in Abuja for now. One of the biggest reasons that so many stores are failing is that people
-                                aren't shopping the same way they used to.
-                                <br> Rather than spending whole afternoons walking around the mall, many people prefer to shop in their pajamas at home. Shopping isn 't a pastime like it used to be — it's more transactional. It is owned by an Igbo man.
-                                Employees are 99% of Igbo tribe.</p>
-                            <a href=" https://nextcashandcarry.com.ng/ " target="_blank " rel="noreferrer "> <button class="btn card_btn ">Read More</button></a>
+                            <p class="card_text ">One stop Shop with 'Everything under One Roof'! Visit our website to
+                                enjoy non-stop shopping. <br> <br> & store pick up to commence in Abuja for now. One of
+                                the biggest reasons that so many stores are failing is that people
+                                aren't shopping the same way they used to.<br>
+                                <br> Rather than spending whole afternoons walking around the mall, many people prefer
+                                to shop in their pajamas at home. Shopping isn 't a pastime like it used to be — it's
+                                more transactional. It is owned by an Igbo man.
+                                Employees are 99% of Igbo tribe.
+                            </p>
+                            <a href=" https://nextcashandcarry.com.ng/ " target="_blank " rel="noreferrer "> <button
+                                    class="btn card_btn ">Read More</button></a>
                         </div>
                     </div>
                 </li>
@@ -289,7 +507,8 @@
     <!-- Footer Start -->
     <!-- Start Footer bottom Area -->
     <footer class="footer-distributed ">
-        <iframe id="footer-distributed " title="ACCI Location Map " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.8054976090457!2d7.390899614786372!3d8.990037893547937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e73a990a36d67%3A0x145a2a2f5fdfa745!2sAbuja%20Chamber%20Of%20Commerce%20and%20Industry!5e0!3m2!1sen!2sng!4v1617254729999!5m2!1sen!2sng "
+        <iframe id="footer-distributed " title="ACCI Location Map "
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.8054976090457!2d7.390899614786372!3d8.990037893547937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e73a990a36d67%3A0x145a2a2f5fdfa745!2sAbuja%20Chamber%20Of%20Commerce%20and%20Industry!5e0!3m2!1sen!2sng!4v1617254729999!5m2!1sen!2sng "
             width="100% " height="350 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe> <br>
         <div class="footer-left ">
             <h3>ABUJA<span> Chamber</span></h3>
@@ -307,10 +526,10 @@
             </p>
 
             <p class="footer-company-name ">All Rights Reserved | ACCI &copy 2021 </p>
-            <p>weather data by <a style="color:rgb(37, 39, 2); " href="https://openweathermap.org/ " target="_blank " rel="noreferrer ">Open Weather </a>
-                <hr> <span id="date "></span>
+            <p>weather data by <a style="color:rgb(49, 53, 2);" href="https://openweathermap.org/" target="_blank" rel="noreferrer">Open Weather </a>
+                <hr> <span id="date"></span>
             </p>
-            <p style="color:rgb(32, 34, 1); " class="update ">Today's Date: <span id="currentdate "></span></p>
+            <p style="color:rgb(53, 56, 3);" class="update">Today's Date: <span id="currentdate"></span></p>
 
         </div>
 
@@ -333,24 +552,26 @@
         </div>
         <div class="footer-right ">
             <p class="footer-company-about ">
-                <span>About Abuja</span> Abuja is the capital city of Nigeria which was built largely in the 1980s, is dominated by Aso Rock, an enormous monolith. It rises up behind the Presidential Complex, in the Three Arms Zone on the eastern edge
+                <span>About Abuja</span> Abuja is the capital city of Nigeria which was built largely in the 1980s, is
+                dominated by Aso Rock, an enormous monolith. It rises up behind the Presidential Complex, in the Three
+                Arms Zone on the eastern edge
                 of the city.
 
-                <div class="footer-icons ">
+            <div class="footer-icons ">
 
-                    <a href="# "><i class="fa fa-facebook "></i></a>
-                    <a href="# "><i class="fa fa-twitter "></i></a>
-                    <a href="# "><i class="fa fa-linkedin "></i></a>
-                    <a href="# "><i class="fa fa-github "></i></a>
+                <a href="# "><i class="fa fa-facebook "></i></a>
+                <a href="# "><i class="fa fa-twitter "></i></a>
+                <a href="# "><i class="fa fa-linkedin "></i></a>
+                <a href="# "><i class="fa fa-github "></i></a>
 
-                </div>
+            </div>
 
         </div>
     </footer>
     <script src="js/currentdate.js "></script>
     <script src="js/modal.js "></script>
     <script src="js/weather.js "></script>
-    <script src="js/abublog.js "></script>
+   
 
 
 </body>
